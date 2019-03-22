@@ -1,0 +1,43 @@
+body {
+    background: #fff;
+}
+
+.banner-top h4 {
+}
+
+main {
+    margin-top: 55px;
+}
+
+.banner-top {
+    min-height: 400px;
+    float: right;
+    width: 100%;
+    background: #E6D420;
+    text-align: center;
+}
+
+.white-box {
+    float: right;
+    width: 100%;
+    float: right;
+    margin: 40px 0;
+}
+
+.white-box-contnet span {
+    font-size: 35px;
+    font-weight: 200;
+
+}   
+.white-box-contnet p{
+    text-align: justify
+    
+}
+@media(min-width: 992px) {
+    .banner-top-content, .white-box-contnet {
+        float: none;
+        margin: auto;
+        padding: 25px;
+        text-align: center;
+    }
+}

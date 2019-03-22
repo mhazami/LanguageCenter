@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -107,7 +108,61 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_theme\MainTheme\css\all.css" />
+    <Content Include="App_theme\MainTheme\css\aos.css" />
+    <Content Include="App_theme\MainTheme\css\bootstrap-theme.css" />
+    <Content Include="App_theme\MainTheme\css\bootstrap-theme.min.css" />
+    <Content Include="App_theme\MainTheme\css\bootstrap.css" />
+    <Content Include="App_theme\MainTheme\css\bootstrap.min.css" />
+    <Content Include="App_theme\MainTheme\css\nav-style.css" />
+    <Content Include="App_theme\MainTheme\css\NavMenu.css" />
+    <Content Include="App_theme\MainTheme\css\owl.carousel.min.css" />
+    <Content Include="App_theme\MainTheme\css\owl.theme.default.min.css" />
+    <Content Include="App_theme\MainTheme\css\r-slider.css" />
+    <Content Include="App_theme\MainTheme\css\style.css" />
+    <Content Include="App_theme\MainTheme\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_theme\MainTheme\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="App_theme\MainTheme\js\all.js" />
+    <Content Include="App_theme\MainTheme\js\aos.js" />
+    <Content Include="App_theme\MainTheme\js\bootstrap.js" />
+    <Content Include="App_theme\MainTheme\js\bootstrap.min.js" />
+    <Content Include="App_theme\MainTheme\js\jquery-3.1.1.min.js" />
+    <Content Include="App_theme\MainTheme\js\jquery.validate.min.js" />
+    <Content Include="App_theme\MainTheme\js\modernizr-2.8.3.js" />
+    <Content Include="App_theme\MainTheme\js\navbar.js" />
+    <Content Include="App_theme\MainTheme\js\npm.js" />
+    <Content Include="App_theme\MainTheme\js\owl.carousel.min.js" />
+    <Content Include="App_theme\MainTheme\js\r-slider.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\bootstrapcarouselswipe\bootstrap-carousel-swipe.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="App_theme\MainTheme\slider\assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="App_theme\MainTheme\slider\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="App_theme\MainTheme\slider\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\dropdown\css\style.css" />
+    <Content Include="App_theme\MainTheme\slider\assets\dropdown\js\script.min.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\images\background1.jpg" />
+    <Content Include="App_theme\MainTheme\slider\assets\images\background2.jpg" />
+    <Content Include="App_theme\MainTheme\slider\assets\images\background3.jpg" />
+    <Content Include="App_theme\MainTheme\slider\assets\images\background4.jpg" />
+    <Content Include="App_theme\MainTheme\slider\assets\images\logo2.png" />
+    <Content Include="App_theme\MainTheme\slider\assets\images\logo4.png" />
+    <Content Include="App_theme\MainTheme\slider\assets\mobirise\css\mbr-additional.css" />
+    <Content Include="App_theme\MainTheme\slider\assets\parallax\jarallax.min.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\popper\popper.min.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\slidervideo\script.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\smoothscroll\smooth-scroll.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\tether\tether.min.css" />
+    <Content Include="App_theme\MainTheme\slider\assets\tether\tether.min.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\theme\css\style.css" />
+    <Content Include="App_theme\MainTheme\slider\assets\theme\js\script.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\touchswipe\jquery.touch-swipe.min.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\vimeoplayer\jquery.mb.vimeo_player.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\web\assets\jquery\jquery.min.js" />
+    <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
+    <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
+    <Content Include="App_theme\MainTheme\slider\assets\ytplayer\jquery.mb.ytplayer.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +175,43 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="App_theme\MainTheme\css\bootstrap-theme.css.map" />
+    <Content Include="App_theme\MainTheme\css\bootstrap-theme.min.css.map" />
+    <Content Include="App_theme\MainTheme\css\bootstrap.css.map" />
+    <Content Include="App_theme\MainTheme\css\bootstrap.min.css.map" />
+    <Content Include="App_theme\MainTheme\fonts\fontawesome-webfont.eot" />
+    <Content Include="App_theme\MainTheme\fonts\fontawesome-webfont.ttf" />
+    <Content Include="App_theme\MainTheme\fonts\fontawesome-webfont.woff" />
+    <Content Include="App_theme\MainTheme\fonts\fontawesome-webfont.woff2" />
+    <Content Include="App_theme\MainTheme\fonts\FontAwesome.otf" />
+    <Content Include="App_theme\MainTheme\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="App_theme\MainTheme\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="App_theme\MainTheme\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="App_theme\MainTheme\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\eot\Vazir-Bold-FD.eot" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\eot\Vazir-FD.eot" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\eot\Vazir-Light-FD.eot" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\eot\Vazir-Medium-FD.eot" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\eot\Vazir-Thin-FD.eot" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\ttf\Vazir-Bold-FD.ttf" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\ttf\Vazir-FD.ttf" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\ttf\Vazir-Light-FD.ttf" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\ttf\Vazir-Medium-FD.ttf" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\ttf\Vazir-Thin-FD.ttf" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff2\Vazir-Bold-FD.woff2" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff2\Vazir-FD.woff2" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff2\Vazir-Light-FD.woff2" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff2\Vazir-Medium-FD.woff2" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff2\Vazir-Thin-FD.woff2" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff\Vazir-Bold-FD.woff" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff\Vazir-FD.woff" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff\Vazir-Light-FD.woff" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff\Vazir-Medium-FD.woff" />
+    <Content Include="App_theme\MainTheme\fonts\Vazir\woff\Vazir-Thin-FD.woff" />
+    <Content Include="App_theme\MainTheme\slider\assets\images\Thumbs.db" />
+    <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.eot" />
+    <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
+    <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
