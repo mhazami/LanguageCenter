@@ -50,11 +50,6 @@
   <ItemGroup>
     <Compile Include="BusinessBase.cs" />
     <Compile Include="ConnectionHandler.cs" />
-    <Compile Include="Migrations\201903041916090_Create_DB.cs" />
-    <Compile Include="Migrations\201903041916090_Create_DB.Designer.cs">
-      <DependentUpon>201903041916090_Create_DB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,11 +61,6 @@
       <Project>{8df442b7-ced3-463a-9cae-4eed63e2241b}</Project>
       <Name>DataStructure</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903041916090_Create_DB.resx">
-      <DependentUpon>201903041916090_Create_DB.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
