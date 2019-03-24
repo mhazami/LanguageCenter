@@ -2,18 +2,89 @@ body {
     background: #fff;
 }
 
-.banner-top h4 {
+.banner-item h2 {
+    color: #252525;
+    margin-bottom: 25px;
+    font-size: 33px;
 }
 
 main {
     margin-top: 55px;
 }
 
-.banner-top {
+.banner-item {
     min-height: 400px;
     float: right;
     width: 100%;
-    background: #E6D420;
+    background-color: #E6D420;
+    text-align: center;
+}
+
+.items-section {
+    text-align: center;
+    margin: auto;
+    display: block;
+    float: right;
+    width: 100%;
+    padding-top: 55px;
+}
+
+.white-box img {
+    min-height: 60px;
+    height: 80px;
+    width: auto;
+    margin: auto;
+}
+
+.center-detail-box p, .center-detail-box-3 p, .center-detail-box-4 p {
+    width: 80%;
+    margin: auto;
+}
+
+.center-detail-box, .center-detail-box-3, .center-detail-box-4 {
+    text-align: center;
+    float: none;
+    margin: auto;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    background-position: top;
+    background-size: 100%;
+    background-image: url('../../../Content/Image/img-bg-2.png');
+}
+
+.center-detail-box-3 {
+    background-image: url('../../../Content/Image/img-bg-3.png');
+}
+
+.center-detail-box-4 {
+    background-image: url('../../../Content/Image/img-bg-4.png');
+}
+
+.white-box .row label {
+    font-size: 18px;
+    margin: 16px 0 4px 0;
+}
+
+.white-box .row {
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .banner-item {
+        background-image: url(../../../Content/Image/img-bg-1.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+        .banner-item.bottom-banner {
+            background-image: none !important;
+            padding: 0;
+            height: auto;
+            min-height: inherit;
+        }
+}
+
+.bottom-banner p {
     text-align: center;
 }
 
@@ -27,12 +98,12 @@ main {
 .white-box-contnet span {
     font-size: 35px;
     font-weight: 200;
-
-}   
-.white-box-contnet p{
-    text-align: justify
-    
 }
+
+.white-box-contnet p {
+    text-align: justify;
+}
+
 @media(min-width: 992px) {
     .banner-top-content, .white-box-contnet {
         float: none;
@@ -41,3 +112,109 @@ main {
         text-align: center;
     }
 }
+
+.bottom-center-item img {
+    min-height: 80px !important;
+    height: 80px !important;
+    width: auto !important;
+}
+
+.items-section-title h3, .white-box-contnet h3, .gray-box h3 {
+    font-size: 28px;
+    width: 100%;
+    margin: 27px auto;
+    font-weight: 300;
+    text-align: center;
+    color: #3e3e3e;
+}
+
+p {
+    text-align: justify;
+}
+
+.white-box .items-section-content .row label {
+    margin: 3px 0 4px 0;
+}
+
+.gray-box {
+    background: #F6F6F6;
+    padding: 40px 0;
+    float: right;
+    width: 100%;
+}
+
+.btn-more span {
+    font-weight: 600;
+    vertical-align: middle;
+    margin: -1px 6px;
+    float: left;
+    font-size: 15px;
+}
+
+.btn-more {
+    border: 2px solid #383838;
+    padding: 6px 17px 6px 10px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+
+    .btn-more:hover, .btn-more:focus, .btn-more:active {
+        color: #383838;
+        box-shadow: inset 0px 0px 0 1px #4e4e4e;
+    }
+
+.br-items {
+    content: "";
+    display: block;
+    border-top: 2px solid #e6d420;
+    width: 30%;
+    margin-bottom: 4px;
+    margin: 15px auto;
+    margin-bottom: 50px;
+}
+
+.resource-box {
+    padding: 0 50px;
+}
+
+    .resource-box h4 {
+        text-align: right;
+        width: 50%;
+        line-height: 1.7;
+        float: right;
+        display: block;
+        color: #3c3c3c;
+        font-weight: 400;
+    }
+
+.resource-bottom-text {
+    font-weight: 200;
+    font-size: 25px;
+    float: right;
+}
+
+.resource-box-content > .row > div:last-child {
+    margin-top: -60px;
+}
+
+.button-subscribe, .button-subscribe:hover, .button-subscribe:focus, .button-subscribe:active {
+    background: #FAF6D2;
+    padding: 12px;
+    margin: 15px 2px;
+    padding: 16px 20px;
+    display: inline-block;
+    color: #444;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+}
+
+    .button-subscribe:hover, .button-subscribe:focus, .button-subscribe:active {
+        background: #fff;
+    }
+
+    .button-subscribe svg {
+        margin-right: 6px;
+    }
