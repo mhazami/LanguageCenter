@@ -70,6 +70,11 @@ main {
 }
 
 @media(min-width: 768px) {
+    .links-item {
+        position: absolute!important;
+        left: 0!important;
+    }
+
     .banner-item {
         background-image: url(../../../Content/Image/img-bg-1.svg);
         background-repeat: no-repeat;
@@ -241,9 +246,11 @@ p {
 .download-box img {
     max-width: 130px;
 }
+
 .download-box ul li:first-child img {
     max-width: 100px;
 }
+
 .download-box ul li {
     margin: 8px 0;
 }
@@ -256,8 +263,40 @@ p {
     padding: 45px;
 }
 
-    .white-footer-box label {
-        color: #636363;
-        font-weight: 500;
-        margin-bottom: 30px;
+.links-item {
+    float: left;
+    padding-top: 11px;
+    width: auto !important;
+    max-width: max-content !important;
+}
+
+    .links-item > .dropdown-container {
+        display: block !important;
+        width: 100%;
+        position: unset;
+    }
+
+        .links-item > .dropdown-container li {
+            width: auto !important;
+            display: inline-block !important;
+        }
+
+.white-footer-box label {
+    color: #636363;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.links-item > .dropdown-container li a {
+    padding: 4px 11px !important;
+}
+
+.btn-register-navbar {
+    border-radius: 7px;
+    background: #5774fc;
+    color: #fff;
+}
+
+    .btn-register-navbar span, .btn-register-navbar svg {
+        color: #fff !important;
     }

@@ -103,7 +103,7 @@ ul {
 
 /*----------------Navbar---------------------*/
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
     .image-mega-menu {
         display: none;
     }
@@ -475,7 +475,7 @@ ul {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .r-collapse {
         cursor: pointer;
         display: block;
@@ -659,7 +659,7 @@ ul {
     padding-right: 80px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
 
 
@@ -690,7 +690,7 @@ ul {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .open-nav ~ .container-custom {
         transition: all .5s;
         padding-right: 270px;
@@ -699,7 +699,7 @@ ul {
 
 
 /*------------Navbar-----------*/
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
     .icon-upper {
         display: none;
@@ -748,7 +748,7 @@ ul {
 
 
             .list-nav > li > a {
-                color: #58585A;
+                color: #6b6b6b;
                 transition: all .3s;
                 float: right;
                 width: 100%;
@@ -763,10 +763,12 @@ ul {
             .list-nav > li a span {
                 color: #4c4c4c;
                 margin: 5px;
-                font-weight: 600;
+                font-weight: 400;
                 font-size: 13px;
                 transition: all .3s ease-in-out;
             }
+
+
 
             .list-nav > li .dropdown-container a:hover span {
                 opacity: .9;
@@ -898,7 +900,7 @@ ul {
     .btn-menu {
         display: block !important;
         position: absolute;
-        top: 18px;
+        top: 20px;
         left: -18px;
         right: auto;
         width: auto;
@@ -983,6 +985,12 @@ ul {
             width: 100%;
             left: 30px;
         }
+        س   
+}
+
+.list-nav > li a svg {
+    display: inline-block;
+    margin-top: -2px;
 }
 
 .list-nav > li:first-child {
