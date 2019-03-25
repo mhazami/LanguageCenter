@@ -78,7 +78,7 @@ main {
 
         .banner-item.bottom-banner {
             background-image: none !important;
-            padding: 0;
+            padding: 15px 0;
             height: auto;
             min-height: inherit;
         }
@@ -216,5 +216,48 @@ p {
     }
 
     .button-subscribe svg {
-        margin-right: 6px;
+        margin-left: 6px;
+    }
+
+.button-subscribe-link {
+    position: relative;
+    text-decoration: none;
+    color: #303030;
+    margin: 18px;
+    display: inline-block;
+}
+
+    .button-subscribe-link:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #303030;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+.download-box img {
+    max-width: 130px;
+}
+.download-box ul li:first-child img {
+    max-width: 100px;
+}
+.download-box ul li {
+    margin: 8px 0;
+}
+
+.white-footer-box {
+    float: right;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 45px;
+}
+
+    .white-footer-box label {
+        color: #636363;
+        font-weight: 500;
+        margin-bottom: 30px;
     }

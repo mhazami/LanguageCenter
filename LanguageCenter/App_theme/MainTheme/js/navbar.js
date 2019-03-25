@@ -1,5 +1,4 @@
 ﻿$(document).ready(function () {
-    menuScroll();
     navbar();
     function navbar() {
         $('.list-nav > li  ul').addClass('dropdown-container');
@@ -111,7 +110,7 @@
         $('.r-nav').toggleClass('open-nav close-nav');
 
 
-    });
+    });     
 
 
 
@@ -119,7 +118,6 @@
 
     $(document).scroll(function () {
         navbar();
-        menuScroll();
     });
     });
 
