@@ -110,7 +110,7 @@
         $('.r-nav').toggleClass('open-nav close-nav');
 
 
-    });     
+    });
 
 
 
@@ -119,5 +119,5 @@
     $(document).scroll(function () {
         navbar();
     });
-    });
+});
 

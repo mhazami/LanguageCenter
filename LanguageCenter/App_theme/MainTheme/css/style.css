@@ -5,7 +5,8 @@ body {
 .banner-item h2 {
     color: #252525;
     margin-bottom: 25px;
-    font-size: 33px;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 main {
@@ -13,7 +14,7 @@ main {
 }
 
 .banner-item {
-    min-height: 400px;
+    min-height: 500px;
     float: right;
     width: 100%;
     background-color: #E6D420;
@@ -69,16 +70,40 @@ main {
     text-align: center;
 }
 
+
+
 @media(min-width: 768px) {
     .links-item {
-        position: absolute!important;
-        left: 0!important;
+        top: 7px;
+        position: absolute !important;
+        left: 0 !important;
+    }
+
+    .dropdown-container li a span {
+        margin: 3px;
+    }
+
+    .dropdown-container li a span, .dropdown-container li a svg {
+        font-size: 12px;
+        font-weight: 500;
+        color: #656565;
+    }
+
+    .dropdown-container li a svg {
+        font-size: 13px;
+    }
+
+    .links-item li a svg {
+        display: inline-block;
+        font-size: 15px;
+        margin-top: -2px;
     }
 
     .banner-item {
+        padding-top: 25px;
         background-image: url(../../../Content/Image/img-bg-1.svg);
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: 50% 80%;
     }
 
         .banner-item.bottom-banner {
@@ -89,7 +114,7 @@ main {
         }
 }
 
-.bottom-banner p {
+.bottom-banner p, .banner-item p {
     text-align: center;
 }
 
@@ -270,22 +295,33 @@ p {
     max-width: max-content !important;
 }
 
-    .links-item > .dropdown-container {
+    .links-item ul {
         display: block !important;
         width: 100%;
         position: unset;
     }
 
-        .links-item > .dropdown-container li {
-            width: auto !important;
-            display: inline-block !important;
-        }
+    .links-item li {
+        margin: 0 7px;
+        width: auto !important;
+        display: inline-block !important;
+    }
 
 .white-footer-box label {
     color: #636363;
     font-weight: 500;
     margin-bottom: 30px;
 }
+
+.white-footer-box ul li {
+    margin: 6px 0px;
+    color: #656565;
+    font-size: 13px;
+}
+
+    .white-footer-box ul li a svg {
+        font-size: 12px;
+    }
 
 .links-item > .dropdown-container li a {
     padding: 4px 11px !important;
@@ -300,3 +336,91 @@ p {
     .btn-register-navbar span, .btn-register-navbar svg {
         color: #fff !important;
     }
+
+footer {
+    padding: 50px 11%;
+    background-color: #231F20;
+    float: right;
+    width: 100%;
+}
+
+    footer img {
+        width: 100px;
+    }
+
+    footer a, footer span, footer label, footer h5 {
+        color: #fff;
+    }
+
+    footer h5 {
+        margin-bottom: 18px;
+    }
+
+    footer label {
+        display: block;
+        font-weight: normal;
+        margin: 20px 0;
+    }
+
+    footer ul li svg {
+        font-size: 12px !important;
+        margin: 5px 0px 7px 6px;
+    }
+
+    footer ul li span {
+        font-size: 12px;
+    }
+
+    footer a svg, footer a span, .dropdown-container li a span, .dropdown-container li a svg {
+        transition: all .3s ease-in-out;
+    }
+
+    footer a:hover span, footer a:hover svg, .dropdown-container li a:hover span, .dropdown-container li a:hover svg {
+        color: #425fe6 !important;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+
+@media(max-width: 768px) {
+    main {
+        margin-top: 0;
+        overflow: hidden;
+    }
+
+    .banner-item {
+        min-height: inherit;
+        padding: 21px 5px;
+    }
+
+        .banner-item h2 {
+            font-size: 31px;
+        }
+
+    .white-box img {
+        margin-top: 50px;
+    }
+
+    .items-section-content p {
+        padding: 11px;
+    }
+
+    .center-detail-box, .center-detail-box-3, .center-detail-box-4 {
+        padding-top: 160px;
+    }
+
+    .resource-box h4 {
+        width: 100%;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .resource-box-content > .row > div:last-child {
+        margin-top: 35px;
+    }
+
+    .resource-bottom-text {
+        font-size: 18px;
+    }
+}

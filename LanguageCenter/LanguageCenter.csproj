@@ -178,6 +178,7 @@
     <Content Include="Content\Image\img-bg-4.png" />
     <Content Include="Content\Image\img-bg-5.svg" />
     <Content Include="Content\Image\img-logo.svg" />
+    <Content Include="Content\Image\logo-footer.png" />
     <Content Include="Global.asax" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
