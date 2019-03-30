@@ -161,6 +161,7 @@
     <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
     <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
     <Content Include="App_theme\MainTheme\slider\assets\ytplayer\jquery.mb.ytplayer.min.js" />
+    <Content Include="App_theme\MainTheme\css\style-en.css" />
     <Content Include="Content\Image\app-store.svg" />
     <Content Include="Content\Image\google-store.svg" />
     <Content Include="Content\Image\img-1.svg" />

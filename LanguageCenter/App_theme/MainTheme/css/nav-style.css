@@ -716,7 +716,7 @@ ul {
 
     .list-nav {
         width: 57%;
-            display: flex;
+        display: flex;
         margin: 0;
         text-align: center;
     }
@@ -761,7 +761,7 @@ ul {
 
 
 
-            .list-nav > li a span  ,.links-item > li a span{
+            .list-nav > li a span, .links-item > li a span {
                 color: #4c4c4c;
                 margin: 5px;
                 font-weight: 400;
@@ -901,8 +901,8 @@ ul {
     .btn-menu {
         display: block !important;
         position: absolute;
-        top: 20px;
-        left: -18px;
+        top: 23px;
+        left: -21px;
         right: auto;
         width: auto;
         opacity: 1 !important;
@@ -1105,4 +1105,32 @@ ul {
 
 #accordian li.active > ul.mega-menu {
     min-width: max-content;
+}
+
+@media(min-width: 1600px) {
+    .list-nav > li a svg {
+        font-size: 22px;
+    }
+    .links-item li a svg {
+        font-size: 18px!important;
+    }
+
+    .list-nav > li a span, .links-item > li a span {
+        font-size: 15px;
+    }
+
+    .list-nav > li {
+        max-width: inherit
+    }
+
+    .r-nav {
+        padding: 20px 0;
+    }
+
+    .links-item {
+        padding-top: 25px;
+    }
+    #accordian ul ul li a {
+        padding: 7px 16px;
+    }
 }
