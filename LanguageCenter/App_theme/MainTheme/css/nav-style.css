@@ -103,7 +103,7 @@ ul {
 
 /*----------------Navbar---------------------*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .image-mega-menu {
         display: none;
     }
@@ -475,7 +475,7 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .r-collapse {
         cursor: pointer;
         display: block;
@@ -575,8 +575,8 @@ ul {
 #accordian ul ul li a {
     color: #878787;
     text-decoration: none;
-    font-size: 11px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 24px;
     display: block;
     padding: 0 15px;
     transition: all 0.3s;
@@ -659,7 +659,7 @@ ul {
     padding-right: 80px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
 
 
@@ -690,7 +690,7 @@ ul {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .open-nav ~ .container-custom {
         transition: all .5s;
         padding-right: 270px;
@@ -699,7 +699,7 @@ ul {
 
 
 /*------------Navbar-----------*/
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .icon-upper {
         display: none;
@@ -738,8 +738,9 @@ ul {
         .list-nav > li {
             display: inline-block;
             max-width: 166px;
-            height: 55px;
+            min-height: 100px;
             text-align: center;
+            padding-top: 22px;
             margin-top: -2px;
             cursor: pointer;
             transition: all .3s;
@@ -901,7 +902,7 @@ ul {
     .btn-menu {
         display: block !important;
         position: absolute;
-        top: 23px;
+        top: 45px;
         left: -21px;
         right: auto;
         width: auto;
@@ -930,27 +931,27 @@ ul {
 
 
     .active > .dropdown-container {
+        width: max-content;
+        width: -moz-max-content;
         display: block !important;
         background-color: white;
         min-width: 130px;
         animation: go-top .3s ease-in-out;
-        -webkit-transform: translateX(0) translateY(2px);
-        transform: translateX(0) translateY(2px);
+        -webkit-transform: translateX(0) translateY(-4px);
+        transform: translateX(0) translateY(-4px);
         padding: 0;
-        background: #ffffff;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: 1px solid #ebebeb;
+        border-top: none;
         -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
         filter: alpha(opacity=0);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        border-radius: 5px;
-        -webkit-box-shadow: 0 5px 19px 1px rgba(0, 0, 0, 0.09);
-        -moz-box-shadow: 0 5px 19px 1px rgba(0, 0, 0, 0.09);
-        -ms-box-shadow: 0 5px 19px 1px rgba(0, 0, 0, 0.09);
-        -o-box-shadow: 0 5px 19px 1px rgba(0, 0, 0, 0.09);
-        box-shadow: 0 5px 19px 1px rgba(0, 0, 0, 0.09);
+        -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.03);
+        -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.03);
+        -ms-box-shadow: 0 5px 10px rgba(0,0,0,0.03);
+        -o-box-shadow: 0 5px 10px rgba(0,0,0,0.03);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.03);
     }
 
     @keyframes go-top {
@@ -961,8 +962,8 @@ ul {
 
 
         to {
-            -webkit-transform: translateX(0) translateY(2px);
-            transform: translateX(0) translateY(2px);
+            -webkit-transform: translateX(0) translateY(-4px);
+            transform: translateX(0) translateY(-4px);
         }
     }
 
@@ -1042,7 +1043,7 @@ ul {
     overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .container-nav {
         position: fixed;
         -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
@@ -1107,12 +1108,13 @@ ul {
     min-width: max-content;
 }
 
-@media(min-width: 1600px) {
+@media(min-width: 992px) {
     .list-nav > li a svg {
         font-size: 22px;
     }
+
     .links-item li a svg {
-        font-size: 18px!important;
+        font-size: 18px !important;
     }
 
     .list-nav > li a span, .links-item > li a span {
@@ -1124,13 +1126,14 @@ ul {
     }
 
     .r-nav {
-        padding: 20px 0;
+        padding: 0;
     }
 
     .links-item {
         padding-top: 25px;
     }
+
     #accordian ul ul li a {
-        padding: 7px 16px;
+        padding: 9px 16px;
     }
 }
