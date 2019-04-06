@@ -1,5 +1,6 @@
 body {
     background: #fff;
+    color: #231f20;
 }
 
 .banner-item h2 {
@@ -627,32 +628,37 @@ footer {
 }
 
 .text-box {
-    text-align: center
+    text-align: center;
+    background-color: #fff;
 }
 
-    .text-box > div {
-        padding: 30px 0;
+    .text-box .row > div {
+        padding: 70px 0;
         float: none;
         display: inline-block;
         margin: auto
     }
 
-        .text-box > div > span {
-            font-size: 44px;
-            color: #303030;
-            margin: 25px 0 30px 0;
-            float: right;
-            display: block;
-            width: 100%;
-            text-align: right;
-            font-weight: 300;
-        }
-
-    .text-box p {
+    .text-box [class^="col"] > span {
+        font-size: 44px;
+        color: #303030;
+        margin: 25px 0 30px 0;
         float: right;
-        font-size: 15px;
-        line-height: 1.5;
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-weight: 300;
     }
+
+.pricing.text-box [class^="col"] > span {
+    text-align: center !important
+}
+
+.text-box p {
+    float: right;
+    font-size: 16px;
+    line-height: 1.5;
+}
 
 
 .button-row {
@@ -761,7 +767,7 @@ footer {
         width: 150px;
     }
 
-    .text-box > div > span {
+    .text-box span {
         font-size: 30px;
         font-weight: normal
     }
@@ -812,8 +818,8 @@ footer {
 
     .selector-currency > select {
         padding: 14px 42px 5px 0;
-        width: 80%;
-        font-size: 18px;
+        width: 100%;
+        font-size: 19px;
         transition: all .2s ease-in-out;
         float: right;
         border-radius: 4px;
@@ -824,3 +830,146 @@ footer {
             border-color: #425fe6;
             outline: none;
         }
+
+.selector-product {
+    float: right;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 50px 0;
+}
+
+
+    .selector-product article > div {
+        background-color: #fff;
+        padding: 22px 30px;
+        position: relative;
+        float: right;
+        width: 100%;
+    }
+
+    .selector-product article.selected-item .article-item:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 30px;
+        -webkit-border-top-left-radius: 4px;
+        -moz-border-top-left-radius: 4px;
+        border-top-left-radius: 4px;
+        border-left-color: #3eb988;
+        border-top-color: #3eb988;
+    }
+
+.selected-icon {
+    display: none;
+}
+
+
+
+
+.article-item {
+    transition: all .2s ease-in-out;
+    border: 2px solid #fff;
+}
+
+
+.selected-item .article-item {
+    cursor: default
+}
+
+.article-item:hover {
+    cursor: pointer;
+    border-color: #5774fc !important
+}
+
+.selected-item .article-item:hover {
+    border-color: #fff !important;
+    cursor: default
+}
+
+.selected-item .selected-icon {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+}
+
+.selector-product h2 {
+    margin: 4px 0 23px 0;
+    font-weight: 300;
+}
+
+.selector-product p {
+    margin-bottom: 30px;
+}
+
+.selector-product article ul li img {
+    width: 12px;
+    margin-left: 3px;
+}
+
+.selector-product article ul li {
+    margin: 4px 0;
+}
+
+.price-product {
+    margin: 17px 0 17px 0;
+}
+
+    .price-product ul {
+        margin: 10px 15px;
+    }
+
+.article-item .price-product ul {
+    margin-right: 0;
+    display: inline-block;
+}
+
+.price-product li:first-child span {
+    font-size: 15px;
+}
+
+.price-product li label {
+    font-weight: normal;
+    font-size: 20px;
+    color: #3c3c3c;
+}
+
+.price-product li:last-child span {
+    font-size: 12px;
+}
+
+.article-item a {
+    width: 100%;
+    float: right;
+    border: 2px solid #5774fc;
+    display: block;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    color: #5774fc;
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+    .article-item:hover a, .article-item a:hover {
+        color: #fff;
+        background-color: #5774fc;
+    }
+
+.selected-item a, .selected-item a:hover ,.selected-item:hover a {
+    background-color: #3eb988;
+    color: #fff;
+    border-color: #3eb988;
+}
+
+    .selected-item a svg {
+        font-size: 15px;
+        margin: 0 0px 3px 6px;
+    }

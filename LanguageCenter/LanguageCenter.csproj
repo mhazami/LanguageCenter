@@ -164,6 +164,7 @@
     <Content Include="App_theme\MainTheme\css\style-en.css" />
     <Content Include="Content\Image\241.jpg" />
     <Content Include="Content\Image\app-store.svg" />
+    <Content Include="Content\Image\Check-icon.png" />
     <Content Include="Content\Image\google-store.svg" />
     <Content Include="Content\Image\img-1.svg" />
     <Content Include="Content\Image\img-2.svg" />
@@ -197,6 +198,7 @@
     <Content Include="Content\Image\img-logo.svg" />
     <Content Include="Content\Image\logo-footer.png" />
     <Content Include="Global.asax" />
+    <Content Include="Resources.html" />
     <Content Include="Pricing.html" />
     <Content Include="Sample.html" />
     <Content Include="Index.html" />
