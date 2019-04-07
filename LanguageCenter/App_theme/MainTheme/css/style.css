@@ -232,6 +232,7 @@ p {
 
 .button-subscribe, .button-subscribe:hover, .button-subscribe:focus, .button-subscribe:active {
     background: #FAF6D2;
+    font-size: 18px;
     padding: 12px;
     margin: 15px 2px;
     padding: 16px 20px;
@@ -241,13 +242,19 @@ p {
     border-radius: 5px;
 }
 
-    .button-subscribe:hover, .button-subscribe:focus, .button-subscribe:active {
-        background: #fff;
-    }
+.flash-footer .button-subscribe {
+    background: #fff;
+    padding: 11px 13px;
+    font-size: 16px;
+}
 
-    .button-subscribe svg {
-        margin-left: 6px;
-    }
+.button-subscribe:hover, .button-subscribe:focus, .button-subscribe:active {
+    background: #fff;
+}
+
+.button-subscribe svg {
+    margin-left: 6px;
+}
 
 .button-subscribe-link {
     position: relative;
@@ -351,7 +358,7 @@ p {
     color: #fff;
 }
 
-.btn-register, .content-item-tutorials .button-row a {
+.btn-register, .content-item-tutorials .button-row a, .flash-footer .black-button {
     margin: 10px 5px;
     padding: 9px 16px;
     font-size: 16px;
@@ -372,7 +379,7 @@ p {
     padding-right: 30px
 }
 
-    .content-item-tutorials .button-row a {
+    .content-item-tutorials .button-row a, .flash-footer .black-button {
         border: 2px solid #fff;
         border-radius: 4px;
     }
@@ -394,8 +401,26 @@ p {
     border-color: #252525;
 }
 
-    .content-item-tutorials .button-row a:hover span, .content-item-tutorials .button-row a:hover svg {
-        color: #252525 !important
+
+.flash-footer .black-button {
+    border-color: #252525;
+    float: none;
+    padding: 8px 13px;
+    font-size: 15px;
+    transition: all .3s ease-in-out
+}
+
+    .flash-footer .black-button:hover {
+        border-color: #fff
+    }
+
+        .flash-footer .black-button:hover svg, .flash-footer .black-button:hover span {
+            color: #fff !important
+        }
+
+    .content-item-tutorials .button-row a:hover span, .content-item-tutorials .button-row a:hover svg, .flash-footer .black-button svg, .flash-footer .black-button span {
+        color: #252525 !important;
+        transition: all .3s ease-in-out
     }
 
 footer {
@@ -414,7 +439,8 @@ footer {
     }
 
     footer h5 {
-        margin-bottom: 18px;
+        margin-bottom: 24px;
+        font-size: 16px;
     }
 
     footer label {
@@ -429,7 +455,7 @@ footer {
     }
 
     footer ul li span {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     footer a svg, footer a span, .dropdown-container li a span, .dropdown-container li a svg {
@@ -629,7 +655,7 @@ footer {
 
 .text-box {
     text-align: center;
-    background-color: #fff;
+    background-color: #F9F9F9;
 }
 
     .text-box .row > div {
@@ -963,7 +989,7 @@ footer {
         background-color: #5774fc;
     }
 
-.selected-item a, .selected-item a:hover ,.selected-item:hover a {
+.selected-item a, .selected-item a:hover, .selected-item:hover a {
     background-color: #3eb988;
     color: #fff;
     border-color: #3eb988;
@@ -973,3 +999,371 @@ footer {
         font-size: 15px;
         margin: 0 0px 3px 6px;
     }
+
+/*FlashCard*/
+.count-items-selected {
+    background-color: #fff;
+    float: right;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+.flash-card-box {
+    padding: 0 !important;
+    width: 100%;
+}
+
+    .flash-card-box .btn-register-navbar {
+        display: inline-block;
+        padding: 5px 7px;
+        margin: 10px;
+    }
+
+.text-box .flash-card-box .row > div {
+    padding: 0;
+    float: right
+}
+
+.count-items-selected > span {
+    display: block;
+    font-size: 15px
+}
+
+.des-counter-selected {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+
+.accordion {
+    width: 100%;
+    margin-top: -15px;
+}
+
+    .accordion > li {
+        display: block;
+        width: 100%;
+        float: right;
+    }
+
+    .accordion .link {
+        min-height: 105px;
+        cursor: pointer;
+        display: block;
+        padding: 15px 15px 15px 42px;
+        color: #4D4D4D;
+        font-size: 14px;
+        font-weight: 700;
+        float: right;
+        max-width: max-content;
+        max-width: -moz-max-content;
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        text-align: right;
+        transition: all 0.4s ease;
+    }
+
+    .accordion li:last-child .link {
+        border-bottom: 0;
+    }
+
+.link > img {
+    width: 65px;
+    height: 65px;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+}
+
+.link span {
+    margin-right: 87px;
+    float: right;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.accordion li .link svg {
+    position: absolute;
+    top: 32px;
+    left: 12px;
+    font-size: 13px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+
+
+.accordion li.open svg:last-child {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.accordion li.default .submenu {
+    display: block;
+}
+/**
+ * Submenu
+ -----------------------------*/
+.submenu {
+    display: none;
+    font-size: 14px;
+    float: right;
+    width: 100%;
+}
+
+
+
+    .submenu a {
+        display: block;
+        cursor: pointer;
+        color: #231f20;
+        padding: 0;
+        padding-left: 42px;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+
+    .submenu .fit-size a span {
+        text-decoration: none !important
+    }
+
+    .submenu a span {
+        text-decoration: underline !important;
+    }
+
+    .submenu a:hover span {
+        color: #5774fc;
+    }
+
+    .submenu li > div {
+        width: 48%;
+        padding: 3px 40px;
+        font-size: 17px;
+        display: inline-block;
+        text-align: right;
+        float: right;
+    }
+
+        .submenu li > div.fit-size {
+            width: 100%;
+            padding: 2px 8px;
+            font-size: 14px;
+        }
+
+.link span.count-card {
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.submenu ul {
+    list-style: disc;
+}
+
+.flash-footer h2 {
+    font-weight: 300;
+    line-height: 1.3;
+    font-size: 30px;
+}
+
+.flash-footer p {
+    text-align: right;
+    line-height: 1.5;
+    font-size: 16px;
+}
+/*FlashCard*/
+
+
+
+/*Lessons*/
+
+
+ul.tabs-item {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+    ul.tabs-item li {
+        float: right;
+        width: 33%;
+    }
+
+        ul.tabs-item li a {
+            color: #4e4e4e;
+            position: relative;
+            display: block;
+            padding: 15px 15px 0 0;
+            font-size: 22px;
+            text-align: right;
+            text-decoration: none;
+            min-height: 70px;
+            background: rgba(249,249,249,0.4) !important;
+            -webkit-transition: padding 0.2s ease, margin 0.2s ease;
+            -moz-transition: padding 0.2s ease, margin 0.2s ease;
+            -o-transition: padding 0.2s ease, margin 0.2s ease;
+            -ms-transition: padding 0.2s ease, margin 0.2s ease;
+            transition: padding 0.2s ease, margin 0.2s ease;
+        }
+
+.wrap ul.tabs-item li a svg {
+    font-size: 37px;
+    margin: 0 0 2px 5px;
+}
+
+
+.tabs-item li:first-child a {
+    z-index: 3;
+}
+
+.tabs-item li:nth-child(2) a {
+    z-index: 2;
+}
+
+.tabs-item li:last-child a {
+    z-index: 1;
+}
+
+ul.tabs-itemli a:hover {
+    margin: 35px 0 0 0;
+    padding: 10px 0 5px 0;
+}
+
+ul.tabs-item li a.active {
+    background: #fff !important;
+    /*color: #ff6831;*/
+    z-index: 4;
+    outline: none;
+}
+
+.group:before,
+.group:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.group:after {
+    clear: both;
+}
+
+#content-tabs {
+    float: right;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    color: #252525;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+    #content-tabs p {
+        padding: 30px 40px;
+        color: #252525;
+        line-height: 26px;
+        font-size: 18px;
+        margin: 0;
+    }
+
+.wrap, .wrap .banner-top-content, .wrap .white-box-contnet, .wrap .banner-item {
+    padding-bottom: 0 !important
+}
+
+.lesson-header-text h3 {
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.lesson-header-text h1 {
+    font-weight: 200;
+    margin-top: 0;
+    font-size: 31px;
+}
+
+.lesson-header-text {
+    text-align: right
+}
+
+    .lesson-header-text * {
+        display: block
+    }
+
+.bottom-banner.calendar {
+    background-color: #E5B223 !important
+}
+
+.bottom-banner.collections {
+    background-color: #F5A33D !important
+}
+
+.calendar .lesson-header img {
+    max-width: 165px;
+    margin-right: 20px;
+}
+
+.lesson-courses-box {
+    padding: 40px 20px
+}
+
+    .lesson-courses-box h2 {
+        font-weight: 300;
+    }
+.sorted-box ul:first-child {
+    margin-right:0
+}
+.sorted-box ul {
+    display: inline-block;
+    margin: 0 10px;
+}
+    .sorted-box ul li:first-child {
+        font-size: 17px;
+        margin-left: 13px;
+
+    }
+.sorted-box a {
+    border: 2px solid #5774FC;
+    background-color: #fff;
+    color: #5774FC;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    padding: 3px 6px;
+}
+    .sorted-box ul li {
+        display:inline-block
+    }
+.sorted-box {
+    margin-top: 20px;
+}
+.sorted-box a:hover, .sorted-box a:active, .sorted-box a:focus {
+    background-color: #5774FC;
+    color: #fff
+}
+/*Lessons*/
