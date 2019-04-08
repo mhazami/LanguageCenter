@@ -128,6 +128,7 @@
     <Content Include="App_theme\MainTheme\js\bootstrap.min.js" />
     <Content Include="App_theme\MainTheme\js\jquery-3.1.1.min.js" />
     <Content Include="App_theme\MainTheme\js\jquery.validate.min.js" />
+    <Content Include="App_theme\MainTheme\js\mixitup.min.js" />
     <Content Include="App_theme\MainTheme\js\modernizr-2.8.3.js" />
     <Content Include="App_theme\MainTheme\js\navbar.js" />
     <Content Include="App_theme\MainTheme\js\npm.js" />
@@ -187,6 +188,8 @@
     <Content Include="Content\Image\img-bg-3.png" />
     <Content Include="Content\Image\img-bg-4.png" />
     <Content Include="Content\Image\img-bg-5.svg" />
+    <Content Include="Content\Image\img-co1.png" />
+    <Content Include="Content\Image\img-co2.png" />
     <Content Include="Content\Image\img-header-1.svg" />
     <Content Include="Content\Image\img-header-2.svg" />
     <Content Include="Content\Image\img-header-3.svg" />
@@ -211,6 +214,7 @@
     <Content Include="Global.asax" />
     <Content Include="Lesson-collections.html" />
     <Content Include="Lesson-calendar.html" />
+    <Content Include="Lesson-courses - Copy.html" />
     <Content Include="Lesson-courses.html" />
     <Content Include="Resources.html" />
     <Content Include="Pricing.html" />
