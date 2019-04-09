@@ -209,6 +209,10 @@
     <Content Include="Content\Image\img-lessons\img-lessons8.png" />
     <Content Include="Content\Image\img-lessons\img-lessons9.png" />
     <Content Include="Content\Image\img-logo.svg" />
+    <Content Include="Content\Image\img-new1.png" />
+    <Content Include="Content\Image\img-new2.png" />
+    <Content Include="Content\Image\img-new3.png" />
+    <Content Include="Content\Image\img-new4.jpg" />
     <Content Include="Content\Image\logo-footer.png" />
     <Content Include="FlashCard.html" />
     <Content Include="Global.asax" />

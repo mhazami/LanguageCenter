@@ -809,15 +809,31 @@ footer {
 }
 
 .hippie-blue {
-    background-color: #66A0B2
+    background-color: #66A0B2;
 }
 
 .tan-hide {
-    background-color: #FB9252
+    background-color: #FB9252;
+}
+
+.sushi {
+    background-color: #73BE44;
+}
+
+.bird-flower {
+    background-color: #C5CC11;
+}
+
+.soft-amber {
+    background-color: #CAC1B1;
+}
+
+.gumbo {
+    background-color: #7EAAAC;
 }
 
 .silver-rust {
-    background-color: #CCC6BD
+    background-color: #CCC6BD;
 }
 
 .selector-currency {
@@ -1479,35 +1495,98 @@ ul.tabs-item li a.active {
 }
 
 
-.categories .item  .row div span {
+.categories .item .row div span {
     display: block;
     margin: 3px 0;
 }
-.categories .item  .row div {
+
+.categories .item .row div {
     padding: 7px
 }
+
 .categories .item .row img {
     float: left;
     border-radius: 5px;
     width: 155px;
     height: 80px;
 }
+
 .categories .item a {
     cursor: pointer;
     transition: all .3s ease-in-out
 }
+
     .categories .item a:hover {
         color: #5774fc
     }
+
 .row-item-sorted {
     float: right;
     width: 100%
 }
+
 .controls {
     display: inline-block;
     float: right;
 }
+
 .sorted-box > .controls:first-child {
     margin-left: 35px
+}
+
+.featured-items .items-tutorials a {
+    font-weight: 300 !important;
+}
+
+.featured-items .items-tutorials h2 {
+    font-size: 40px;
+    margin-bottom: 25px
+}
+
+.lesson-list {
+    background-color: #EBEBEB;
+    float: right;
+    width: 100%;
+    padding: 50px;
+}
+
+    .lesson-list ul {
+        color: #6f6f6f;
+        margin: auto;
+    }
+
+    .lesson-list label {
+        font-size: 22px;
+        cursor: pointer;
+        font-weight: 200;
+        margin-bottom: 30px;
+    }
+
+    .lesson-list .title-item-list {
+        cursor: pointer
+    }
+
+    .lesson-list ul li {
+        margin: 13px 0
+    }
+.lesson-list ul li a span {
+    margin-right: 5px;
+}
+        .lesson-list ul li a:hover, .lesson-list a:hover {
+            color: #5774fc
+        }
+.big-calendar svg {
+    font-size: 100px;
+}
+.big-calendar h1 {
+    margin-top: 5px;
+    padding-right: 10px;
+    line-height: 1.4
+}
+.big-calendar {
+    margin: 15px -15px;
+}
+.big-calendar ul li {
+    display: inline-block;
 }
 /*Lessons*/

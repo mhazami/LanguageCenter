@@ -13,19 +13,40 @@
     <script src="App_theme/MainTheme/js/all.js"></script>
     <link href="App_theme/MainTheme/css/style.css" rel="stylesheet" />
     <script>
-    $(document).ready(function () {
-        $(".categories .item").each(function () {
-            if ($('.level-type',this).is(':contains("آسان")')) {
-                $(this).addClass("beg");
+        $(document).ready(function () {
+            $(".categories .item").each(function () {
+                debugger;
+
+                var a = $(this).index();
+
+                if ($('.level-type', this).is(':contains("آسان")')) {
+                    var id_element = $(this);
+                    $(this).addClass("beg");
+                    Check_type(id_element);
+                }
+                else if ($('.level-type', this).is(':contains("پیشرفته")')) {
+                    var id_element = $(this);
+                    $(this).addClass("adv");
+                    Check_type(id_element);
+                }
+                else if ($('.level-type', this).is(':contains("بین المللی")')) {
+                    var id_element = $(this);
+                    $(this).addClass("int");
+                    Check_type(id_element);
+                }
+
+
+            });
+
+            function Check_type(id_element) {
+                if (id_element.is(':contains("دیجیتال")')) {
+                    $(id_element).addClass("degital");
+                }
+
+                else if (id_element.is(':contains("PDF")')) {
+                    $(id_element).addClass("pdf");
+                }
             }
-            else if ($('.level-type', this).is(':contains("پیشرفته")')) {
-                $(this).addClass("adv");
-            }
-            else if ($('.level-type', this).is(':contains("بین المللی")')) {
-                $(this).addClass("int");
-            }
-           
-        });
         });
     </script>
 </head>
@@ -267,19 +288,27 @@
                                 <span>
                                     <i class="far fa-copy"></i>
                                 </span>
-                               
-                                <button type="button" class="control" data-filter=".type4">دیجیتال</button>
-                                <button type="button" class="control" data-filter=".type5">PDF</button>
-                             
+
+                                <button type="button" class="control" data-filter=".degital">
+                                    <i class="fas fa-desktop"></i>
+                                    دیجیتال
+
+
+                                </button>
+                                <button type="button" class="control" data-filter=".pdf">
+                                    <i class="fas fa-print"></i>
+                                    PDF
+                                </button>
+
                             </div>
-                     
+
 
                             <div class="container" data-ref="mixitup-container">
                                 <div class="row-item-sorted">
                                     <h2>
                                         بحث و گفتگو
                                     </h2>
-                                    <div class="item  type4" data-ref="mixitup-target">
+                                    <div class="item" data-ref="mixitup-target">
                                         <a href="#">
 
                                             <div class="row">
@@ -291,13 +320,13 @@
                                                         <strong> شروع کننده بحث</strong>
                                                     </span>
                                                     <span> 108 درس ESL</span>
-                                                    <span class="level-type" >دیجیتال - آسان</span>
+                                                    <span class="level-type">دیجیتال - آسان</span>
                                                 </div>
 
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item  type5" data-ref="mixitup-target">
+                                    <div class="item " data-ref="mixitup-target">
                                         <div class="row">
                                             <div class="col-sm-3 col-lg-4 col-xs-12 col-md-3">
                                                 <img src="Content/Image/img-co2.png" class="img img-responsive" />
@@ -307,7 +336,7 @@
                                                     <strong> شروع کننده بحث</strong>
                                                 </span>
                                                 <span> 108 درس ESL</span>
-                                                <span class="level-type" >PDF - آسان</span>
+                                                <span class="level-type">آسان - پیشرفته</span>
                                             </div>
 
                                         </div>
@@ -329,7 +358,7 @@
                                                         <strong> شروع کننده بحث</strong>
                                                     </span>
                                                     <span> 108 درس ESL</span>
-                                                    <span class="level-type">INT - پیشرفته</span>
+                                                    <span class="level-type">دیجیتال - پیشرفته</span>
                                                 </div>
 
                                             </div>
@@ -345,7 +374,7 @@
                                                     <strong> شروع کننده بحث</strong>
                                                 </span>
                                                 <span> 108 درس ESL</span>
-                                                <span class="level-type">INT - پیشرفته</span>
+                                                <span class="level-type">PDF - پیشرفته</span>
                                             </div>
 
                                         </div>
@@ -388,7 +417,7 @@
                                                 <strong> شروع کننده بحث</strong>
                                             </span>
                                             <span> 108 درس ESL</span>
-                                            <span class="level-type">INT - پیشرفته</span>
+                                            <span class="level-type">PDF - پیشرفته</span>
                                         </div>
 
                                     </div>
@@ -407,7 +436,7 @@
 
                                     </div>
                                 </div>
-                                <div class="item adv type4" data-ref="mixitup-target">
+                                <div class="item adv " data-ref="mixitup-target">
                                     <div class="row">
                                         <div class="col-sm-3 col-lg-4 col-xs-12 col-md-3">
                                             <img src="Content/Image/img-co2.png" class="img img-responsive" />
@@ -417,11 +446,11 @@
                                                 <strong> شروع کننده بحث</strong>
                                             </span>
                                             <span> 108 درس ESL</span>
-                                            <span>INT - پیشرفته</span>
+                                            <span>دیجیتال - پیشرفته</span>
                                         </div>
 
                                     </div>
-                                </div> <div class="item type4 " data-ref="mixitup-target">
+                                </div> <div class="item  " data-ref="mixitup-target">
                                     <div class="row">
                                         <div class="col-sm-3 col-lg-4 col-xs-12 col-md-3">
                                             <img src="Content/Image/img-co2.png" class="img img-responsive" />
@@ -431,7 +460,7 @@
                                                 <strong> شروع کننده بحث</strong>
                                             </span>
                                             <span> 108 درس ES222222L</span>
-                                            <span>INT - پیشرفته</span>
+                                            <span>PDF - پیشرفته</span>
                                         </div>
 
                                     </div>
@@ -474,14 +503,314 @@
 
 
 
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="featured-items">
+            <div class="items-tutorials sushi">
+                <div class="container">
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 img-item-tutorials">
 
+                        <img src="Content/Image/img-new1.png" class="img img-responsive" />
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12 content-item-tutorials">
+                        <span>
+                            درس های ویژه
+                        </span>
+                        <h2>
+                            <a href="#"> گلف</a>
+                        </h2>
+                        <p>10 آوریل روز گلف باز است درس های <strong>ورزش و اوقات فراغت</strong> ما در گلف را امتحان کنید و برخی از تاریخ های جالبی در مورد این ورزش یاد بگیرید.</p>
+                        <div class="button-row">
 
+                            <a href="">
+                                <i class="far fa-file-alt"></i>
+                                <span>مشاهده درس (آسان)</span>
+                            </a>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-tutorials bird-flower">
+                <div class="container">
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 img-item-tutorials">
+
+                        <img src="Content/Image/img-new2.png" class="img img-responsive" />
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12 content-item-tutorials">
+                        <span>
+                            گرامر ویژه
+                        </span>
+                        <h2>
+                            <a href="#"> سوالات بله و خیر</a>
+                        </h2>
+                        <p>
+                            آیا دانش آموزان خود می دانند که چگونه به سوال های اساسی و
+                            انگلیسی پاسخ دهند؟ یاد گیرندگان شما درس های فراوانی در مورد صحبت کردن، نوشتن و گوش دادن با بله / <strong>بدون سوالات در این درس</strong> گرامر Practice Worksheets می کنند.
+                        </p>
+                        <div class="button-row">
+
+                            <a href="">
+                                <i class="far fa-file-alt"></i>
+                                <span>مشاهده درس (پیشرفته)</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-tutorials soft-amber">
+                <div class="container">
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 img-item-tutorials">
+
+                        <img src="Content/Image/img-new3.png" class="img img-responsive" />
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12 content-item-tutorials">
+                        <span>
+                            درس هفته
+                        </span>
+                        <h2>
+                            <a href="#"> باغ وحش</a>
+                        </h2>
+                        <p>8 آوریل روز عاشقان باغ وحش است! آیا ما به باغ وحش نیاز داریم؟ با دانش آموزان درس خود را شروع کنید و شروع به گفتگو مهم کنید.</p>
+                        <div class="button-row">
+
+                            <a href="">
+                                <i class="far fa-file-alt"></i>
+                                <span>مشاهده درس (آسان)</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-tutorials gumbo">
+                <div class="container">
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 img-item-tutorials">
+
+                        <img src="Content/Image/img-new4.jpg" class="img img-responsive" />
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12 content-item-tutorials">
+                        <span>
+                            درس های ویژه
+                        </span>
+                        <h2>
+                            <a href="#"> گلف</a>
+                        </h2>
+                        <p>10 آوریل روز گلف باز است درس های <strong>ورزش و اوقات فراغت</strong> ما در گلف را امتحان کنید و برخی از تاریخ های جالبی در مورد این ورزش یاد بگیرید.</p>
+                        <div class="button-row">
+
+                            <a href="">
+                                <i class="far fa-file-alt"></i>
+                                <span>مشاهده درس (آسان)</span>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
+        </div>
+        <div class="lesson-list">
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-xs-6 col-sm-6">
+                        <a href="#">    <label>درس های جدید</label></a>
+
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>  عید پاک (HIGH INT)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>       روز زمین (LIT - PRE BEG)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>     جاز (INT)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>    روز یادبود هولوکاست (HIGH INT - ADV)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>      هفته طلایی (INT)</span>
+                                </a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6 col-sm-6">
+                        <a href="#" class="title-item-list">
+                            <label>درس های پیشرفته</label>
+                        </a>
+
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>  درسهای جدید</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>   مقایسهای، مقایسهای و عبارات شفاف (INT)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>   چک و تعادل (HIGH INT)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span> انفجار هالیفاکس (LOW INT-INT)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>   تعجب (INT)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>      تولدهای (LIT - PRE BEG)</span>
+                                </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6 col-sm-6">
+                        <label>مجموعه های ویژه</label>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>
+                                        بهار و عید پاک
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>آمریکایی</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>کانادا</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>شمارش</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-file"></i>
+                                    <span>  مسائل علمی</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                        <div class="row big-calendar">
+
+                            <div class="col-sm-1 col-lg-1 col-md-1 col-xs-2">
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                            <div class="col-sm-10 col-lg-10 col-md-10 col-xs-10">
+                                <h1>
+                                    تمامی برنامه های جدید و برجسته ما برای آوریل در تقویم برنامه ESL ما را بررسی کنید.
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-item bottom-banner flash-footer">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-7 col-sm-12 col-md-8 col-xs-12 banner-top-content ">
+                        <h2>برای عضویت در کتابخانه ESL، برای دسترسی به همه درسها و مرتبا برای معلمان انگلیسی حرفه ای، یک اشتراک بخرید. </h2>
+                        <p>
+                            برای استفاده از کتابهای آموزشی ESL به منابع آموزشی عالی کمک کنید تا به شما در کلاس بهتر کمک کنند. مواد آماده ما برای آموزش انگلیسی به نوجوانان و بزرگسالان در هر نقطه از جهان طراحی شده اند. ما همچنین درس های بچه دوستانه برای یادگیرندگان جوان و مدرسه متوسطه و همچنین درس های کلاس های سواد آموزی داریم. ما هر ماه مواد جدیدی اضافه می کنیم تا مطالب جدید کلاس درس خود را حفظ کنید.
+                        </p>
+
+                        <a href="" class="black-button">
+                            <i class="far fa-file"></i>
+                            <span>نمونه ها</span>
+
+                        </a>
+                        <a href="" class="black-button">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>مشاهده قیمت ها</span>
+
+                        </a>
+
+                        <a href="" class="button-subscribe">
+                            <i class="fas fa-plus"></i>
+                            <span>ثبت نام</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="white-footer-box">
             <div class="row">
