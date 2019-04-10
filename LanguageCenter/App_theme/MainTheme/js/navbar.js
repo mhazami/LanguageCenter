@@ -122,12 +122,13 @@ $(document).ready(function () {
             var $el = e.data.el;
             $this = $(this),
                 $next = $this.next();
-
+            $this.toggleClass('sub-opend');
             $next.slideToggle();
+     
             $this.parent().toggleClass('open');
 
             if (!e.data.multiple) {
-                $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+             
             };
         }
 
@@ -145,6 +146,7 @@ $(document).ready(function () {
             $(this).addClass("active");
             $("#content-tabs").find('p').hide();
             $(content).fadeIn(200);
+            var a = content
         });
 
     })(jQuery);

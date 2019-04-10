@@ -209,6 +209,16 @@
     <Content Include="Content\Image\img-lessons\img-lessons8.png" />
     <Content Include="Content\Image\img-lessons\img-lessons9.png" />
     <Content Include="Content\Image\img-logo.svg" />
+    <Content Include="Content\Image\img-month1.png" />
+    <Content Include="Content\Image\img-month10.png" />
+    <Content Include="Content\Image\img-month2.png" />
+    <Content Include="Content\Image\img-month3.png" />
+    <Content Include="Content\Image\img-month4.png" />
+    <Content Include="Content\Image\img-month5.png" />
+    <Content Include="Content\Image\img-month6.png" />
+    <Content Include="Content\Image\img-month7.png" />
+    <Content Include="Content\Image\img-month8.png" />
+    <Content Include="Content\Image\img-month9.png" />
     <Content Include="Content\Image\img-new1.png" />
     <Content Include="Content\Image\img-new2.png" />
     <Content Include="Content\Image\img-new3.png" />

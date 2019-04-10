@@ -956,8 +956,8 @@ ul {
 
     @keyframes go-top {
         from {
-            -webkit-transform: translateX(0) translateY(10px);
-            transform: translateX(0) translateY(10px);
+            -webkit-transform: translateX(0) translateY(-12px);
+            transform: translateX(0) translateY(-12px);
         }
 
 
