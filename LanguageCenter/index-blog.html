@@ -11,48 +11,15 @@
     <link href="App_theme/MainTheme/css/nav-style.css" rel="stylesheet" />
     <script src="App_theme/MainTheme/js/bootstrap.min.js"></script>
     <script src="App_theme/MainTheme/js/all.js"></script>
-    <script src="App_theme/MainTheme/js/navbar.js"></script>
     <link href="App_theme/MainTheme/css/style.css" rel="stylesheet" />
-    <script>
-        $(document).ready(function () {
-            $(".selector-product article:first-child").addClass("selected-item");
-
-
-            $('.selector-product article:first-child a').empty();
-
-            $('.selector-product article:first-child a').append("<i class='fas fa-check'></i>انتخاب شد");
-
-            $(".selector-product article").click(function () {
-
-                $(".selector-product article ").removeClass("selected-item");
-                $(".text-selected ").remove();
-                $(this).addClass("selected-item");
-                $('.selector-product a').empty();
-                $('.selector-product a').append('<span>انتخاب کنید </span>');
-                $('a', this).empty();
-                $('a', this).append("<i class='fas fa-check'></i><span>انتخاب شد</span>");
-
-            });
-
-            $(".selector-plan article:first-child").addClass("selected-item");
-            $('.selector-plan article:first-child a').empty();
-            $('.selector-plan article:first-child a').append("<i class='fas fa-check'></i>انتخاب شد");
-            $(".selector-plan article").click(function () {
-                $(".selector-plan article ").removeClass("selected-item");
-                $(".selector-plan .text-selected ").remove();
-                $(this).addClass("selected-item");
-                $('.selector-plan a').empty();
-                $('.selector-plan a').append('<span>انتخاب کنید</span>');
-                $('a', this).empty();
-                $('a', this).append("<i class='fas fa-check'></i><span>انتخاب شد</span>");
-            });
-        });
-    </script>
 </head>
 <body>
     <header></header>
-    <div class="container-fluid container-nav">
-        <div class="row header-nav-panel">
+    <div class="container-fluid container-nav blog-index">
+        <div class="row header-nav-panel  ">
+
+
+
             <div class="col-lg-10 col-md-12 col-xs-12 col-sm-12 navbar-panel  item-third">
                 <div class="r-collapse">
                     <ul class="icon-nav">
@@ -76,6 +43,7 @@
                                             <span> چرا کتابخانه ESL؟</span>
                                         </a>
                                     </li>
+
                                     <li>
                                         <a class="dropdown-btn">
                                             <i class="fas fa-globe"></i>
@@ -85,6 +53,7 @@
                                                 <li class="bar3"></li>
                                             </ul>
                                         </a>
+
                                         <ul>
                                             <li>
                                                 <a href="#about">
@@ -104,9 +73,12 @@
                                                     <span> نمونه ها</span>
                                                 </a>
                                             </li>
+
                                             <li>
                                                 <a class="dropdown-btn">
+
                                                     <span>محصولات</span>
+
                                                     <!--<i class="icon-upper fa fa-chevron-left"></i>-->
                                                 </a>
                                                 <ul>
@@ -116,17 +88,22 @@
 
                                                         </a>
                                                     </li>
+
                                                     <li>
                                                         <a class="dropdown-btn">
+
                                                             <span>خرید ها</span>
+
                                                             <!--<i class="icon-upper fa fa-chevron-left"></i>-->
                                                         </a>
                                                         <ul>
                                                             <li>
                                                                 <a href="#">
                                                                     <span>قالب ها</span>
+
                                                                 </a>
                                                             </li>
+
                                                             <li>
                                                                 <a href="#">
                                                                     <span> سبد خرید</span>
@@ -138,6 +115,7 @@
 
                                                                 </a>
                                                             </li>
+
                                                         </ul>
                                                     </li>
                                                     <li>
@@ -146,6 +124,7 @@
 
                                                         </a>
                                                     </li>
+
                                                 </ul>
                                             </li>
 
@@ -157,6 +136,8 @@
                                             <span> قیمت گذاری</span>
                                         </a>
                                     </li>
+
+
                                 </ul>
                                 <ul class="links-item">
                                     <li class="">
@@ -187,256 +168,223 @@
                                             </li>
                                         </ul>
                                     </li>
+
                                 </ul>
                             </div>
+
                         </nav>
                     </li>
                 </ul>
             </div>
         </div>
-
-    </div>
-    <main>
-        <div class="text-box pricing">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12">
-                        <span>
-                            قیمت گذاری
-                        </span>
-                        <p>
-                            بهترین کلاس خود را با یک اشتراک به کتابخانه ESL آموزش دهید. مواد جدید توسعه یافته و هر ماه به سایت اضافه می شوند.
-                            </p>
-                        <div class="selector-currency">
-                            <select>
-                                <option value="value">یورو</option>
-                                <option value="value">ریال</option>
-                                <option value="value">دلار</option>
-                                <option value="value">پوند</option>
-                                <option value="value">یوان</option>
-                                </select>
-                            <label>
-                                *یک ارز را انتخاب کنید
-                            </label>
-                            <i class="fas fa-money-bill"></i>
-                        </div>
+    </div><main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                    <div class="input-search">
+                        <input type="text" name="name" value="" placeholder="جستجو در سایت ..." />
+                        <i class="fas fa-search"></i>
                     </div>
-
                 </div>
-
-            </div>
-        </div>
-        <div class="selector-product">
-            <div class="container">
-                <div class="row">
-                    <article class="col-lg-6 col-sm-6 col-md-6 col-xs-12 ">
-                        <div class="article-item">
-                            <h2>چاپ</h2>
-                            <p>دانلود، چاپ و فتوکپی مواد آموزش زبان انگلیسی از کتابخانه جامع ما.</p>
-                            <ul>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    1000 درس + PDF (برای کودکان، نوجوانان و بزرگسالان)
-
-                                </li>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    2000+ تصاویر واژگان
-
-                                </li>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    200+ منابع PDF
-                                </li>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    500+ فایل های صوتی (همراه با درس های ما)
-                                </li>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    شامل یک محاکمه رایگان یک ماهه به پلت فرم دیجیتال ما می باشد
-                                </li>
-                            </ul>
-                            <div class="selected-icon">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="price-product">
-                                <ul>
-                                    <li>
-                                        <span>کم تر از </span>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            10 هزار ریال
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            برای  هر معلم در هر ماه
-                                        </span>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <a>انتخاب کنید </a>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="item-blog">
+                        <div class="item-blog-img">
+                            <img src="Content/Image/img-blog1.png"/>
                         </div>
-                    </article>
-                    <article class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-                        <div class="article-item">
-                            <h2>چاپ + دیجیتال</h2>
-                            <p>با افزودن دیجیتال، می توانید بیش از 500 درس تعاملی را در دستگاه های خود دانش آموزان خود مدیریت کنید.</p>
-                            <ul>
+                        <div class="item-blog-content">
+                            <h4> سوالات نازک و ضخیم</h4>
 
-
-
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    دسترسی به همه چیز را از طرح اشتراک چاپ
-
-                                </li>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    درس های تعاملی در کلاس یا آنلاین را انجام دهید
-
-                                </li>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    جفت تعاملی و فعالیت های گروهی را آغاز کنید
-                                    محتوای پخش را به صفحه Smartboard خود منتقل کنید
-                                </li>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-                                    اختصاص دادن تکالیف دیجیتال
-                                </li>
-                                <li>
-                                    <img src="Content/Image/Check-icon.png" />
-
-
-                                    نمایش نتایج جلسات و نتایج تکالیف در زمان واقعی
-                                </li>
-                            </ul>
-                            <div class="selected-icon">
-                                <i class="fas fa-check"></i>
+                            <div class="writer-post">
+                                <img src="Content/Image/avator1.png"/>
+                                <span>توسط ان دیکسون در تاریخ 11 آوریل 2019 </span>
+                                <label>
+                                    راهنمایی ها و ایده ها
+                                </label>
                             </div>
-                            <div class="price-product">
-                                <ul>
-                                    <li>
-                                        <span>کم تر از </span>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            10 هزار ریال
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            برای  هر معلم در هر ماه
-                                        </span>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span>و </span>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            20 هزار ریال
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            برای  هر دانشجو در هر ماه
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a>انتخاب کنید </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
 
-        </div>
-        <div class="select-plan">
-            <div class="text-box pricing ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12">
-                            <span>
-                                اشتراک نسخه چاپی خود را سفارشی کنید
-                            </span>
                             <p>
-
-                                با استفاده از این برنامه، هر معلم با استفاده از این اطلاعات نیاز به یک حساب کاربری دارد. لطفا تعداد حساب های معلمی که مایل به خرید هستند را مشخص کنید.
+                                در مورد چگونگی تفکر دانش آموزانتان چه نظری دارید؟ در مورد سؤال های نازک و ضخیم، حتما این ترفند را انجام دهید.
                             </p>
+                        </div>
+                        <div class="button-row-post">
+                            <div>
+                                <a href="#">
 
+
+                                    بیشتر
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="comment">
+
+
+                                    نظر ؟
+
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="select-teacher">
-                        <a class="add-teacher"><i class="fas fa-plus"></i></a>
-                        <input type="text" class="selector-teacher" name="name" value="0" />
-                        <a class="remove-teacher"> <i class="fas fa-minus"></i></a>
+                    <div class="item-blog">
+                        <div class="item-blog-img">
+                            <img src="Content/Image/img-blog3.png"/>
+                        </div>
+                        <div class="item-blog-content">
+                            <h4> سوالات نازک و ضخیم</h4>
+
+                            <div class="writer-post">
+                                <img src="Content/Image/avator1.png"/>
+                                <span>توسط ان دیکسون در تاریخ 11 آوریل 2019 </span>
+                                <label>
+                                    راهنمایی ها و ایده ها
+                                </label>
+                            </div>
+
+                            <p>
+                                در مورد چگونگی تفکر دانش آموزانتان چه نظری دارید؟ در مورد سؤال های نازک و ضخیم، حتما این ترفند را انجام دهید.
+                            </p>
+                        </div>
+                        <div class="button-row-post">
+                            <div>
+                                <a href="#">
+
+
+                                    بیشتر
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="comment">
+
+
+                                    نظر ؟
+
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="selector-plan">
-                    <article class="col-lg-4 col-sm-4 col-md-4 col-xs-12 ">
-                        <div class="article-item">
-                            <div class="head-plan">
-                                <h4>چاپ</h4>
-                            </div>
-                            
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-
-                            <div class="selected-icon">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="price-product">
-
-                            </div>
-                            <a>انتخاب کنید </a>
+                    <div class="item-blog">
+                        <div class="item-blog-img">
+                            <img src="Content/Image/img-blog2.png"/>
                         </div>
-                    </article>
-                    <article class="col-lg-4 col-sm-4 col-md-4 col-xs-12 ">
-                        <div class="article-item">
-                            <h2>چاپ</h2>
+                        <div class="item-blog-content">
+                            <h4> سوالات نازک و ضخیم</h4>
 
-
-                            <div class="selected-icon">
-                                <i class="fas fa-check"></i>
+                            <div class="writer-post">
+                                <img src="Content/Image/avator1.png"/>
+                                <span>توسط ان دیکسون در تاریخ 11 آوریل 2019 </span>
+                                <label>
+                                    راهنمایی ها و ایده ها
+                                </label>
                             </div>
-                            <div class="price-product">
 
-                            </div>
-                            <a>انتخاب کنید </a>
+                            <p>
+                                در مورد چگونگی تفکر دانش آموزانتان چه نظری دارید؟ در مورد سؤال های نازک و ضخیم، حتما این ترفند را انجام دهید.
+                            </p>
                         </div>
-                    </article>
-                    <article class="col-lg-4 col-sm-4 col-md-4 col-xs-12 ">
-                        <div class="article-item">
-                            <h2>چاپ</h2>
+                        <div class="button-row-post">
+                            <div>
+                                <a href="#">
 
 
-                            <div class="selected-icon">
-                                <i class="fas fa-check"></i>
+                                    بیشتر
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                </a>
                             </div>
-                            <div class="price-product">
+                            <div>
+                                <a href="#" class="comment">
 
+
+                                    نظر ؟
+
+                                </a>
                             </div>
-                            <a>انتخاب کنید </a>
                         </div>
-                    </article>
+                    </div>
+                    <div class="item-blog">
+                        <div class="item-blog-img">
+                            <img src="Content/Image/img-blog3.png"/>
+                        </div>
+                        <div class="item-blog-content">
+                            <h4> سوالات نازک و ضخیم</h4>
+
+                            <div class="writer-post">
+                                <img src="Content/Image/avator1.png"/>
+                                <span>توسط ان دیکسون در تاریخ 11 آوریل 2019 </span>
+                                <label>
+                                    راهنمایی ها و ایده ها
+                                </label>
+                            </div>
+
+                            <p>
+                                در مورد چگونگی تفکر دانش آموزانتان چه نظری دارید؟ در مورد سؤال های نازک و ضخیم، حتما این ترفند را انجام دهید.
+                            </p>
+                        </div>
+                        <div class="button-row-post">
+                            <div>
+                                <a href="#">
+
+
+                                    بیشتر
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="comment">
+
+
+                                    نظر ؟
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-blog">
+                        <div class="item-blog-img">
+                            <img src="Content/Image/img-blog2.png"/>
+                        </div>
+                        <div class="item-blog-content">
+                            <h4> سوالات نازک و ضخیم</h4>
+
+                            <div class="writer-post">
+                                <img src="Content/Image/avator1.png"/>
+                                <span>توسط ان دیکسون در تاریخ 11 آوریل 2019 </span>
+                                <label>
+                                    راهنمایی ها و ایده ها
+                                </label>
+                            </div>
+
+                            <p>
+                                در مورد چگونگی تفکر دانش آموزانتان چه نظری دارید؟ در مورد سؤال های نازک و ضخیم، حتما این ترفند را انجام دهید.
+                            </p>
+                        </div>
+                        <div class="button-row-post">
+                            <div>
+                                <a href="#">
+
+
+                                    بیشتر
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="comment">
+
+
+                                    نظر ؟
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
         </div>
-        <div class="white-footer-box">
+
+
+
+
+        <!--<div class="white-footer-box">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
                     <label>طرح ها</label>
@@ -516,7 +464,7 @@
 
                 </div>
             </div>
-        </div>
+        </div>-->
         <footer>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
@@ -571,7 +519,9 @@
             </div>
         </footer>
     </main>
+    <script></script>
+    <script src="App_theme/MainTheme/js/navbar.js">
 
+    </script>
 </body>
-
 </html>

@@ -102,10 +102,6 @@
     $(document).scroll(function () {
         navbar();
     });
-});
-
-
-$(document).ready(function () {
 
     $(function () {
         var Accordion = function (el, multiple) {
@@ -124,11 +120,11 @@ $(document).ready(function () {
                 $next = $this.next();
             $this.toggleClass('sub-opend');
             $next.slideToggle();
-     
+
             $this.parent().toggleClass('open');
 
             if (!e.data.multiple) {
-             
+
             };
         }
 
@@ -146,8 +142,27 @@ $(document).ready(function () {
             $(this).addClass("active");
             $("#content-tabs").find('p').hide();
             $(content).fadeIn(200);
-            var a = content
+            var a = content;
+
         });
 
+
     })(jQuery);
+    var oldValue = $(".selector-teacher").val();
+    $(".add-teacher").click(function () {
+        var newValue = oldValue++;
+        $(".selector-teacher").val(newValue);
+    });
+    $(".remove-teacher").click(function () {
+        var newValue; 
+        if (oldValue > 0) {
+            oldValue--;
+            newValue = oldValue;
+        } else {
+            newValue = 0;
+        }
+        $(".selector-teacher").val(newValue);
+    });
+
 });
+

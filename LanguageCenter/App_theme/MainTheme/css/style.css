@@ -497,6 +497,7 @@ footer {
         max-width: inherit !important;
         width: 100% !important;
         height: 75px;
+        top: 0;
         background: #fff;
         box-shadow: 0px 5px 10px rgba(0,0,0,0.03);
     }
@@ -663,7 +664,7 @@ footer {
 
 .text-box {
     text-align: center;
-    background-color: #F9F9F9;
+    background-color: #fff;
 }
 
     .text-box .row > div {
@@ -688,15 +689,115 @@ footer {
     text-align: center !important
 }
 
+.select-plan .text-box.pricing {
+    background-color: #f5f5f5
+}
+
 .text-box p {
     float: right;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 25px;
 }
 
+.selector-plan-item {
+    background: #fff;
+    min-height: 250px;
+    float: right;
+    width: 100%;
+}
+
+.select-teacher {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+    .select-teacher > a {
+        background: #5774fc;
+        color: #fff;
+        padding: 22px 15px;
+        display: inline-block;
+        text-align: center;
+        font-size: 20px;
+        width: 50px;
+        float: right;
+        cursor: pointer;
+    }
+
+.selector-plan-item-head {
+    background: #98ABFF;
+    font-size: 19px;
+    padding: 17px;
+    color: #fff;
+}
+.selector-plan-item:hover .selector-plan-item-head {
+    background: #5774fc;
+}
+
+    .select-teacher > a:hover {
+        background: #4e66d3;
+    }
+
+.select-teacher ::selection {
+    background: transparent;
+}
+
+.select-teacher ::-moz-selection {
+    background: transparent;
+}
+
+.add-teacher, .remove-teacher {
+    position: absolute;
+    top: 0;
+}
+
+.add-teacher {
+    right: 0;
+    border-radius: 0 7px 7px 0;
+}
+
+.remove-teacher {
+    left: 0;
+    border-radius: 7px 0 0 7px;
+}
 
 .button-row {
     margin-top: 20px;
+}
+
+.select-plan {
+    float: right;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.select-teacher {
+    padding: 5px 38px;
+    width: 213px;
+    height: 70px;
+    background-color: #fff;
+    text-align: center;
+    color: #484848;
+    border: none;
+    font-weight: 200;
+    font-size: 48px;
+}
+
+    .select-teacher .selector-teacher {
+        width: 110px;
+        height: 40px;
+        border: none;
+        font-size: 25px;
+        margin: auto;
+        float: right;
+        text-align: center;
+        margin: 13px 12px 14px 0px;
+    }
+
+.selector-teacher:focus, .selector-teacher:active {
+    outline: none
 }
 
 .items-tutorials {
@@ -751,6 +852,12 @@ footer {
 
 .img-item-tutorials {
     float: right
+}
+
+@media(min-width: 1200px) {
+    .lesson-collection img {
+        width: 150px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -895,6 +1002,7 @@ footer {
         position: relative;
         float: right;
         width: 100%;
+        margin: 0 0 55px 0;
     }
 
     .selector-product article.selected-item .article-item:after {
@@ -1253,9 +1361,11 @@ ul.tabs-item {
             -ms-transition: padding 0.2s ease, margin 0.2s ease;
             transition: padding 0.2s ease, margin 0.2s ease;
         }
+
             ul.tabs-item li a:hover {
-                background: rgba(249, 249, 249, 0.54)!important
+                background: rgba(249, 249, 249, 0.54) !important
             }
+
 .wrap ul.tabs-item li a svg {
     font-size: 37px;
     margin: 0 0 2px 5px;
@@ -1419,15 +1529,19 @@ ul.tabs-item li a.active {
     .categories .mixitup-control-active[data-filter]:after {
         background: transparent;
     }
+.head-plan {
+    background: #5774FC;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    padding: 13px;
 
-.categories .control:first-of-type {
-    border-radius: 3px 0 0 3px;
 }
-
-.categories .control:last-of-type {
-    border-radius: 0 3px 3px 0;
+.selected-item .head-plan {
+    background: #3eb988
 }
-
+.head-plan h4 {
+    margin: 0
+}
 .categories .control[data-filter] + .control[data-sort] {
     margin-left: .75rem;
 }
@@ -1584,7 +1698,7 @@ ul.tabs-item li a.active {
             margin-right: 5px;
         }
 
-.calendar-tab-box, .lesson-courses-box {
+.calendar-tab-box, .lesson-courses-box, .collection-box {
     background-color: #F9F9F9
 }
 
@@ -1768,6 +1882,7 @@ ul.tabs-item li a.active {
     width: 60px;
     height: 60px;
 }
+
 .new-lesson-content {
     padding: 0;
     min-height: 90px;
@@ -1810,4 +1925,211 @@ a:hover svg.fa-folder-open {
 a:hover svg.fa-heart {
     color: #a74747;
 }
+
+.message-panel {
+    margin: 20px;
+    position: relative;
+    float: right;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 8px 10px 0 86px;
+}
+
+#content-tabs .message-panel span {
+    position: relative;
+    padding-right: 7px;
+    margin: 14px 24px;
+    float: right;
+    font-size: 17px;
+}
+
+    #content-tabs .message-panel span:before {
+        content: "";
+        display: block;
+        width: 20px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: 1px solid #2b2b2b;
+    }
+
+#content-tabs .message-panel p {
+    padding: 0;
+    font-size: 16px;
+}
+
+.message-panel-body h2 {
+    font-weight: 200;
+    font-size: 25px;
+    margin-bottom: 26px;
+    margin-top: 20px;
+}
+
+.message-panel .message-panel-body {
+    margin-right: 100px;
+    display: inline-block;
+}
+
+.message-panel img {
+    width: 58px;
+    position: absolute;
+    border-radius: 50%;
+    top: 30px;
+    right: 30px;
+}
+
+.lesson-collection {
+    float: right;
+    width: 100%;
+    margin: 20px
+}
+
+    .lesson-collection img {
+        height: 75px;
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+.lesson-collection-item > a * {
+    display: block;
+}
+
+.lesson-collection-item > ul li {
+    display: inline-block;
+    margin: 3px 0px 0px 10px;
+}
+
+.lesson-collection > .row > div {
+    margin: 15px 0px;
+}
+
 /*Lessons*/
+
+
+/*Blog*/
+.blog-index.container-nav {
+    position: absolute;
+    top: 0;
+}
+
+.blog-index ~ main {
+    background: #efefef;
+    margin: 0;
+    padding-top: 125px
+}
+
+.item-blog {
+    padding-bottom: 40px;
+    float: right;
+    width: 100%;
+}
+
+.item-blog-content {
+    float: right;
+    padding-right: 80px;
+    position: relative;
+}
+
+.item-blog-img img {
+    max-width: 100%;
+}
+
+.writer-post img {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    right: 5px;
+}
+
+.writer-post label, .writer-post span {
+    display: block
+}
+
+.item-blog-content p {
+    margin-right: -75px;
+    padding: 25px 0;
+    font-size: 16px;
+}
+
+.button-row-post a {
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+    .button-row-post a, .button-row-post a.comment:hover {
+        color: #f36b21;
+    }
+
+        .button-row-post a:hover, .button-row-post a.comment {
+            color: #4c4c4c
+        }
+
+.button-row-post > div {
+    width: 49%;
+    display: inline-block;
+}
+
+.writer-post span {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.item-blog-content h4 {
+    margin: 29px;
+    margin-right: -75px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.input-search {
+    position: relative
+}
+
+    .input-search svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 13px;
+        font-size: 18px;
+        color: #4d4d4d;
+    }
+
+    .input-search input {
+        background: #fff;
+        border: none;
+        padding: 12px;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        transition: all .3s ease-in-out;
+        border-bottom: 2px solid #fff
+    }
+
+        .input-search input:focus, .input-search input:active {
+            border-color: #63a1d2
+        }
+
+    .input-search ::-webkit-input-placeholder {
+        color: #4d4d4d;
+        font-size: 15px;
+    }
+
+    .input-search ::-moz-placeholder {
+        color: #4d4d4d;
+        font-size: 15px;
+    }
+
+    .input-search :-ms-input-placeholder {
+        color: #4d4d4d;
+        font-size: 15px;
+    }
+
+    .input-search :-moz-placeholder {
+        color: #4d4d4d;
+        font-size: 15px;
+    }
+
+/*Blog*/
