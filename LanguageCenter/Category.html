@@ -1,0 +1,938 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width" name="viewport">
+    <script src="App_theme/MainTheme/js/jquery-3.1.1.min.js"></script>
+    <link href="App_theme/MainTheme/css/all.css" rel="stylesheet" />
+    <link href="App_theme/MainTheme/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="App_theme/MainTheme/css/nav-style.css" rel="stylesheet" />
+    <script src="App_theme/MainTheme/js/bootstrap.min.js"></script>
+    <script src="App_theme/MainTheme/js/all.js"></script>
+    <link href="App_theme/MainTheme/css/style.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $(".category .item").each(function () {
+                debugger;
+
+                var a = $(this).index();
+
+                if ($('.level-type', this).is(':contains("آسان")')) {
+                    var id_element = $(this);
+                    $(this).addClass("beg");
+                    Check_type(id_element);
+                }
+                else if ($('.level-type', this).is(':contains("پیشرفته")')) {
+                    var id_element = $(this);
+                    $(this).addClass("adv");
+                    Check_type(id_element);
+                }
+                else if ($('.level-type', this).is(':contains("بین المللی")')) {
+                    var id_element = $(this);
+                    $(this).addClass("int");
+                    Check_type(id_element);
+                }
+
+
+            });
+
+            function Check_type(id_element) {
+                if (id_element.is(':contains("دیجیتال")')) {
+                    $(id_element).addClass("degital");
+                }
+
+                else if (id_element.is(':contains("PDF")')) {
+                    $(id_element).addClass("pdf");
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    <div class="container-fluid container-nav">
+        <div class="row header-nav-panel  ">
+
+
+
+            <div class="col-lg-7 col-md-12 col-xs-12 col-sm-12 navbar-panel  item-third">
+                <div class="r-collapse">
+                    <ul class="icon-nav">
+                        <li class="bar1"></li>
+                        <li class="bar2"></li>
+                        <li class="bar3"></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <nav class="r-nav navigation-menu sidenav close-nav ">
+                            <div id="accordian" class="content-navigation-menu">
+                                <ul class="list-nav">
+                                    <li>
+
+                                        <img src="Content/Image/img-logo.svg" style=" width: 100px;height: 60px;" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-btn" href="Index.html">
+                                            <i class="fas fa-tasks"></i>
+                                            <span> چرا کتابخانه ESL؟</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-btn">
+                                            <i class="fas fa-globe"></i>
+                                            <span> بررسی</span>
+                                            <ul class="btn-menu">
+                                                <li class="bar1"></li>
+                                                <li class="bar3"></li>
+                                            </ul>
+                                        </a>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#about">
+                                                    <i class="fas fa-wrench"></i>
+                                                    <span> درس ها</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#about">
+                                                    <i class="fas fa-pen"></i>
+                                                    <span> فلش کارت ها</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Sample.html">
+                                                    <i class="far fa-file"></i>
+                                                    <span> نمونه ها</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-btn">
+
+                                                    <span>محصولات</span>
+
+                                                    <!--<i class="icon-upper fa fa-chevron-left"></i>-->
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>قالب ها</span>
+
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="dropdown-btn">
+
+                                                            <span>خرید ها</span>
+
+                                                            <!--<i class="icon-upper fa fa-chevron-left"></i>-->
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span>قالب ها</span>
+
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span> سبد خرید</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span>سوالات متداول</span>
+
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>سوالات متداول</span>
+
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span> قیمت گذاری</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                                <ul class="links-item">
+                                    <li class="">
+                                        <ul style="display: block">
+                                            <li>
+                                                <a href="" class="btn-register-navbar">
+                                                    <i class="fas fa-plus"></i>
+                                                    <span>ثبت نام</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-sign-in-alt"></i>
+                                                    <span>ورود </span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-control-btn">
+                                                <a href="">
+                                                    <i class="fas fa-bars"></i>
+                                                    <span>منو </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="">
+                                                    <i class="fas fa-search"></i>
+                                                    <span>جستجو</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <main>
+        <div class="category-box">
+            <div class="container">
+                <div class="path-category">
+                    <ul>
+                        <li>
+                            <a href="#">درس ها</a>
+                        </li>
+                        <li>
+                            <a href="#">شروع کننده بحث</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-category">
+                    <div class="category-image-header">
+                        <img src="Content/Image/img-co1.png" />
+                    </div>
+                    <div class="content-category-main">
+                        <h1>
+                            شروع کننده بحث
+                        </h1>
+                        <div class="detail-category">
+                            <ul>
+                                <li>
+                                    <i class="far fa-lightbulb"></i>
+                                    <span>آسان</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-copy"></i>
+                                    <span>108 درس انگلیسی</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-unlock-alt"></i>
+                                    <a class="btn-blue-solid">درس نمونه را ببینید</a>
+                                </li>
+                            </ul>
+                            <p>
+                                توجه دانش آموزان را با توجه به این درس های فکری مبتنی بر مباحث طراحی شده برای دریافت حتی آرام ترین دانشجویان صحبت کنید. موضوعاتی مانند چرت زدن، خشم جاده ای و عکس های آنفلوآنزا امروزه مورد توجه است. هر درس شامل سوالات گرم شدن، ضبط صوتی، خواندن، سواد درک، وظایف توسعه واژگان و وظایف بحث است. درس های جدید به صورت ماهانه اضافه می شوند و دانش آموزان می توانند درس های پادکست هفتگی را در وبلاگ ما پیش نمایش نمایند
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sample-lesson-box">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 img-sample-lesson">
+
+                                <img src="Content/Image/img-lessons/img-lessons9.png" />
+                            </div>
+                            <div class="col-lg-8 col-sm-8 col-md-8 col-xs-8 ">
+
+                                <label> ترتیب نمونه</label>
+                                <h3>
+                                    <a href="#">
+                                        حداقل دستمزد
+                                    </a>
+                                </h3>
+                                <ul>
+                                    <li> <i class="far fa-lightbulb"></i></li>
+                                    <li> بین المللی</li>
+                                </ul>
+
+
+                                <p>
+                                    به این درس نمونه از Starters بروید تا درس هایی در این بخش احساس کنید. اشتراکی پرداخت شده به کتابخانه ESL به شما امکان می دهد تا تمام درس های 1000 + و 2000 + کارت را به شما دسترسی داشته باشید.
+                                </p>
+                                <audio controls>
+                                    <source src="Content/AshboryBYU.mp3" type="audio/mpeg" />
+                                </audio>
+                                <div class="button-row">
+                                    <a href="" class="btn-register">
+                                        <i class="fas fa-plus"></i>
+                                        <span>ثبت نام</span>
+                                    </a>
+
+                                    <a href="" class="btn-register solid">
+                                        <i class="far fa-file-alt"></i>
+                                        <span>مشاهده نمونه ها</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-tabs">
+                    <div id="one" class="lesson-courses-box categories">
+                        <div class="container">
+
+                            <div class="sorted-box">
+                                <div class="controls">
+                                    <span>
+                                        <i class="far fa-lightbulb"></i>
+                                    </span>
+                                    <button type="button" class="control" data-filter="all">
+                                        <span>همه</span>
+                                    </button>
+
+                                    <button type="button" class="control" data-filter=".beg">آسان</button>
+                                    <button type="button" class="control" data-filter=".adv">پیشرفته</button>
+                                    <button type="button" class="control" data-filter=".int">بین المللی</button>
+                                </div>
+
+                                <div class="controls">
+                                    <span>
+                                        <i class="far fa-copy"></i>
+                                    </span>
+
+                                    <button type="button" class="control" data-filter=".degital">
+                                        <i class="fas fa-desktop"></i>
+                                        دیجیتال
+
+
+                                    </button>
+                                    <button type="button" class="control" data-filter=".pdf">
+                                        <i class="fas fa-print"></i>
+                                        PDF
+                                    </button>
+
+                                </div>
+
+
+                                <div class="container category" data-ref="mixitup-container">
+                                    <div class="row-item-sorted">
+
+                                        <div class="item" data-ref="mixitup-target">
+
+                                            <div class="row">
+                                                <div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+                                                    <img src="Content/Image/img-lessons/img-lessons1.png" class="img img-responsive" />
+                                                </div>
+                                                <div class="col-lg-9 col-sm-9 col-md-9 col-xs-8 category-item">
+                                                    <a href="#">
+                                                        <label>   سوزان آنتونی</label>
+                                                        <span class="level-type">آسان</span>
+
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a><i class="far fa-folder-open"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-volume-up"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-desktop"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="item" data-ref="mixitup-target">
+
+                                            <div class="row">
+                                                <div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+                                                    <img src="Content/Image/img-lessons/img-lessons2.png" class="img img-responsive" />
+                                                </div>
+                                                <div class="col-lg-9 col-sm-9 col-md-9 col-xs-8 category-item">
+                                                    <a href="#">
+                                                        <label>   سوزان آنتونی</label>
+                                                        <span class="level-type">آسان</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a><i class="far fa-folder-open"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-volume-up"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-desktop"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="item" data-ref="mixitup-target">
+
+                                            <div class="row">
+                                                <div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+                                                    <img src="Content/Image/img-lessons/img-lessons3.png" class="img img-responsive" />
+                                                </div>
+                                                <div class="col-lg-9 col-sm-9 col-md-9 col-xs-8 category-item">
+                                                    <a href="#">
+                                                        <label>   سوزان آنتونی</label>
+                                                        <span class="level-type">آسان</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a><i class="far fa-folder-open"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-volume-up"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-desktop"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="item" data-ref="mixitup-target">
+
+                                            <div class="row">
+                                                <div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+                                                    <img src="Content/Image/img-lessons/img-lessons4.png" class="img img-responsive" />
+                                                </div>
+                                                <div class="col-lg-9 col-sm-9 col-md-9 col-xs-8 category-item">
+                                                    <a href="#">
+                                                        <label>   سوزان آنتونی</label>
+                                                        <span class="level-type">آسان</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a><i class="far fa-folder-open"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-volume-up"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-desktop"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="item" data-ref="mixitup-target">
+
+                                            <div class="row">
+                                                <div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+                                                    <img src="Content/Image/img-lessons/img-lessons5.png" class="img img-responsive" />
+                                                </div>
+                                                <div class="col-lg-9 col-sm-9 col-md-9 col-xs-8 category-item">
+                                                    <a href="#">
+                                                        <label>   سوزان آنتونی</label>
+                                                        <span class="level-type">آسان</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a><i class="far fa-folder-open"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-volume-up"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-desktop"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="item" data-ref="mixitup-target">
+
+                                            <div class="row">
+                                                <div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+                                                    <img src="Content/Image/img-lessons/img-lessons6.png" class="img img-responsive" />
+                                                </div>
+                                                <div class="col-lg-9 col-sm-9 col-md-9 col-xs-8 category-item">
+                                                    <a href="#">
+                                                        <label>   سوزان آنتونی</label>
+                                                        <span class="level-type">آسان - PDF</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a><i class="far fa-folder-open"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-volume-up"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-desktop"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="item" data-ref="mixitup-target">
+
+                                            <div class="row">
+                                                <div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+                                                    <img src="Content/Image/img-lessons/img-lessons7.jpg" class="img img-responsive" />
+                                                </div>
+                                                <div class="col-lg-9 col-sm-9 col-md-9 col-xs-8 category-item">
+                                                    <a href="Lesson-index.html">
+                                                        <label>   هوش مصنوعی</label>
+                                                        <span class="level-type">بین المللی - دیجیتال</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a><i class="far fa-folder-open"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-volume-up"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-desktop"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="item" data-ref="mixitup-target">
+
+                                            <div class="row">
+                                                <div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+                                                    <img src="Content/Image/img-lessons/img-lessons8.png" class="img img-responsive" />
+                                                </div>
+                                                <div class="col-lg-9 col-sm-9 col-md-9 col-xs-8 category-item">
+                                                    <a href="#">
+                                                        <label>   سوزان آنتونی</label>
+                                                        <span class="level-type"> آسان - دیجیتال</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a><i class="far fa-folder-open"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a><i class="far fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-volume-up"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span><i class="fas fa-desktop"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="gap"></div>
+                                        <div class="gap"></div>
+                                        <div class="gap"></div>
+                                    </div>
+
+                                </div>
+                                <div class="other-items">
+                                    <h3>
+                                        سایر دسته های مورد علاقه شما:
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 other-items-content">
+                                            <a href="#">
+                                                تعطیلات و رویدادها
+                                                <span>
+                                                    BEG - ADV
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 other-items-content">
+                                            <a href="#">
+                                                تعطیلات و رویدادها
+                                                <span>
+                                                    BEG - ADV
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 other-items-content">
+                                            <a href="#">
+                                                تعطیلات و رویدادها
+                                                <span>
+                                                    BEG - ADV
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        <div class="more-sample">
+            <div class="container">
+                <div class="row">
+                    <h3>
+                        درس های نمونه های بیشتری را مشاهده کنید
+                    </h3>
+                    <div class="col-lg-4 col-md-4 col-xs-6 col-sm-6">
+                        <h4> بحث و گفتگو</h4>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>                    
+                                        شروع کننده بحث (INT - ADV)
+                                       
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>            مباحثات کوچک (INT - ADV)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>     جاز (INT)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>    روز یادبود هولوکاست (HIGH INT - ADV)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>      هفته طلایی (INT)</span>
+                                </a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6 col-sm-6">
+                        <h4> گرامر و نوشتن</h4>
+                        <ul>      
+                               
+                            
+                           
+                              
+                            <li>
+                                <a href="">
+                                    <span>   سوالات ساده ساده (PRE BEG - BEG)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>    زبان کارکردی انگلیسی (BEG-INT)</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>       گفتگوهای روزمره (BEG-INT)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> انفجار هالیفاکس (LOW INT-INT)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>   تعجب (INT)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>      تولدهای (LIT - PRE BEG)</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6 col-sm-6">
+                        <h4> هر روز انگلیسی</h4>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        بهار و عید پاک
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>آمریکایی</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>کانادا</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>شمارش</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>  مسائل علمی</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-6 col-sm-6">
+                        <h4> هر روز انگلیسی</h4>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        بهار و عید پاک
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>آمریکایی</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>کانادا</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>شمارش</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>  مسائل علمی</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+        <div class="white-footer-box">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                    <label>طرح ها</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="far fa-file"></i>
+                                <span>درس ها</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                    <label>طرح ها</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="far fa-file"></i>
+                                <span>درس ها</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>تقویم درس ها</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                    <label>طرح ها</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="far fa-file"></i>
+                                <span>درس ها</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                    <label>طرح ها</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="far fa-file"></i>
+                                <span>درس ها</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-4 col-md-2 col-xs-6 col-sm-6 download-box">
+                    <label>برنامه را دانلود کنید</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="Content/Image/app-store.svg" />
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="Content/Image/google-store.svg" />
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+
+                    <img src="Content/Image/logo-footer.png" />
+                    <label>
+                        کتابخانه ESL متعلق به Red River Press Inc.
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h5>
+                        تماس
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone"></i>
+                                <span>ایالات متحده / کانادایی (TOLL-FREE): 1-866-896-7123</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h5>
+                        آدرس
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>ایران - تهران - انقلاب</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h5>
+                        حقوقی
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>شرایط استفاده</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>سیاست حفظ حریم خصوصی</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="App_theme/MainTheme/js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('[data-ref~="mixitup-container"]');
+
+        var mixer = mixitup(containerEl, {
+            selectors: {
+                target: '[data-ref~="mixitup-target"]'
+            }
+        });
+    </script>
+    <script src="App_theme/MainTheme/js/navbar.js">
+
+    </script>
+</body>
+</html>

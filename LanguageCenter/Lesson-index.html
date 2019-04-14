@@ -11,8 +11,44 @@
     <link href="App_theme/MainTheme/css/nav-style.css" rel="stylesheet" />
     <script src="App_theme/MainTheme/js/bootstrap.min.js"></script>
     <script src="App_theme/MainTheme/js/all.js"></script>
-    <script src="App_theme/MainTheme/js/navbar.js"></script>
     <link href="App_theme/MainTheme/css/style.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $(".category .item").each(function () {
+                debugger;
+
+                var a = $(this).index();
+
+                if ($('.level-type', this).is(':contains("آسان")')) {
+                    var id_element = $(this);
+                    $(this).addClass("beg");
+                    Check_type(id_element);
+                }
+                else if ($('.level-type', this).is(':contains("پیشرفته")')) {
+                    var id_element = $(this);
+                    $(this).addClass("adv");
+                    Check_type(id_element);
+                }
+                else if ($('.level-type', this).is(':contains("بین المللی")')) {
+                    var id_element = $(this);
+                    $(this).addClass("int");
+                    Check_type(id_element);
+                }
+
+
+            });
+
+            function Check_type(id_element) {
+                if (id_element.is(':contains("دیجیتال")')) {
+                    $(id_element).addClass("degital");
+                }
+
+                else if (id_element.is(':contains("PDF")')) {
+                    $(id_element).addClass("pdf");
+                }
+            }
+        });
+    </script>
 </head>
 <body>
     <header></header>
@@ -181,41 +217,78 @@
 
     </div>
     <main>
-        <div class="text-box">
+        <div class="lesson-content-box">
             <div class="container">
-                <div class="row ">
-                    <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12">
-                        <span>
-                            درس های نمونه
-                        </span>
-                        <p>
+                <div class="path-category">
+                    <ul>
+                        <li>
+                            <a href="Lesson-courses.html">درس ها</a>
+                        </li>
+                        <li>
+                            <a href="Category.html">شروع کننده بحث</a>
+                        </li>
 
-                            ESL Library خدمات اشتراک آنلاین برای معلمان انگلیسی حرفه ای است. ما درس های ELL متمرکز به دانش آموزان را طراحی می کنیم که به منظور ایجاد بحث و گفتگو معنی دار در کلاس درس طراحی شده اند. درسهای ما به تقویت روحیه و تمرکز بر تمام مهارتهای زبان چهارم کمک می کند و توسط هزاران مدرسه در بیش از 100 کشور استفاده می شود.
+                        <li class="current-page">
+                            <a href="#">هوش مصنوعی</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
 
 
-                        </p>
-                        <p>
-                            نگاهی به برخی از نمونه های مختلف از درس های مختلف کتاب های ESL زیر را کلیک کنید. اگر دوست دارید آنچه را که می بینید، به سادگی اشتراک کنید تا بتوانید به بیش از 1000 درس آماده، 2،000 فلش کارت و یک مجموعه بزرگ از منابع اضافی دسترسی پیدا کنید. ما هر ماه درس های جدیدی را توسعه می دهیم.
-                        </p>
-                        <div class="button-row">
-                            <a href="" class="btn-register">
-                                <i class="fas fa-plus"></i>
-                                <span>ثبت نام</span>
-                            </a>
-                            <a href="" class="btn-register solid">
-                                <i class="far fa-file"></i>
-                                <span>مشاهده همه درس ها</span>
-                            </a>
-                            <a href="" class="btn-register solid">
-                                <i class="fas fa-shopping-bag"></i>
-                                <span>مشاهده قیمت ها</span>
-                            </a>
+            <div class="lesson-detail-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-2 col-md-2 col-xs-12 lesson-detail-box-img">
+                            <img src="Content/Image/img-lessons/img-lessons12.png" />
+                        </div>
+                        <div class="col-lg-10 col-sm-10 col-md-10 col-xs-12 lesson-detail-box-detail">
+                            <h3>
+                                تماشا کنید
+                            </h3>
+                            <label>
+                                <a href="#">
+                                    شروع کننده بحث
+                                </a>
+                            </label>
+                            <ul>
+                                <li>
+                                    <i class="far fa-lightbulb"></i>
+                                    <span> اینتر - بین المللی بالا</span>
+                                </li>
+                            </ul>
+
+                            <div class="row">
+                                <div class="col-lg-7 col-sm-12 col-md-10 col-xs-12 ">
+                                    <p>
+                                        دانش آموزان در مورد پدیده مدرن تماشای بیگانه را می خوانند. آنها واژگان را مرور می کنند و رفتار مشاهده ی اعتیادآور را مورد بحث قرار می دهند. این درس همچنین شامل بررسی سریع تاثیر و تأثیر است.
+
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
+                    <div class="options-button">
+                        <a href="#">
+                            <i class="far fa-file-alt"></i>
+                            <span>
+                                دیجیتال
+                            </span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-print"></i>
+                            <span>
+                                پرینت
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+
         <div class="white-footer-box">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
@@ -351,5 +424,19 @@
             </div>
         </footer>
     </main>
+    <script src="App_theme/MainTheme/js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('[data-ref~="mixitup-container"]');
+
+        var mixer = mixitup(containerEl, {
+            selectors: {
+                target: '[data-ref~="mixitup-target"]'
+            }
+        });
+    </script>
+    <script src="App_theme/MainTheme/js/navbar.js">
+
+    </script>
 </body>
 </html>

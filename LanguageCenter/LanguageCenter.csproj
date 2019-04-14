@@ -163,7 +163,9 @@
     <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
     <Content Include="App_theme\MainTheme\slider\assets\ytplayer\jquery.mb.ytplayer.min.js" />
     <Content Include="App_theme\MainTheme\css\style-en.css" />
-    <Content Include="Blog.html" />
+    <Content Include="Lesson-index.html" />
+    <Content Include="Category.html" />
+    <Content Include="Content\AshboryBYU.mp3" />
     <Content Include="Content\Image\241.jpg" />
     <Content Include="Content\Image\app-store.svg" />
     <Content Include="Content\Image\avator1.png" />
@@ -228,6 +230,7 @@
     <Content Include="Content\Image\img-new3.png" />
     <Content Include="Content\Image\img-new4.jpg" />
     <Content Include="Content\Image\img-user1.jpg" />
+    <Content Include="Content\Image\left-arrow.png" />
     <Content Include="Content\Image\logo-footer.png" />
     <Content Include="FlashCard.html" />
     <Content Include="Global.asax" />
