@@ -14,6 +14,18 @@
     <link href="App_theme/MainTheme/css/style.css" rel="stylesheet" />
     <script>
         $(document).ready(function () {
+            $(".tabContent").hide();
+            $("ul.tabs li:first").addClass("active").show();
+            $(".tabContent:first").show();
+
+            $("ul.tabs li").click(function () {
+                $("ul.tabs li").removeClass("active");
+                $(this).addClass("active");
+                $(".tabContent").hide();
+                var activeTab = $(this).find("a").attr("href");
+                $(activeTab).fadeIn();
+                return false;
+            });
             $(".category .item").each(function () {
                 debugger;
 
@@ -48,6 +60,7 @@
                 }
             }
         });
+
     </script>
 </head>
 <body>
@@ -269,19 +282,350 @@
                             </div>
                         </div>
                     </div>
-                    <div class="options-button">
-                        <a href="#">
-                            <i class="far fa-file-alt"></i>
-                            <span>
-                                دیجیتال
-                            </span>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-print"></i>
-                            <span>
-                                پرینت
-                            </span>
-                        </a>
+
+                </div>
+            </div>
+            <div class="options-button">
+                <div class="tabBox">
+                    <ul class="tabs">
+
+                        <li>
+                            <a href="#tab1">
+                                <i class="far fa-file-alt"></i>
+                                <span>
+                                    دیجیتال
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab2">
+                                <i class="fas fa-print"></i>
+                                <span>
+                                    پرینت
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tabContainer">
+                        <div id="tab1" class="tabContent lesson-print-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                                        <div class="white-box-print">
+                                            <div class="white-box-print-head">
+                                                <label>
+                                                    <i class="far fa-file-alt"></i>
+                                                    <span>
+                                                        فایل های PDF
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="white-box-print-content">
+                                                <a class="big-blue-button" href="#">
+                                                    <i class="far fa-file-alt"></i>
+                                                    <span>
+                                                        دانشجو
+                                                    </span>
+                                                </a>
+                                                <a class="big-blue-button" href="#">
+                                                    <i class="far fa-file-alt"></i>
+                                                    <span>
+                                                        استاد
+                                                    </span>
+                                                </a>
+                                                <div class="study-time">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="far fa-clock"></i>
+                                                            <span>
+                                                                1-2 ساعت
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="far fa-copy"></i>
+                                                            <span>
+                                                                2 صفحه
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                                        <div class="white-box-print">
+                                            <div class="white-box-print-head">
+                                                <label>
+                                                    <i class="fas fa-volume-up"></i>
+                                                    <span>
+                                                        صدا ها
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="white-box-print-content">
+                                                <p>ممنوعیت کیسه های پلاستیکی</p>
+                                                <a href="#" class="download-link">         <img src="Content/Image/download.png" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="columns-events">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                                            <div class="head-col-event">
+                                                <i class="fas fa-tasks"></i>
+                                                <span>وظایف</span>
+                                            </div>
+                                            <div class="content-col-event">
+                                                <ul>
+                                                    <li>
+                                                        <span>
+                                                            خواندن
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            وظایف بازبینی واژگان
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            سوالات بحث
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            سمعی
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+                                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                                            <div class="head-col-event">
+                                                <i class="fas fa-book"></i>
+                                                <span>واژگان</span>
+                                            </div>
+                                            <div class="content-col-event">
+                                                <ul>
+                                                    <li>
+                                                        <span>
+                                                            راحتی
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            وظایف بازبینی واژگان
+                                                            s
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            ممنوعیت
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            دسترس
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            ویرانگر
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            فراخوانی
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            قراضه
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            اعمال
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            اجباری
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            یکجا
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                                            <div class="head-col-event">
+                                                <i class="fas fa-pen"></i>
+                                                <span>گرامر</span>
+                                            </div>
+                                            <div class="content-col-event">
+                                                <ul>
+                                                    <li>
+                                                        <span>
+                                                            ملت ها و. ملیت ها
+                                                        </span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="tab2" class="tabContent">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 col-sm-10 col-md-8 col-xs-12 tasks-box">
+                                        <div class="head-col-event">
+                                            <i class="fas fa-tasks"></i>
+                                            <span>وظایف</span>
+                                        </div>
+                                        <div class="content-col-event">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        عنوان
+                                                    </th>
+                                                    <th>
+                                                        آخرین جلسه
+
+                                                    </th>
+                                                    <th>مشق شب</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        دست گرمی بازی کردن
+
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        پیشنمایش واژگان A
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        پیش بینی واژگان B
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        خواندن و گوش دادن
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        دست گرمی بازی کردن
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        مرور واژگان
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        ملت ها و ملیت ها
+
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        بحث
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        گوش دادن و نوع
+                                                    </td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="related-material-box">
+                <div class="container">
+                    <div class="related-material-head">
+                        <h2>
+                            موارد مرتبط
+                        </h2>
+                    </div>
+                    <div class="related-material-content">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 ">
+                                <div class="items-related">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 items-related-img">
+                                            <img src="Content/Image/img-lessons/img-lessons14.png" />
+                                        </div>
+                                        <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9 ">
+                                            <div class="items-related-content">
+                                            <a href="#">
+                                                <h4> ممنوعیت معادن زمین</h4>
+
+                                                <span> مباحثات کوتاه</span>
+
+                                                <label> INT - HIGH INT</label>
+
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

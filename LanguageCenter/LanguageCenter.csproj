@@ -163,6 +163,7 @@
     <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
     <Content Include="App_theme\MainTheme\slider\assets\ytplayer\jquery.mb.ytplayer.min.js" />
     <Content Include="App_theme\MainTheme\css\style-en.css" />
+    <Content Include="Content\Image\download.png" />
     <Content Include="Lesson-index.html" />
     <Content Include="Category.html" />
     <Content Include="Content\AshboryBYU.mp3" />

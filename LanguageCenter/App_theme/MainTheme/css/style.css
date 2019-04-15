@@ -2503,13 +2503,13 @@ a:hover svg.fa-heart {
 /*Category*/
 
 /*Lesson detail*/
-.lesson-content-box {
+/*.lesson-content-box {
     padding: 50px 0;
-}
+}*/
 
 .lesson-detail-box {
     background-color: #fff;
-    padding: 30px 0;
+    padding: 30px 0 60px 0;
 }
 
 .lesson-detail-box-img img {
@@ -2563,25 +2563,276 @@ a:hover svg.fa-heart {
 
 .options-button {
     text-align: center;
-    transform: translateY(36px);
+    transform: translateY(-16px);
 }
 
 
-    .options-button a {
-        padding: 15px 35px;
+
+    .options-button .tabs a, .big-blue-button {
+        padding: 13px 39px;
         font-size: 18px;
         text-align: center;
         border: 2px solid #5774fc;
         color: #252525;
-        border-radius: 3px;
+        border-radius: 6px;
         background: #fff;
         margin-right: -2px;
         transition: all .3s ease-in-out;
     }
 
-        .options-button a:focus, .options-button a:active {
-            background-color: #5774fc;
-            border-color: #5774fc;
-            color: #fff;
+    .options-button .tabs li:last-child a {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .options-button .tabs li:first-child a {
+        border-radius: 0 6px 6px 0;
+    }
+
+
+
+    .options-button a span {
+        font-weight: 500;
+        margin-right: 4px;
+    }
+
+    .options-button .tabs a:focus, .options-button .tabs a:active, .big-blue-button {
+        background: #5774fc;
+        border-color: #5774fc;
+        color: #fff;
+    }
+
+.white-box-print-content .big-blue-button:first-child {
+    margin-right: 0;
+}
+
+.big-blue-button {
+    float: right;
+    margin: 10px;
+}
+
+    .big-blue-button:hover, .big-blue-button:focus, .big-blue-button:active, .big-blue-button:focus:active, .tabs .active a {
+        background: #5774fc;
+        color: #fff;
+        border-color: #5774fc;
+    }
+
+.study-time {
+    float: right;
+    width: 100%;
+    text-align: right;
+    padding: 20px 9px;
+}
+
+    .study-time ul li {
+        font-size: 16px;
+        color: #565656;
+    }
+
+        .study-time ul li svg {
+            margin: 0px 0 3px 6px;
         }
-/*Lesson detail*/
+
+.lesson-print-box {
+    padding: 60px 0;
+}
+
+
+.white-box-print-head {
+    border-bottom: 2px solid #efefef;
+    float: right;
+    width: 100%;
+    padding: 10px;
+}
+
+    .white-box-print-head label {
+        float: right;
+        margin: 0;
+        font-size: 17px;
+        color: #545454;
+    }
+
+        .white-box-print-head label svg {
+            margin: 0px 0 3px 6px;
+            font-size: 20px;
+        }
+
+.white-box-print {
+    width: 100%;
+    min-height: 250px;
+    float: right;
+    background: #fff;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.white-box-print-content {
+    padding: 10px 0;
+    float: right;
+    width: 100%;
+}
+
+    .white-box-print-content p {
+        display: inline-block;
+        text-align: right;
+        float: right;
+    }
+
+.download-link img {
+    max-width: 100%;
+}
+
+.download-link {
+    width: 17px;
+    float: left;
+}
+
+.columns-events {
+    margin-top: 50px;
+}
+
+.head-col-event {
+    text-align: right;
+    border-bottom: 2px solid #e8e8e8;
+    font-size: 18px;
+    padding: 15px 0;
+    color: #464646;
+}
+
+    .head-col-event span {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .head-col-event svg {
+        margin-left: 6px;
+    }
+
+
+.content-col-event ul {
+    padding: 5px 18px;
+    list-style: disc
+}
+
+    .content-col-event ul li {
+        text-align: right;
+        font-size: 18px;
+        margin: 6px 0;
+    }
+
+        .content-col-event ul li span {
+            font-size: 15px;
+        }
+
+.items-related {
+    float: right;
+    width: 100%;
+    background: #fff;
+}
+
+.tasks-box {
+    float: none;
+    display: inline-block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+    .tasks-box .content-col-event table {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 16px;
+        color: #797979;
+        border-collapse: separate;
+        border-spacing: 0 7px;
+    }
+
+        .tasks-box .content-col-event table td, .tasks-box .content-col-event table th {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .tasks-box .content-col-event table td {
+            color: #333333;
+            font-size: 18px;
+            font-weight: 500;
+            background-color: #fff;
+            padding: 20px 5px;
+        }
+
+        .tasks-box .content-col-event table tr {
+            padding: 4px 0
+        }
+
+.related-material-box {
+    background-color: #e9edff;
+    padding: 50px 0;
+}
+
+.items-related {
+    padding: 20px;
+}
+
+.items-related-img img {
+    border-radius: 50%;
+    width: 80px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.items-related-content {
+    margin-right: -20px;
+    color: #252525
+}
+
+    .items-related-content > a * {
+        display: block
+    }
+
+    .items-related-content span {
+        font-size: 16px;
+        margin-bottom: 15px;    
+    }
+    .items-related-content h4 {
+        margin-bottom: 5px;
+    }
+.items-related-content label{
+font-weight: 600
+}
+    /*Lesson detail*/
+    /*Tabs*/
+    .tabBox .tabs {
+        width: max-content;
+        width: -moz-max-content;
+        margin: auto;
+        display: flex;
+    }
+
+.tabBox .tabs > li {
+    width: auto;
+}
+
+    .tabBox .tabs > li > a {
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+
+
+    .tabBox .tabs > li > a {
+        cursor: pointer;
+    }
+
+
+        .tabBox .tabs > li > a:hover:after, .tabBox .tabs > li.active a:after {
+            opacity: 1;
+            bottom: 0px;
+        }
+
+
+.tabBox {
+    position: relative;
+}
+
+
+/*Tabs*/
