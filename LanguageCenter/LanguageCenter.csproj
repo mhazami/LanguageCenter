@@ -163,6 +163,7 @@
     <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
     <Content Include="App_theme\MainTheme\slider\assets\ytplayer\jquery.mb.ytplayer.min.js" />
     <Content Include="App_theme\MainTheme\css\style-en.css" />
+    <Content Include="Content\Image\cat-b.svg" />
     <Content Include="Content\Image\download.png" />
     <Content Include="Lesson-index.html" />
     <Content Include="Category.html" />
@@ -239,6 +240,8 @@
     <Content Include="Lesson-calendar.html" />
     <Content Include="index-blog.html" />
     <Content Include="Lesson-courses.html" />
+    <Content Include="Sign-up.html" />
+    <Content Include="Sign-up-student.html" />
     <Content Include="Resources.html" />
     <Content Include="Pricing.html" />
     <Content Include="Sample.html" />

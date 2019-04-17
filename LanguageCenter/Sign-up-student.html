@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width" name="viewport">
+    <script src="App_theme/MainTheme/js/jquery-3.1.1.min.js"></script>
+    <link href="App_theme/MainTheme/css/all.css" rel="stylesheet" />
+    <link href="App_theme/MainTheme/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="App_theme/MainTheme/css/nav-style.css" rel="stylesheet" />
+    <script src="App_theme/MainTheme/js/bootstrap.min.js"></script>
+    <script src="App_theme/MainTheme/js/all.js"></script>
+    <script src="App_theme/MainTheme/js/navbar.js"></script>
+    <link href="App_theme/MainTheme/css/style.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $(".selector-product article:first-child").addClass("selected-item");
+
+
+            $('.selector-product article:first-child a').empty();
+
+            $('.selector-product article:first-child a').append("<i class='fas fa-check'></i>انتخاب شد");
+
+            $(".selector-product article").click(function () {
+
+                $(".selector-product article ").removeClass("selected-item");
+                $(".text-selected ").remove();
+                $(this).addClass("selected-item");
+                $('.selector-product a').empty();
+                $('.selector-product a').append('<span>انتخاب کنید </span>');
+                $('a', this).empty();
+                $('a', this).append("<i class='fas fa-check'></i><span>انتخاب شد</span>");
+
+            });
+
+            $(".selector-plan article:first-child").addClass("selected-item");
+            $('.selector-plan article:first-child a').empty();
+            $('.selector-plan article:first-child a').append("<i class='fas fa-check'></i>انتخاب شد");
+            $(".selector-plan article").click(function () {
+                $(".selector-plan article ").removeClass("selected-item");
+                $(".selector-plan .text-selected ").remove();
+                $(this).addClass("selected-item");
+                $('.selector-plan a').empty();
+                $('.selector-plan a').append('<span>انتخاب کنید</span>');
+                $('a', this).empty();
+                $('a', this).append("<i class='fas fa-check'></i><span>انتخاب شد</span>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    <div class="container-fluid container-nav">
+        <div class="row header-nav-panel">
+            <div class="col-lg-10 col-md-12 col-xs-12 col-sm-12 navbar-panel  item-third">
+                <div class="r-collapse">
+                    <ul class="icon-nav">
+                        <li class="bar1"></li>
+                        <li class="bar2"></li>
+                        <li class="bar3"></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <nav class="r-nav navigation-menu sidenav close-nav ">
+                            <div id="accordian" class="content-navigation-menu">
+                                <ul class="list-nav">
+                                    <li>
+
+                                        <img src="Content/Image/img-logo.svg" style=" width: 100px;height: 60px;" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-btn" href="Index.html">
+                                            <i class="fas fa-tasks"></i>
+                                            <span> چرا کتابخانه ESL؟</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-btn">
+                                            <i class="fas fa-globe"></i>
+                                            <span> بررسی</span>
+                                            <ul class="btn-menu">
+                                                <li class="bar1"></li>
+                                                <li class="bar3"></li>
+                                            </ul>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#about">
+                                                    <i class="fas fa-wrench"></i>
+                                                    <span> درس ها</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#about">
+                                                    <i class="fas fa-pen"></i>
+                                                    <span> فلش کارت ها</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Sample.html">
+                                                    <i class="far fa-file"></i>
+                                                    <span> نمونه ها</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-btn">
+                                                    <span>محصولات</span>
+                                                    <!--<i class="icon-upper fa fa-chevron-left"></i>-->
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>قالب ها</span>
+
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-btn">
+                                                            <span>خرید ها</span>
+                                                            <!--<i class="icon-upper fa fa-chevron-left"></i>-->
+                                                        </a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span>قالب ها</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span> سبد خرید</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <span>سوالات متداول</span>
+
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>سوالات متداول</span>
+
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span> قیمت گذاری</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="links-item">
+                                    <li class="">
+                                        <ul style="display: block">
+                                            <li>
+                                                <a href="" class="btn-register-navbar">
+                                                    <i class="fas fa-plus"></i>
+                                                    <span>ثبت نام</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fas fa-sign-in-alt"></i>
+                                                    <span>ورود </span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-control-btn">
+                                                <a href="">
+                                                    <i class="fas fa-bars"></i>
+                                                    <span>منو </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="">
+                                                    <i class="fas fa-search"></i>
+                                                    <span>جستجو</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <main>
+        <div class="text-box pricing">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12">
+                        <span>
+                            قیمت گذاری
+                        </span>
+                        <p>
+                            بهترین کلاس خود را با یک اشتراک به کتابخانه ESL آموزش دهید. مواد جدید توسعه یافته و هر ماه به سایت اضافه می شوند.
+                        </p>
+                        <div class="selector-currency">
+                            <select>
+                                <option value="value">یورو</option>
+                                <option value="value">ریال</option>
+                                <option value="value">دلار</option>
+                                <option value="value">پوند</option>
+                                <option value="value">یوان</option>
+                            </select>
+                            <label>
+                                *یک ارز را انتخاب کنید
+                            </label>
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="selector-product">
+            <div class="container">
+                <div class="row">
+                    <article class="col-lg-6 col-sm-6 col-md-6 col-xs-12 ">
+                        <div class="article-item">
+                            <h2>چاپ</h2>
+                            <p>دانلود، چاپ و فتوکپی مواد آموزش زبان انگلیسی از کتابخانه جامع ما.</p>
+                            <ul>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    1000 درس + PDF (برای کودکان، نوجوانان و بزرگسالان)
+
+                                </li>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    2000+ تصاویر واژگان
+
+                                </li>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    200+ منابع PDF
+                                </li>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    500+ فایل های صوتی (همراه با درس های ما)
+                                </li>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    شامل یک محاکمه رایگان یک ماهه به پلت فرم دیجیتال ما می باشد
+                                </li>
+                            </ul>
+                            <div class="selected-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="price-product">
+                                <ul>
+                                    <li>
+                                        <span>کم تر از </span>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            10 هزار ریال
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            برای  هر معلم در هر ماه
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <a>انتخاب کنید </a>
+                        </div>
+                    </article>
+                    <article class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                        <div class="article-item">
+                            <h2>چاپ + دیجیتال</h2>
+                            <p>با افزودن دیجیتال، می توانید بیش از 500 درس تعاملی را در دستگاه های خود دانش آموزان خود مدیریت کنید.</p>
+                            <ul>
+
+
+
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    دسترسی به همه چیز را از طرح اشتراک چاپ
+
+                                </li>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    درس های تعاملی در کلاس یا آنلاین را انجام دهید
+
+                                </li>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    جفت تعاملی و فعالیت های گروهی را آغاز کنید
+                                    محتوای پخش را به صفحه Smartboard خود منتقل کنید
+                                </li>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+                                    اختصاص دادن تکالیف دیجیتال
+                                </li>
+                                <li>
+                                    <img src="Content/Image/Check-icon.png" />
+
+
+                                    نمایش نتایج جلسات و نتایج تکالیف در زمان واقعی
+                                </li>
+                            </ul>
+                            <div class="selected-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="price-product">
+                                <ul>
+                                    <li>
+                                        <span>کم تر از </span>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            10 هزار ریال
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            برای  هر معلم در هر ماه
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <span>و </span>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            20 هزار ریال
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            برای  هر دانشجو در هر ماه
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a>انتخاب کنید </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+        <div class="select-plan">
+            <div class="text-box pricing ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12">
+                            <span>
+                                اشتراک نسخه چاپی خود را سفارشی کنید
+                            </span>
+                            <p>
+
+                                با استفاده از این برنامه، هر معلم با استفاده از این اطلاعات نیاز به یک حساب کاربری دارد. لطفا تعداد حساب های معلمی که مایل به خرید هستند را مشخص کنید.
+                            </p>
+
+                        </div>
+                    </div>   
+                    <div class="select-teacher">
+                        <h2> معلم ها</h2>
+                        <a class="add-teacher"><i class="fas fa-plus"></i></a>
+                        <input type="text" class="selector-teacher" name="name" value="0" />
+                        <a class="remove-teacher"> <i class="fas fa-minus"></i></a>
+                    </div>
+                </div>
+                <div class="selector-plan">
+                    <article class="col-lg-4 col-sm-4 col-md-4 col-xs-12 ">
+                        <div class="article-item">
+                            <div class="head-plan">
+                                <h4>طرح 12 ماهه</h4>
+                            </div>
+
+
+
+                            <div class="selected-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="price-product">
+                                <h3>20 هزار تومان</h3>
+                                <label>هر 6 ماه </label>
+                                <span>   کار می کند</span>
+                                <span>
+                                 
+                                    10 هزار تومان
+                                  
+                                </span>
+                                <span>  هر ماه</span>
+                            </div>
+                            <a>انتخاب کنید </a>
+                        </div>
+                    </article>    
+                    <article class="col-lg-4 col-sm-4 col-md-4 col-xs-12 ">
+                        <div class="article-item">
+                            <div class="head-plan">
+                                <h4>طرح 12 ماهه</h4>
+                            </div>
+
+
+
+                            <div class="selected-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="price-product">
+                                <h3>20 هزار تومان</h3>
+                                <label>هر 6 ماه </label>
+                                <span>   کار می کند</span>
+                                <span>
+                                 
+                                    10 هزار تومان
+                                  
+                                </span>
+                                <span>  هر ماه</span>
+                            </div>
+                            <a>انتخاب کنید </a>
+                        </div>
+                    </article>    
+                    <article class="col-lg-4 col-sm-4 col-md-4 col-xs-12 ">
+                        <div class="article-item">
+                            <div class="head-plan">
+                                <h4>طرح 12 ماهه</h4>
+                            </div>
+
+
+
+                            <div class="selected-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="price-product">
+                                <h3>20 هزار تومان</h3>
+                                <label>هر 6 ماه </label>
+                                <span>   کار می کند</span>
+                                <span>
+                                 
+                                    10 هزار تومان
+                                  
+                                </span>
+                                <span>  هر ماه</span>
+                            </div>
+                            <a>انتخاب کنید </a>
+                        </div>
+                    </article>    
+                    <div class="button-row">
+                        <a href="#" class="btn-register continue">
+                            <i class="fas fa-key"></i>
+                            <span> ادامه</span>
+                        </a> 
+                        <a href="#" class="white-button">
+                            <i class="far fa-file-alt"></i>
+                            <span> ایمیل من برای یک نقل قول</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="white-footer-box">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                    <label>طرح ها</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="far fa-file"></i>
+                                <span>درس ها</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                    <label>طرح ها</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="far fa-file"></i>
+                                <span>درس ها</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>تقویم درس ها</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                    <label>طرح ها</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="far fa-file"></i>
+                                <span>درس ها</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                    <label>طرح ها</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="far fa-file"></i>
+                                <span>درس ها</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-4 col-md-2 col-xs-6 col-sm-6 download-box">
+                    <label>برنامه را دانلود کنید</label>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="Content/Image/app-store.svg" />
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="Content/Image/google-store.svg" />
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+
+                    <img src="Content/Image/logo-footer.png" />
+                    <label>
+                        کتابخانه ESL متعلق به Red River Press Inc.
+                    </label>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h5>
+                        تماس
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone"></i>
+                                <span>ایالات متحده / کانادایی (TOLL-FREE): 1-866-896-7123</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h5>
+                        آدرس
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>ایران - تهران - انقلاب</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <h5>
+                        حقوقی
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>شرایط استفاده</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>سیاست حفظ حریم خصوصی</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
