@@ -165,6 +165,8 @@
     <Content Include="App_theme\MainTheme\css\style-en.css" />
     <Content Include="Content\Image\cat-b.svg" />
     <Content Include="Content\Image\download.png" />
+    <Content Include="Content\Image\left-arrow-icon.png" />
+    <Content Include="Content\Image\teacher_apple.svg" />
     <Content Include="Lesson-index.html" />
     <Content Include="Category.html" />
     <Content Include="Content\AshboryBYU.mp3" />

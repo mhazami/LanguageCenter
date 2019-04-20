@@ -2945,19 +2945,28 @@ a:hover svg.fa-heart {
     }
 }
 
-.banner-sign-up.student img {
+.banner-sign-up img {
     width: 53px;
     float: right;
     margin-top: 17px;
 }
 
-.banner-sign-up.student {
+.banner-sign-up.teacher img {
+    width: 30px;
+    margin-top: 9px;
+}
+
+.banner-sign-up {
     overflow: hidden;
     height: 60px;
     float: right;
     width: 100%;
     background-color: #5DD4A4;
 }
+
+    .banner-sign-up.teacher {
+        background-color: #f6f6f6;
+    }
 
 .banner-sign-item {
     float: none;
@@ -2981,6 +2990,10 @@ a:hover svg.fa-heart {
             .banner-sign-item h4 a:hover {
                 color: #fff;
             }
+
+.sign-up-page.student-box {
+    background-color: #5DD4A4;
+}
 
 .sign-up-page {
     float: right;
@@ -3015,15 +3028,19 @@ a:hover svg.fa-heart {
         padding: 13px;
     }
 
-        .sign-up-page > .container > div > div {
-            float: none;
-            margin: auto
-        }
+    .sign-up-page.teacher-box > .container > div > div {
+        float: none;
+        margin: auto
+    }
+
+    .sign-up-page.student-box > .container > div > div {
+        text-align: right
+    }
 
     .sign-up-page a {
         font-weight: 400;
         font-size: 15px;
-        border-radius: 6px;
+        border-radius: 4px;
     }
 
         .sign-up-page a svg {
@@ -3279,22 +3296,69 @@ a:hover svg.fa-heart {
 
     .input-control input[type="checkbox"]:checked:after,
     .input-control input[type="checkbox"]:not(:checked):after {
-        border: 1px solid #5774fc;
+        border: 1px solid #fff;
     }
 
     .input-control input[type="checkbox"]:checked:before,
     .input-control input[type="checkbox"]:not(:checked):before {
         border-color: #5774fc;
     }
+
 .input-control > label input[type="checkbox"], .input-control > label {
     float: right;
 }
-.input-control > label span {
-    float: right;
-    position: inherit;
-    margin: 5px 19px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #1f1f1f;
-}
+
+    .input-control > label span {
+        float: right;
+        position: inherit;
+        margin: 5px 19px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #1f1f1f;
+    }
 /*Check-box*/
+
+.sign-up-page .continue span {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.sign-up-page .continue svg {
+    margin: 0 auto 9px auto;
+    font-size: 32px;
+    display: block;
+}
+
+.student-box.sign-up-page .continue.btn-register span, .student-box.sign-up-page .continue.btn-register svg {
+    color: #252525 !important;
+}
+
+.student-box.sign-up-page .continue {
+    background-color: #fff;
+    color: #252525 !important;
+    border-color: transparent
+}
+
+.student-box.sign-up-page .continue {
+    padding: 10px 40px
+}
+
+    .student-box.sign-up-page .continue:hover {
+        background-color: #efefef;
+    }
+
+    .student-box.sign-up-page .continue img {
+        width: 19px;
+        margin-right: 9px;
+    }
+
+.sign-up-page .continue {
+    display: inline-block;
+    margin: 15px auto -5px auto;
+    float: none;
+    padding: 10px 55px;
+}
+
+.form-sign-up .sign-center {
+    width: 100%;
+}
