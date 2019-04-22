@@ -108,6 +108,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Equivalencies.html" />
     <Content Include="App_theme\MainTheme\css\all.css" />
     <Content Include="App_theme\MainTheme\css\aos.css" />
     <Content Include="App_theme\MainTheme\css\bootstrap-theme.css" />
@@ -167,6 +168,11 @@
     <Content Include="Content\Image\download.png" />
     <Content Include="Content\Image\left-arrow-icon.png" />
     <Content Include="Content\Image\teacher_apple.svg" />
+    <Content Include="Content\Image\team\team-p1.jpg" />
+    <Content Include="Content\Image\team\team-p2.jpg" />
+    <Content Include="Content\Image\team\team-p3.jpg" />
+    <Content Include="Content\Image\team\team-p4.jpg" />
+    <Content Include="Content\Image\team\team-p5.jpg" />
     <Content Include="Lesson-index.html" />
     <Content Include="Category.html" />
     <Content Include="Content\AshboryBYU.mp3" />
@@ -242,6 +248,9 @@
     <Content Include="Lesson-calendar.html" />
     <Content Include="index-blog.html" />
     <Content Include="Lesson-courses.html" />
+    <Content Include="Login-student.html" />
+    <Content Include="Login-teacher.html" />
+    <Content Include="About.html" />
     <Content Include="Sign-up.html" />
     <Content Include="Sign-up-student.html" />
     <Content Include="Resources.html" />

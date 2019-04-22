@@ -300,7 +300,7 @@ p {
     display: block;
     width: 100%;
     overflow: hidden;
-    padding: 45px;
+    padding: 65px 0;
 }
 
 .links-item {
@@ -331,42 +331,50 @@ p {
 
 .white-footer-box ul li {
     margin: 6px 0px;
-    color: #656565;
+    color: #4a4a4a;
+    float: right;
     font-size: 13px;
+    display: block;
+    width: 100%;
 }
 
-    .white-footer-box ul li a svg, .white-footer-box ul li a span {
-        transition: all .3s ease-in-out
-    }
+.white-footer-box .btn-blue-small {
+    margin: 0px 5px;
+}
+
+.white-footer-box ul li a svg, .white-footer-box ul li a span {
+    transition: all .3s ease-in-out
+}
 
 
 
-    .white-footer-box ul li a svg {
-        font-size: 14px;
-        margin: 0 0 0 5px;
-    }
+.white-footer-box ul li a svg {
+    font-size: 17px;
+    width: 1.2em !important;
+    margin: -3px 0 0 5px;
+}
 
-    .white-footer-box ul li a span {
-        color: #656565;
-        font-size: 15px;
-    }
+.white-footer-box ul li a span {
+    color: #656565;
+    font-size: 15px;
+}
 
-    .white-footer-box ul li a:hover svg,
-    .white-footer-box ul li a:hover span {
-        color: #5774fc
-    }
+.white-footer-box ul li a:hover svg,
+.white-footer-box ul li a:hover span {
+    color: #5774fc
+}
 
 .links-item > .dropdown-container li a {
     padding: 4px 11px !important;
 }
 
-.btn-register-navbar, .btn-register {
+.btn-blue-small-navbar, .btn-blue-small {
     border-radius: 7px;
     background: #5774fc;
     color: #fff;
 }
 
-.btn-register, .content-item-tutorials .button-row a, .flash-footer .black-button {
+.btn-blue-small, .content-item-tutorials .button-row a, .flash-footer .black-button {
     margin: 10px 5px;
     padding: 9px 16px;
     font-size: 16px;
@@ -375,11 +383,11 @@ p {
     font-weight: 600;
 }
 
-    .btn-register:first-child, .content-item-tutorials > a:first-child {
+    .btn-blue-small:first-child, .content-item-tutorials > a:first-child {
         margin-right: 0
     }
 
-    .btn-register.solid {
+    .btn-blue-small.solid {
         background: #fff;
     }
 
@@ -392,16 +400,16 @@ p {
         border-radius: 4px;
     }
 
-        .btn-register-navbar span, .btn-register-navbar svg, .btn-register span, .btn-register svg, .content-item-tutorials .button-row a span, .content-item-tutorials .button-row a svg {
+        .btn-blue-small-navbar span, .btn-blue-small-navbar svg, .btn-blue-small span, .btn-blue-small svg, .content-item-tutorials .button-row a span, .content-item-tutorials .button-row a svg {
             color: #fff !important;
             transition: all .3s ease-in-out;
         }
 
-.btn-register.solid span, .btn-register.solid svg {
+.btn-blue-small.solid span, .btn-blue-small.solid svg {
     color: #5774fc !important
 }
 
-.btn-register svg {
+.btn-blue-small svg {
     margin-left: 6px;
 }
 
@@ -664,12 +672,16 @@ footer {
     }
 
     .download-box img {
-        max-width: 170px;
+        max-width: 150px;
     }
 }
 
 .text-center {
     text-align: center !important;
+}
+
+.gray-box.text-box {
+    background-color: #efefef
 }
 
 .text-box {
@@ -1077,7 +1089,8 @@ footer {
 
 .pricing .selected-item .selected-icon {
     right: 7px !important;
-    left: auto !important
+    left: auto !important;
+    font-size: 30px;
 }
 
 .pricing .price-product > * {
@@ -1111,7 +1124,7 @@ footer {
     text-align: center;
 }
 
-    .pricing .button-row .btn-register {
+    .pricing .button-row .btn-blue-small {
         float: none;
         display: inline-block
     }
@@ -1127,9 +1140,14 @@ footer {
         font-size: 21px;
     }
 
-    .continue:hover {
-        background-color: #4663eb
+    .continue:hover, .btn-blue-small:hover {
+        background-color: #4663eb;
+        border-color: #4663eb;
     }
+
+.btn-blue-small.solid:hover {
+    background-color: #fff
+}
 
 .white-button {
     background-color: #fff;
@@ -1275,7 +1293,7 @@ footer {
     width: 100%;
 }
 
-    .flash-card-box .btn-register-navbar {
+    .flash-card-box .btn-blue-small-navbar {
         display: inline-block;
         padding: 5px 7px;
         margin: 10px;
@@ -2939,8 +2957,13 @@ a:hover svg.fa-heart {
     }
 }
 
+.white-footer-box > .row > div {
+    float: none;
+    margin: auto
+}
+
 @media(max-width: 600px) {
-    ul.tabs-item li {
+    ul .tabs-item li {
         width: 100%;
     }
 }
@@ -2951,7 +2974,7 @@ a:hover svg.fa-heart {
     margin-top: 17px;
 }
 
-.banner-sign-up.teacher img {
+.banner-sign-up.student img {
     width: 30px;
     margin-top: 9px;
 }
@@ -2964,7 +2987,7 @@ a:hover svg.fa-heart {
     background-color: #5DD4A4;
 }
 
-    .banner-sign-up.teacher {
+    .banner-sign-up.student {
         background-color: #f6f6f6;
     }
 
@@ -2992,13 +3015,25 @@ a:hover svg.fa-heart {
             }
 
 .sign-up-page.student-box {
+    padding: 0;
     background-color: #5DD4A4;
+}
+
+.student-box-content {
+    position: relative;
+    overflow: hidden
+}
+
+.cat-img-login {
+    position: absolute;
+    bottom: 0;
+    width: 290px;
 }
 
 .sign-up-page {
     float: right;
     width: 100%;
-    padding: 40px;
+    padding: 0 40px;
 }
 
 .sign-header {
@@ -3020,12 +3055,20 @@ a:hover svg.fa-heart {
     width: 100%;
 }
 
+    .sign-up-page.login > .container > div {
+        padding: 0
+    }
+
     .sign-up-page > .container > div {
         float: right;
         margin: auto;
         text-align: center;
         width: 100%;
-        padding: 13px;
+        padding: 55px 0 100px 0;
+    }
+
+    .sign-up-page.login > .container > div {
+        padding: 0 0 20px 0
     }
 
     .sign-up-page.teacher-box > .container > div > div {
@@ -3053,6 +3096,7 @@ a:hover svg.fa-heart {
         color: #2f2f2f;
         font-weight: 400;
         line-height: 1.6;
+        margin-top: 40px;
     }
 
 .sign-center {
@@ -3329,7 +3373,7 @@ a:hover svg.fa-heart {
     display: block;
 }
 
-.student-box.sign-up-page .continue.btn-register span, .student-box.sign-up-page .continue.btn-register svg {
+.student-box.sign-up-page .continue.btn-register span, .student-box.sign-up-page .continue.btn-blue-small svg {
     color: #252525 !important;
 }
 
@@ -3362,3 +3406,203 @@ a:hover svg.fa-heart {
 .form-sign-up .sign-center {
     width: 100%;
 }
+
+
+
+
+
+
+
+@keyframes blinking {
+    0% {
+        opacity: 1
+    }
+
+    20% {
+        opacity: 0
+    }
+
+    21% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    81% {
+        opacity: 1
+    }
+
+    85% {
+        opacity: 0
+    }
+
+    86% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+.slBear {
+    top: 1rem;
+    right: -3.5rem;
+    width: 10rem;
+    animation: bouncein 0.6s ease-in-out forwards
+}
+
+
+.bearWaving #bear-arm {
+    transform: rotate(4deg);
+    transform-origin: 50% 100%;
+    animation: waving 2s ease-in-out forwards infinite;
+    animation-delay: 1s
+}
+
+.bearBlinking #bear-eyes {
+    animation: blinking 20s steps(1) forwards infinite;
+    animation-delay: 1s
+}
+
+@media only screen and (min-width: 64em) {
+    .bearBlinking #bear-eyes {
+        animation-delay: 1.666s
+    }
+}
+
+.seBear {
+    width: 36rem;
+    left: 0;
+    bottom: -95px;
+    position: absolute;
+}
+
+    .seBear #bear-arm {
+        display: none
+    }
+
+@media only screen and (min-width: 64em) {
+    .seBear {
+        width: 36rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .seBear {
+        width: 15rem;
+        transform: rotate(68deg);
+        bottom: 0;
+        left: -27px;
+    }
+
+    .sign-up-page.student-box {
+        position: relative;
+    }
+
+    .student-box-content {
+        position: unset;
+    }
+}
+
+.form-sign-up .input-control input[type="checkbox"]:checked:before, .form-sign-up .input-control input[type="checkbox"]:not(:checked):before {
+    border-color: #231f20
+}
+
+.form-sign-up .input-control input[type="checkbox"]:checked:before {
+    opacity: 1;
+    -webkit-transform: rotate(40deg) scale(1.1);
+    -ms-transform: rotate(40deg) scale(1.1);
+    transform: rotate(40deg) scale(1.1);
+}
+
+
+.seBear #bear-eyes {
+    animation: blinking 10s steps(1) forwards infinite
+}
+
+.drawsGiftBear #bear-eyes-open {
+    animation: blinking 10s steps(1) forwards infinite
+}
+
+.st0 {
+    fill: #FFFEF0;
+}
+
+.st1 {
+    fill: #F387AE;
+}
+
+.forget-password {
+    margin: 19px 0;
+    float: right;
+    display: block;
+    color: #2b2b2b !important;
+    width: 100%;
+    text-decoration: underline !important
+}
+
+.student a:hover {
+    color: #2b2b2b !important;
+}
+
+.forget-password h4 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.form-sign-up .input-control input[type="text"]:active, .form-sign-up .input-control input[type="text"]:focus, .form-sign-up .input-control input[type="email"]:active, .form-sign-up .input-control input[type="email"]:focus, .form-sign-up .input-control input[type="password"]:active, .form-sign-up .input-control input[type="password"]:focus, .form-sign-up .input-control select:active, .form-sign-up .input-control select:focus {
+    border-color: #231f20;
+}
+
+.login .input-control > label, .login .form-sign-up a {
+    float: none;
+    display: inline-block
+}
+
+.light-blue {
+    background-color: #E9EDFF
+}
+
+.text-box.light-blue h1, .text-box.light-blue h3 {
+    text-align: center;
+    font-weight: 300;
+    margin: 35px 0;
+    font-size: 44px;
+}
+
+.text-box.light-blue h3 {
+    font-size: 25px;
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.text-box.light-blue p {
+    font-size: 17px;
+}
+
+.our-team-box article img {
+    margin: auto;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.our-team-box article {
+    padding: 20px;
+}
+
+    .our-team-box article label {
+        font-size: 16px;
+        font-weight: 500
+    }
+
+    .our-team-box article h3 {
+        text-align: center;
+        margin: 15px 0 8px 0;
+        font-size: 25px;
+        color: #6f6f6f;
+    }
