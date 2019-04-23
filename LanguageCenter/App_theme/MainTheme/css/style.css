@@ -523,7 +523,7 @@ footer {
 
     main {
         margin-top: 80px;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
     .banner-item {
@@ -662,7 +662,7 @@ footer {
 
     .items-section-title h3, .white-box-contnet h3, .gray-box h3 {
         margin: 3px auto 27px auto;
-        text-align: right;
+        text-align: center;
         line-height: 1.3;
         font-size: 32px;
     }
@@ -1433,24 +1433,28 @@ footer {
         text-decoration: underline !important;
     }
 
-    .submenu a:hover span {
-        color: #5774fc;
-    }
+.about-box a {
+    border-bottom: 1px solid #5774fc;
+}
 
-    .submenu li > div {
-        width: 48%;
-        padding: 3px 40px;
-        font-size: 17px;
-        display: inline-block;
-        text-align: right;
-        float: right;
-    }
+.submenu a:hover span {
+    color: #5774fc;
+}
 
-        .submenu li > div.fit-size {
-            width: 100%;
-            padding: 2px 8px;
-            font-size: 14px;
-        }
+.submenu li > div {
+    width: 48%;
+    padding: 3px 40px;
+    font-size: 17px;
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+    .submenu li > div.fit-size {
+        width: 100%;
+        padding: 2px 8px;
+        font-size: 14px;
+    }
 
 .link span.count-card {
     margin-top: 3px;
@@ -2335,29 +2339,63 @@ a:hover svg.fa-heart {
         border-bottom: 2px solid #fff
     }
 
-        .input-search input:focus, .input-search input:active {
-            border-color: #63a1d2
-        }
+.help-doc-box .input-search input, .help-doc-box .input-search input:hover, .help-doc-box .input-search input:active {
+    border: 1px solid #ddd !important;
+    border-radius: 3px;
+}
 
-    .input-search ::-webkit-input-placeholder {
-        color: #4d4d4d;
-        font-size: 15px;
+    .help-doc-box .input-search input:focus {
+        box-shadow: 0px 0px 2px #2990fb;
     }
 
-    .input-search ::-moz-placeholder {
-        color: #4d4d4d;
-        font-size: 15px;
-    }
+.help-doc-box .input-search svg {
+    color: #848484;
+}
 
-    .input-search :-ms-input-placeholder {
-        color: #4d4d4d;
-        font-size: 15px;
-    }
+.input-search input:focus, .input-search input:active {
+    border-color: #63a1d2
+}
 
-    .input-search :-moz-placeholder {
-        color: #4d4d4d;
-        font-size: 15px;
-    }
+.input-search ::-webkit-input-placeholder {
+    color: #4d4d4d;
+    font-size: 15px;
+}
+
+.input-search ::-moz-placeholder {
+    color: #4d4d4d;
+    font-size: 15px;
+}
+
+.input-search :-ms-input-placeholder {
+    color: #4d4d4d;
+    font-size: 15px;
+}
+
+.input-search :-moz-placeholder {
+    color: #4d4d4d;
+    font-size: 15px;
+}
+
+
+.search-for-help ::-webkit-input-placeholder {
+    color: #acacac;
+    font-size: 17px;
+}
+
+.search-for-help ::-moz-placeholder {
+    color: #acacac;
+    font-size: 17px;
+}
+
+.search-for-help :-ms-input-placeholder {
+    color: #acacac;
+    font-size: 17px;
+}
+
+.search-for-help :-moz-placeholder {
+    color: #acacac;
+    font-size: 17px;
+}
 
 /*Blog*/
 /*Category*/
@@ -3121,27 +3159,9 @@ a:hover svg.fa-heart {
         display: inline-block;
     }
 
-        .form-sign-up .input-control ::-webkit-input-placeholder {
-            color: #a9a7a7;
-            font-size: 18px;
-        }
 
-        .form-sign-up .input-control ::-moz-placeholder {
-            color: #a9a7a7;
-            font-size: 18px;
-        }
 
-        .form-sign-up .input-control:-ms-input-placeholder {
-            color: #a9a7a7;
-            font-size: 18px;
-        }
-
-        .form-sign-up .input-control :-moz-placeholder {
-            color: #a9a7a7;
-            font-size: 18px;
-        }
-
-.input-control input[type="text"], .input-control input[type="email"], .input-control input[type="password"], .input-control select {
+.input-control input[type="text"], .input-control input[type="email"], .input-control input[type="password"], .input-control select, .input-control textarea {
     width: 100%;
     color: #272727;
     border-radius: 5px;
@@ -3154,12 +3174,12 @@ a:hover svg.fa-heart {
     transition: all .3s ease-in-out;
 }
 
-    .input-control input[type="text"]:hover, .input-control input[type="email"]:hover, .input-control input[type="password"]:hover, .input-control select:hover {
+    .input-control input[type="text"]:hover, .input-control textarea:hover, .input-control input[type="email"]:hover, .input-control input[type="password"]:hover, .input-control select:hover {
         border-color: #e8e8e8
     }
 
-    .input-control input[type="text"]:active, .input-control input[type="text"]:focus, .input-control input[type="email"]:active, .input-control input[type="email"]:focus, .input-control input[type="password"]:active, .input-control input[type="password"]:focus, .input-control select:active, .input-control select:focus {
-        border-color: #5774fc
+    .input-control input[type="text"]:active, .input-control input[type="text"]:focus, .input-control textarea:active, .input-control textarea:focus, .input-control input[type="email"]:active, .input-control input[type="email"]:focus, .input-control input[type="password"]:active, .input-control input[type="password"]:focus, .input-control select:active, .input-control select:focus {
+        border-color: #5774fc !important
     }
 
 .input-control svg {
@@ -3170,9 +3190,11 @@ a:hover svg.fa-heart {
     font-size: 18px;
     color: #696969;
 }
-
-
-.input-control span {
+.input-control textarea ~ svg {
+    top: 15px;
+    transform: none;
+}
+    .input-control span {
     position: absolute;
     font-size: 12px;
     top: 7px;
@@ -3606,3 +3628,284 @@ a:hover svg.fa-heart {
         font-size: 25px;
         color: #6f6f6f;
     }
+
+.lan-tabel {
+    width: 100%;
+    text-align: center;
+    background: #fff;
+}
+
+    .lan-tabel tr th {
+        text-align: center;
+        border-top-color: #fff !important;
+    }
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 10px !important;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.lan-tabel tr > td {
+    border-top: 1px solid #eaeaea !important
+}
+
+
+
+.equivalencies h4 {
+    font-size: 28px;
+    margin: 15px 0 0 0;
+    font-weight: 300;
+}
+
+.equivalencies p {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.text-box .equivalencies .row > div {
+    padding: 35px 0;
+}
+
+.text-box .about-box p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.text-box .about-box h2 {
+    margin: 17px 0 32px 0;
+    font-size: 37px;
+    font-weight: 300;
+}
+
+/*HELP*/
+.help-header {
+    background-color: #fff;
+    float: right;
+    width: 100%;
+}
+
+.logo-help {
+    float: right;
+    padding: 10px 0;
+}
+
+.help-header ul {
+    float: left;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+
+    .help-header ul li a {
+        padding: 44px 0 15px 0;
+        float: right;
+        position: relative;
+    }
+
+        .help-header ul li a.active {
+            color: #5774fc
+        }
+
+            .help-header ul li a.active:after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                bottom: -5px;
+                right: 46%;
+                border-top: 0;
+                border-bottom: 5px solid #F0F0F0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+            }
+
+    .help-header ul li {
+        margin: 0 5px;
+        display: inline-block
+    }
+
+.help-header ~ main {
+    margin-top: 0
+}
+
+.search-for-help {
+    float: right;
+    width: 100%
+}
+
+.help-box .help-content.text-box .search-for-help .row > div {
+    float: right
+}
+
+.help-box .text-box .row > div {
+    padding: 5px 0
+}
+
+.search-for-help > div {
+    position: relative
+}
+
+.search-for-help input[type="text"] {
+    border: 1px solid #bfbfbf;
+    padding: 11px 12px 11px 100px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+}
+
+.search-for-help h2 {
+    margin: 32px 0;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    padding: 11px 20px;
+    font-size: 16px;
+    background: #407FB3;
+    border: none;
+    left: 0;
+    color: #FFF;
+    border-radius: 5px 0 0 5px;
+}
+
+.help-box .gray-box {
+    padding: 0;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #ddd;
+}
+
+.help-content .search-for-help h2 {
+    text-align: right;
+}
+
+.search-for-help article, .search-for-help article > a {
+    float: right;
+}
+
+.search-for-help article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 0 5px;
+}
+
+    .search-for-help article h6 {
+        font-size: 18px;
+        display: block
+    }
+
+    .search-for-help article span {
+        color: #5774fc;
+        display: inline-block;
+        margin: 10px auto;
+    }
+
+    .search-for-help article p {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        color: #a0a0a0;
+        display: block
+    }
+
+@media(max-width: 768px) {
+    .search-for-help article, .search-for-help article > a {
+        float: none;
+        display: inline-block;
+    }
+
+        .search-for-help article span {
+            display: block
+        }
+}
+
+.help-doc-box {
+    display: inline-block;
+    width: 100%;
+}
+
+.category-aside ul {
+    margin-top: 24px;
+    font-size: 15px;
+    color: #616161;
+}
+
+.category-aside li a {
+    font-size: 14px;
+    color: #888888
+}
+
+.category-aside ul li {
+    margin: 3px 0
+}
+
+.most-popular {
+    background: #fff;
+    border: 1px solid #e9e5e5;
+    color: #222;
+    padding: 35px 46px;
+    position: relative;
+}
+
+    .most-popular h1 {
+        margin: 0 0 25px 0;
+        color: #545454;
+        font-weight: normal;
+    }
+
+    .most-popular ul {
+        font-size: 16px;
+        color: #b3b3b3;
+    }
+
+        .most-popular ul li {
+            margin: 15px 0;
+        }
+
+            .most-popular ul li span {
+                color: #5774fc;
+                margin: 0 5px;
+            }
+
+            .most-popular ul li a:hover span {
+                text-decoration: underline !important
+            }
+
+            .most-popular ul li a svg {
+                color: #b3b3b3 !important;
+            }
+
+/*HELP*/
+
+
+
+/*contact-us*/
+.contact-us.text-box .row > div {
+    padding: 25px 0 10px 0
+}
+.items-contact > div {
+    text-align: center;
+    float: right !important
+}
+.items-contact ul li {
+    margin: 5px 0
+}
+.items-contact ul li svg {
+    margin: 0 5px;
+}
+.items-contact ul {
+    font-size: 16px;
+    color: #5d5d5d
+}
+.items-contact ul label {
+    font-weight: 600;
+    font-size: 17px;
+
+}
+.centred-item {
+    float: none!important;
+    display: inline-block!important;
+    margin: auto!important
+}
+/*contact-us*/
