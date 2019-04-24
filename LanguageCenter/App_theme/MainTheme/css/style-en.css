@@ -1,0 +1,35 @@
+/* Help*/
+body {
+    direction: ltr
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+    float: left
+}
+
+.logo-help, .help-box .help-content.text-box .search-for-help .row > div {
+    float: left;
+}
+
+.help-header ul {
+    float: right;
+}
+
+
+.search-for-help input[type="text"] {
+    padding: 15px 100px 12px 19px;
+}
+
+.search-btn {
+    left: auto;
+    right: 0;
+    border-radius:0 5px 5px 0;
+}
+.help-content .search-for-help h2 {
+    text-align: left
+}
+.input-search svg {
+    left: auto;
+    right: 13px;
+}
+/* Help*/

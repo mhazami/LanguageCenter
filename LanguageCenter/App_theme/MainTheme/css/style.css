@@ -3171,6 +3171,7 @@ a:hover svg.fa-heart {
     border: 2px solid #fff;
     outline: none;
     font-size: 18px;
+    max-width: 100%;
     transition: all .3s ease-in-out;
 }
 
@@ -3190,11 +3191,13 @@ a:hover svg.fa-heart {
     font-size: 18px;
     color: #696969;
 }
+
 .input-control textarea ~ svg {
     top: 15px;
     transform: none;
 }
-    .input-control span {
+
+.input-control span {
     position: absolute;
     font-size: 12px;
     top: 7px;
@@ -3747,21 +3750,22 @@ a:hover svg.fa-heart {
 
 .search-for-help input[type="text"] {
     border: 1px solid #bfbfbf;
-    padding: 11px 12px 11px 100px;
+    padding: 15px 19px 12px 100px;
     width: 100%;
     outline: none;
     border-radius: 5px;
 }
 
 .search-for-help h2 {
+    font-weight: normal;
     margin: 32px 0;
 }
 
 .search-btn {
     position: absolute;
     top: 0;
-    padding: 11px 20px;
-    font-size: 16px;
+    padding: 12px 25px;
+    font-size: 18px;
     background: #407FB3;
     border: none;
     left: 0;
@@ -3772,6 +3776,7 @@ a:hover svg.fa-heart {
 .help-box .gray-box {
     padding: 0;
     padding-bottom: 27px;
+    background: #F5F5F5;
     border-bottom: 1px solid #ddd;
 }
 
@@ -3805,8 +3810,9 @@ a:hover svg.fa-heart {
         text-align: center;
         width: 100%;
         margin: 0;
-        color: #a0a0a0;
-        display: block
+        color: #9e9e9e;
+        font-weight: 200;
+        display: block;
     }
 
 @media(max-width: 768px) {
@@ -3833,11 +3839,19 @@ a:hover svg.fa-heart {
 
 .category-aside li a {
     font-size: 14px;
+    transition: all .3s ease-in-out;
     color: #888888
 }
+.category-aside li a:hover {
+     color: #676666
+ }
 
 .category-aside ul li {
-    margin: 3px 0
+    margin: 10px 0;
+}
+
+.most-popular.most-popular-box {
+    box-shadow: -1px -2px 15px #e6e6e6;
 }
 
 .most-popular {
@@ -3850,7 +3864,8 @@ a:hover svg.fa-heart {
 
     .most-popular h1 {
         margin: 0 0 25px 0;
-        color: #545454;
+        color: #424242;
+        font-size: 32px;
         font-weight: normal;
     }
 
@@ -3863,7 +3878,7 @@ a:hover svg.fa-heart {
             margin: 15px 0;
         }
 
-            .most-popular ul li span {
+            .most-popular ul li span, .help-item-box a {
                 color: #5774fc;
                 margin: 0 5px;
             }
@@ -3881,31 +3896,143 @@ a:hover svg.fa-heart {
 
 
 /*contact-us*/
-.contact-us.text-box .row > div {
-    padding: 25px 0 10px 0
+.gray-box.text-box.contact-us {
+    background-color: #F9F9F9;
 }
+
+.contact-us.text-box .row > div {
+    padding: 10px 0
+}
+
 .items-contact > div {
     text-align: center;
     float: right !important
 }
+
 .items-contact ul li {
     margin: 5px 0
 }
-.items-contact ul li svg {
-    margin: 0 5px;
-}
+
+    .items-contact ul li svg {
+        margin: 0 5px;
+    }
+
 .items-contact ul {
     font-size: 16px;
     color: #5d5d5d
 }
-.items-contact ul label {
-    font-weight: 600;
-    font-size: 17px;
 
-}
-.centred-item {
-    float: none!important;
-    display: inline-block!important;
-    margin: auto!important
+    .items-contact ul label {
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+.centered-item, .items-contact > div.centered-item {
+    float: none !important;
+    display: inline-block !important;
+    margin: auto !important
 }
 /*contact-us*/
+
+/*Item Help */
+.help-item-box {
+    float: right
+}
+
+    .help-item-box h1 {
+        font-size: 28px;
+        color: #292929;
+    }
+
+.items-row-help {
+    float: right;
+    padding: 15px 0 5px 0;
+    margin: 30px 0 10px 0;
+    border-top: 2px solid #ececec;
+}
+
+.video-help {
+    width: 100%;
+    float: right;
+    margin: 25px 0;
+    display: block;
+}
+
+    .video-help video {
+        width: 70%;
+    }
+
+@media(max-width: 992px) {
+    .video-help video {
+        width: 100%;
+    }
+}
+
+.items-row-help p {
+    display: block
+}
+
+.help-item-box h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #353535;
+}
+
+.items-row-help > * {
+    margin: 13px 0 !important;
+    float: right;
+    width: 100%;
+    display: inline-block;
+}
+
+.items-row-help > p {
+    margin-top: 0 !important;
+}
+
+.items-row-help > time {
+    color: #b5b5b5;
+    margin: 15px 0 -6px 0 !important;
+}
+
+.items-row-help img {
+    border: 1px solid #ddd;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.footer-item-help {
+    float: right;
+    border-top: 2px solid #ececec;
+    padding: 22px 0;
+    width: 100%;
+}
+
+    .footer-item-help > div {
+        border: none;
+        float: right;
+        width: 100%;
+    }
+
+.item-help .most-popular {
+    padding: 0
+}
+
+.help-item-box > div {
+    padding: 35px 46px 0 46px;
+    float: right;
+    width: 100%;
+}
+
+    .help-item-box > div.footer-item-help {
+        padding: 35px 46px;
+    }
+
+.footer-item-help h1 {
+    font-size: 18px !important;
+}
+
+.footer-item-help .most-popular ul li span {
+    color: #4381b5;
+    font-size: 14px;
+}
+/*Item Help */

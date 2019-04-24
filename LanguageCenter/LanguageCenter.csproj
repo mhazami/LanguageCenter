@@ -108,10 +108,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Image\bg-content2.png" />
     <Content Include="Content\Image\Logo-transparent.png" />
-    <Content Include="Help-video.html" />
-    <Content Include="Help-doc.html" />
-    <Content Include="Help.html" />
+    <Content Include="Content\Image\steps-help\step2.png" />
+    <Content Include="Content\Image\steps-help\step3.png" />
+    <Content Include="Content\Image\steps-help\step4.png" />
+    <Content Include="Content\Image\steps-help\step5.png" />
+    <Content Include="Content\Image\steps-help\step6.png" />
+    <Content Include="Content\Image\steps-help\step7.png" />
+    <Content Include="Content\mov_bbb.mp4" />
+    <Content Include="Help-doc-EN.html" />
+    <Content Include="Help-EN.html" />
+    <Content Include="Help-item-EN.html" />
+    <Content Include="Help-item-FA.html" />
+    <Content Include="Help-video-EN.html" />
+    <Content Include="Help-video-FA.html" />
+    <Content Include="Help-doc-FA.html" />
+    <Content Include="Help-FA.html" />
     <Content Include="Equivalencies.html" />
     <Content Include="App_theme\MainTheme\css\all.css" />
     <Content Include="App_theme\MainTheme\css\aos.css" />
