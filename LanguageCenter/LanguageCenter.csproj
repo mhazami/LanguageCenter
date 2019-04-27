@@ -190,6 +190,7 @@
     <Content Include="Content\Image\team\team-p3.jpg" />
     <Content Include="Content\Image\team\team-p4.jpg" />
     <Content Include="Content\Image\team\team-p5.jpg" />
+    <Content Include="Index-EN.html" />
     <Content Include="Lesson-index.html" />
     <Content Include="Category.html" />
     <Content Include="Content\AshboryBYU.mp3" />

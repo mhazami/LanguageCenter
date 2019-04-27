@@ -1,6 +1,7 @@
 /* Help*/
 body {
-    direction: ltr
+    direction: ltr;
+    font-family: 'Open Sans', BlinkMacSystemFont, -apple-system, Roboto, 'Segoe UI', sans-serif;
 }
 
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
@@ -23,13 +24,165 @@ body {
 .search-btn {
     left: auto;
     right: 0;
-    border-radius:0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
 }
+
 .help-content .search-for-help h2 {
     text-align: left
 }
+
 .input-search svg {
     left: auto;
     right: 13px;
 }
 /* Help*/
+
+
+/*Main index*/
+@media (min-width: 768px) {
+    .links-item {
+        left: auto !important;
+        right: 0 !important;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .dropdown-container {
+        right: auto;
+        left: 0;
+    }
+
+    .btn-menu {
+        right: 33px;
+        top: 42px;
+        left: auto;
+    }
+
+    #accordian ul ul li a {
+        text-align: left;
+    }
+
+    #accordian .list-nav ul li a {
+        padding: 9px 35px 9px 16px;
+    }
+
+    .dropdown-container .dropdown-container {
+        left: 100%;
+        right: 0;
+    }
+
+    .content-navigation-menu a span {
+        font-weight: 500 !important;
+        font-size: 16px !important;
+    }
+
+    .list-nav > li a svg {
+        font-size: 18px;
+        margin-top: -5px;
+    }
+
+    .list-nav > li {
+        margin: 0px 5px;
+    }
+}
+
+.white-box p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.btn-more > svg {
+    margin-top: -2px;
+}
+
+.center-detail-box p {
+    font-size: 19px;
+    text-align: left
+}
+
+.center-detail-box h3, .gray-box .center-detail-box h3 {
+    text-align: left;
+    font-size: 45px;
+    margin-top: -7px;
+}
+
+.white-box .row label {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.gray-box > .container > .row > div:nth-child(odd) > div:first-child {
+    float: right
+}
+
+@media (min-width: 1440px) {
+    .banner-item h2 {
+        font-size: 56px;
+        font-weight: 500;
+    }
+
+    .bottom-banner p, .banner-item p {
+        font-size: 18px;
+    }
+
+    .items-section-title h3, .white-box-contnet h3, .gray-box h3 {
+        font-weight: 300;
+        color: #000000;
+        font-size: 40px;
+    }
+}
+
+.resource-box h4 {
+    float: left;
+    text-align: left;
+    font-size: 24px;
+    width: 71%;
+}
+
+.resource-bottom-text {
+    float: left;
+    font-size: 39px;
+}
+
+.resource-box-content > .row > div:last-child {
+    margin-top: -161px;
+}
+
+@media(max-width: 992px) {
+
+    .list-nav > li:first-child {
+        position: fixed;
+        top: 9px;
+        right: auto;
+        width: auto;
+        left: 39px;
+    }
+}
+
+.button-subscribe svg {
+    margin-left: 0;
+}
+
+.white-footer-box ul li a span {
+    font-size: 16px;
+    margin-left: 6px;
+}
+
+.btn-blue-small, .content-item-tutorials .button-row a, .flash-footer .black-button {
+    float: left
+}
+
+    .btn-blue-small:first-child, .content-item-tutorials > a:first-child {
+        margin: 0px 5px;
+        margin-left: 0
+    }
+
+.white-footer-box ul li a svg {
+    margin: -3px 5px 0 0px;
+}
+
+.list-nav > li:first-child {
+    margin-left: 0;
+    margin-right: 30px;
+}

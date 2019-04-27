@@ -30,6 +30,10 @@ a {
     text-align: center;
 }
 
+#accordian ul ul li a {
+    padding: 10px 13px;
+}
+
 .items-section {
     text-align: center;
     margin: auto;
@@ -41,7 +45,7 @@ a {
 
 .white-box img {
     min-height: 60px;
-    height: 80px;
+    height: 85px;
     width: auto;
     margin: auto;
 }
@@ -137,14 +141,16 @@ a {
     font-weight: 200;
 }
 
-.white-box-contnet p {
-    font-size: 15px;
-    text-align: justify;
+.white-box-contnet p, .banner-top-content > p {
+    font-size: 19px !important;
+    color: #353535;
+    text-align: center;
+    margin: 0 -30px 10px -30px;
 }
 
 @media(min-width: 992px) {
     .banner-top-content, .white-box-contnet {
-        float: none;
+        float: none !important;
         margin: auto;
         padding: 25px;
         text-align: center;
@@ -171,7 +177,7 @@ p {
 }
 
 .white-box .items-section-content .row label {
-    margin: 3px 0 4px 0;
+    margin: 10px 0 4px 0;
 }
 
 .gray-box {
@@ -191,12 +197,13 @@ p {
 
 .btn-more {
     border: 2px solid #383838;
-    padding: 6px 17px 6px 10px;
+    padding: 10px 21px 10px 16px;
     border-radius: 5px;
     transition: all .5s ease-in-out;
     display: inline-block;
     margin: 30px 0;
 }
+
 
 
     .btn-more:hover, .btn-more:focus, .btn-more:active {
@@ -234,8 +241,23 @@ p {
     float: right;
 }
 
+@media(max-width:1800px) {
+    .header-nav-panel > div {
+        width: 90%;
+    }
+}
+
+@media(max-width:1200px) {
+    .header-nav-panel > div {
+        width: 100%;
+    }
+}
 .resource-box-content > .row > div:last-child {
     margin-top: -60px;
+}
+
+.resource-top-text {
+    font-size: 15px
 }
 
 .button-subscribe, .button-subscribe:hover, .button-subscribe:focus, .button-subscribe:active {
@@ -269,6 +291,8 @@ p {
     text-decoration: none;
     color: #303030;
     margin: 18px;
+    font-weight: 500;
+    font-size: 20px;
     display: inline-block;
 }
 
@@ -282,7 +306,9 @@ p {
         right: 0;
         margin: auto;
     }
-
+.download-box, .white-footer-box .container  div[class^="col"] {
+    margin-right: 30px;
+}
 .download-box img {
     max-width: 130px;
 }
@@ -369,7 +395,7 @@ p {
 }
 
 .btn-blue-small-navbar, .btn-blue-small {
-    border-radius: 7px;
+    border-radius: 5px;
     background: #5774fc;
     color: #fff;
 }
@@ -490,7 +516,7 @@ footer {
         margin: 5px 0;
     }
 
-@media(max-width: 992px) {
+@media(max-width: 1024px) {
     .dropdown-container li a svg {
         display: none
     }
@@ -3842,9 +3868,10 @@ a:hover svg.fa-heart {
     transition: all .3s ease-in-out;
     color: #888888
 }
-.category-aside li a:hover {
-     color: #676666
- }
+
+    .category-aside li a:hover {
+        color: #676666
+    }
 
 .category-aside ul li {
     margin: 10px 0;

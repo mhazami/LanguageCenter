@@ -103,7 +103,7 @@ ul {
 
 /*----------------Navbar---------------------*/
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
     .image-mega-menu {
         display: none;
     }
@@ -475,7 +475,7 @@ ul {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .r-collapse {
         cursor: pointer;
         display: block;
@@ -659,7 +659,7 @@ ul {
     padding-right: 80px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 
 
 
@@ -690,7 +690,7 @@ ul {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .open-nav ~ .container-custom {
         transition: all .5s;
         padding-right: 270px;
@@ -699,7 +699,7 @@ ul {
 
 
 /*------------Navbar-----------*/
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 
     .icon-upper {
         display: none;
@@ -1043,7 +1043,7 @@ ul {
     overflow: hidden;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .container-nav {
         position: fixed;
         -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
@@ -1108,7 +1108,7 @@ ul {
     min-width: max-content;
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1024px) {
     .list-nav > li a svg {
         font-size: 22px;
     }
