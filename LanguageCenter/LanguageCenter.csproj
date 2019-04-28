@@ -108,6 +108,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_theme\MainTheme\webfonts\fa-brands-400.svg" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-regular-400.svg" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-solid-900.svg" />
     <Content Include="Content\Image\bg-content2.png" />
     <Content Include="Content\Image\Logo-transparent.png" />
     <Content Include="Content\Image\steps-help\step2.png" />
@@ -191,6 +194,9 @@
     <Content Include="Content\Image\team\team-p4.jpg" />
     <Content Include="Content\Image\team\team-p5.jpg" />
     <Content Include="Index-EN.html" />
+    <Content Include="Lesson-calendar-EN.html" />
+    <Content Include="Lesson-collections-EN.html" />
+    <Content Include="Lesson-courses-EN.html" />
     <Content Include="Lesson-index.html" />
     <Content Include="Category.html" />
     <Content Include="Content\AshboryBYU.mp3" />
@@ -325,6 +331,18 @@
     <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.eot" />
     <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
     <Content Include="App_theme\MainTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.woff" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-regular-400.eot" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-regular-400.ttf" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-regular-400.woff" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-regular-400.woff2" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-solid-900.eot" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-solid-900.ttf" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-solid-900.woff" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-solid-900.woff2" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-brands-400.eot" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-brands-400.ttf" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-brands-400.woff" />
+    <Content Include="App_theme\MainTheme\webfonts\fa-brands-400.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

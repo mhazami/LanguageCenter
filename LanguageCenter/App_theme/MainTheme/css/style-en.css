@@ -133,6 +133,12 @@ body {
     }
 }
 
+.flash-footer h2 {
+    font-weight: 300;
+    text-align: left;
+    font-size: 30px !important;
+}
+
 .resource-box h4 {
     float: left;
     text-align: left;
@@ -161,15 +167,15 @@ body {
 }
 
 .button-subscribe svg {
-    margin-left: 0;
+    margin: -2px 3px 0 0;
 }
 
 .white-footer-box ul li a span {
     font-size: 16px;
-    margin-left: 6px;
+    margin-left: 0;
 }
 
-.btn-blue-small, .content-item-tutorials .button-row a, .flash-footer .black-button {
+.btn-blue-small, .content-item-tutorials .button-row a {
     float: left
 }
 
@@ -186,3 +192,41 @@ body {
     margin-left: 0;
     margin-right: 30px;
 }
+footer ul li span {
+    font-weight: 500;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+
+/*Lesson-box*/
+
+.lesson-header-text, ul.tabs-item li a, .flash-footer p {
+    text-align: left
+}
+
+ul.tabs-item li a {
+    padding: 15px 0 0 15px;
+}
+
+ul.tabs-item li, .controls {
+    float: left
+}
+
+.sorted-box > .controls:first-child {
+    margin: 0;
+    margin-right: 35px;
+}
+
+.wrap ul.tabs-item li a svg {
+    margin: -4px 5px 0 7px;
+}
+
+.flash-footer .button-subscribe {
+    padding: 10px 13px;
+    font-size: 16px;
+    margin: 9px;
+}
+
+/*Lesson-box*/
+
