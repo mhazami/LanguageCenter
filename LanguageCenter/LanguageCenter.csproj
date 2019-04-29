@@ -197,6 +197,7 @@
     <Content Include="Lesson-calendar-EN.html" />
     <Content Include="Lesson-collections-EN.html" />
     <Content Include="Lesson-courses-EN.html" />
+    <Content Include="Lesson-index-EN.html" />
     <Content Include="Lesson-index.html" />
     <Content Include="Category.html" />
     <Content Include="Content\AshboryBYU.mp3" />

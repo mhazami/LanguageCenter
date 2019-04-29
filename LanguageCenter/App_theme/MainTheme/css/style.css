@@ -411,16 +411,18 @@ p {
     border: 2px solid #5774fc;
     font-weight: 600;
 }
-    .content-item-tutorials .button-row a {
-        margin: 5px;
-    }
-    .btn-blue-small:first-child, .content-item-tutorials > a:first-child {
-        margin-right: 0
-    }
 
-    .btn-blue-small.solid {
-        background: #fff;
-    }
+.content-item-tutorials .button-row a {
+    margin: 5px;
+}
+
+.btn-blue-small:first-child, .content-item-tutorials > a:first-child {
+    margin-right: 0
+}
+
+.btn-blue-small.solid {
+    background: #fff;
+}
 
 .content-item-tutorials {
     padding-right: 30px
@@ -492,7 +494,6 @@ footer {
     footer h5 {
         margin-bottom: 40px;
         font-size: 17px;
-
     }
 
     footer label {
@@ -1500,7 +1501,6 @@ footer {
 .flash-footer h2 {
     font-weight: 300;
     text-align: right;
-
     line-height: 1.3;
     font-size: 30px;
 }
@@ -1617,6 +1617,10 @@ ul.tabs-item li a.active {
 .wrap, .wrap .banner-top-content, .wrap .white-box-contnet, .wrap .banner-item {
     padding-bottom: 0 !important
 }
+
+    .wrap .flash-footer {
+        padding-bottom: 25px !important
+    }
 
 .lesson-header-text h3 {
     margin-top: 0;
@@ -2001,15 +2005,17 @@ ul.tabs-item li a.active {
 
 .head-title-calendar h1, .teachers-calendar h1 {
     font-size: 38px;
-    color: #444444;
+    color: #272727;
     font-weight: 300;
     margin-bottom: 25px;
 }
 
-.calendar-months li a {
-    font-weight: 300;
-    font-size: 17px
+.calendar-months li a, #content-tabs .teachers-calendar p {
+    font-weight: 400 !important;
+    font-size: 18px;
+    color: #292929;
 }
+
 
 #content-tabs .teachers-calendar p {
     font-weight: 300;
@@ -2267,6 +2273,10 @@ a:hover svg.fa-heart {
     margin: 3px 0px 0px 10px;
 }
 
+.lesson-collection-item {
+    padding: 0
+}
+
 .lesson-collection > .row > div {
     margin: 15px 0px;
 }
@@ -2466,7 +2476,8 @@ a:hover svg.fa-heart {
     }
 
     .path-category li:first-child a, .path-category li a {
-        text-decoration: underline !important
+        text-decoration: underline !important;
+        text-decoration-color: #5774fc !important;
     }
 
     .path-category li.current-page a {
@@ -2474,7 +2485,7 @@ a:hover svg.fa-heart {
     }
 
     .path-category a {
-        font-size: 14px;
+        font-size: 17px;
     }
 
         .path-category a:hover {
@@ -2730,9 +2741,6 @@ a:hover svg.fa-heart {
         color: #565656;
     }
 
-        .study-time ul li svg {
-            margin: 0px 0 3px 6px;
-        }
 
 .lesson-print-box {
     padding: 60px 0;
@@ -2822,17 +2830,18 @@ a:hover svg.fa-heart {
     }
 
         .content-col-event ul li span {
-            font-size: 15px;
+            font-size: 17px;
         }
 
 .items-related {
     float: right;
+    margin: 12px 0;
     width: 100%;
     background: #fff;
 }
 
 .tasks-box {
-    float: none;
+    float: none !important;
     display: inline-block;
     margin: auto;
     margin-top: 40px;
@@ -2849,6 +2858,7 @@ a:hover svg.fa-heart {
 
         .tasks-box .content-col-event table td, .tasks-box .content-col-event table th {
             text-align: center;
+            font-size: 19px;
             padding: 10px;
         }
 
@@ -2993,6 +3003,7 @@ a:hover svg.fa-heart {
         background-position: 50% 96%;
     }
 
+
         .flash-footer .black-button {
             display: block;
             width: 170px;
@@ -3034,6 +3045,10 @@ a:hover svg.fa-heart {
 .white-footer-box > .row > div {
     float: none;
     margin: auto
+}
+
+#content-tabs .flash-footer .banner-top-content > p {
+    padding: 15px 0
 }
 
 @media(max-width: 600px) {

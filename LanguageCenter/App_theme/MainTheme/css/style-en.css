@@ -20,14 +20,21 @@ body {
 .search-for-help input[type="text"] {
     padding: 15px 100px 12px 19px;
 }
-
+.white-box-print-content p {
+    text-align: left;
+    float: left;
+    font-size: 16px;
+}
+.download-link {
+    float: right
+}
 .search-btn {
     left: auto;
     right: 0;
     border-radius: 0 5px 5px 0;
 }
 
-.help-content .search-for-help h2 {
+.help-content .search-for-help h2, .study-time ul li, .head-col-event, .content-col-event ul li {
     text-align: left
 }
 
@@ -192,6 +199,7 @@ body {
     margin-left: 0;
     margin-right: 30px;
 }
+
 footer ul li span {
     font-weight: 500;
     margin-left: 5px;
@@ -200,17 +208,52 @@ footer ul li span {
 
 
 /*Lesson-box*/
+.items-detail-calendar li > * {
+    font-size: 15px;
+}
 
-.lesson-header-text, ul.tabs-item li a, .flash-footer p {
+.calendar-days .submenu a svg {
+    margin: -3px 5px 0 0;
+}
+
+.lesson-header-text, ul.tabs-item li a, .flash-footer p, #content-tabs .teachers-calendar p, .items-detail-calendar li > *, .calendar-days .submenu a {
     text-align: left
 }
+
 
 ul.tabs-item li a {
     padding: 15px 0 0 15px;
 }
 
-ul.tabs-item li, .controls {
+ul.tabs-item li, .controls, .calendar-days > li .link ul, .accordion .link, .lesson-collection, .white-box-print-head label {
     float: left
+}
+
+.calendar-date {
+    position: absolute;
+    right: auto;
+    left: 0;
+}
+
+.calendar-days .link ul span {
+    margin-right: 0;
+    margin-left: 45px
+}
+
+.calendar-days li .link svg {
+    left: auto;
+    right: -28px;
+    transform: rotate(270deg);
+}
+
+.submenu a {
+    padding-left: 0;
+    padding-right: 42px
+}
+
+.calendar-days .submenu a span {
+    margin-right: 0;
+    margin-left: 15px;
 }
 
 .sorted-box > .controls:first-child {
@@ -228,5 +271,91 @@ ul.tabs-item li, .controls {
     margin: 9px;
 }
 
-/*Lesson-box*/
+.calendar-days .submenu {
+    padding-right: 0px;
+    padding-left: 60px;
+}
 
+.accordion li .link.sub-opend svg {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+/*Lesson-box*/
+.message-panel .message-panel-body {
+    margin-right: 0;
+    margin-left: 100px
+}
+
+.message-panel {
+    float: left;
+    padding: 8px 86px 0 10px
+}
+
+#content-tabs .message-panel p {
+    padding: 0;
+    text-align: left;
+    font-size: 18px;
+}
+
+#content-tabs .message-panel span {
+    padding-left: 7px;
+    float: left;
+}
+
+    #content-tabs .message-panel span:before {
+        left: auto;
+        right: 100%
+    }
+
+.message-panel img {
+    right: auto;
+    left: 30px;
+}
+
+.lesson-collection-item > ul li {
+    display: inline-block;
+    margin: 3px 10px 0px 0;
+}
+
+
+.path-category li:before {
+    top: 4px;
+    left: 3px;
+    transform: rotate(180deg);
+}
+
+.options-button .tabs li:first-child a {
+    border-radius: 6px 0 0 6px
+}
+
+.options-button .tabs li:last-child a {
+    border-radius: 0 6px 6px 0;
+}
+
+svg {
+    margin: -4px 3px 0 0px
+}
+
+.lesson-detail-box-detail {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+    .lesson-detail-box-detail p {
+        font-size: 16px;
+    }
+
+.white-box-print-content .big-blue-button:first-child {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.white-box-print-head label svg {
+    margin: 0px 6px 3px 0;
+}
+
+.big-blue-button {
+    float: left;
+}

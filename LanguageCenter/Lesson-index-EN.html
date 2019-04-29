@@ -12,6 +12,7 @@
     <script src="App_theme/MainTheme/js/bootstrap.min.js"></script>
     <script src="App_theme/MainTheme/js/all.js"></script>
     <link href="App_theme/MainTheme/css/style.css" rel="stylesheet" />
+    <link href="App_theme/MainTheme/css/style-en.css" rel="stylesheet" />
     <script>
         $(document).ready(function () {
             $(".tabContent").hide();
@@ -26,39 +27,6 @@
                 $(activeTab).fadeIn();
                 return false;
             });
-            $(".category .item").each(function () {
-                debugger;
-
-                var a = $(this).index();
-
-                if ($('.level-type', this).is(':contains("آسان")')) {
-                    var id_element = $(this);
-                    $(this).addClass("beg");
-                    Check_type(id_element);
-                }
-                else if ($('.level-type', this).is(':contains("پیشرفته")')) {
-                    var id_element = $(this);
-                    $(this).addClass("adv");
-                    Check_type(id_element);
-                }
-                else if ($('.level-type', this).is(':contains("بین المللی")')) {
-                    var id_element = $(this);
-                    $(this).addClass("int");
-                    Check_type(id_element);
-                }
-
-
-            });
-
-            function Check_type(id_element) {
-                if (id_element.is(':contains("دیجیتال")')) {
-                    $(id_element).addClass("degital");
-                }
-
-                else if (id_element.is(':contains("PDF")')) {
-                    $(id_element).addClass("pdf");
-                }
-            }
         });
 
     </script>
@@ -66,11 +34,8 @@
 <body>
     <header></header>
     <div class="container-fluid container-nav">
-        <div class="row header-nav-panel  ">
-
-
-
-            <div class="col-lg-7 col-md-12 col-xs-12 col-sm-12 navbar-panel  item-third">
+        <div class=" header-nav-panel">
+            <div class="container  navbar-panel ">
                 <div class="r-collapse">
                     <ul class="icon-nav">
                         <li class="bar1"></li>
@@ -90,44 +55,40 @@
                                     <li>
                                         <a class="dropdown-btn" href="Index.html">
                                             <i class="fas fa-tasks"></i>
-                                            <span> چرا کتابخانه ESL؟</span>
+                                            <span> Why ESL Library ?</span>
                                         </a>
                                     </li>
-
                                     <li>
                                         <a class="dropdown-btn">
                                             <i class="fas fa-globe"></i>
-                                            <span> بررسی</span>
+                                            <span> Explore</span>
                                             <ul class="btn-menu">
                                                 <li class="bar1"></li>
                                                 <li class="bar3"></li>
                                             </ul>
                                         </a>
-
                                         <ul>
                                             <li>
-                                                <a href="#about">
+                                                <a href="Lesson-courses-EN.html">
                                                     <i class="fas fa-wrench"></i>
-                                                    <span> درس ها</span>
+                                                    <span> Lessons</span>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#about">
+                                                <a href="FlashCard-EN.html">
                                                     <i class="fas fa-pen"></i>
-                                                    <span> فلش کارت ها</span>
+                                                    <span> FlashCards</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="Sample.html">
                                                     <i class="far fa-file"></i>
-                                                    <span> نمونه ها</span>
+                                                    <span> Samples</span>
                                                 </a>
                                             </li>
-
                                             <li>
                                                 <a class="dropdown-btn">
-
-                                                    <span>محصولات</span>
+                                                    <span>Products</span>
 
                                                     <!--<i class="icon-upper fa fa-chevron-left"></i>-->
                                                 </a>
@@ -138,13 +99,9 @@
 
                                                         </a>
                                                     </li>
-
                                                     <li>
                                                         <a class="dropdown-btn">
-
                                                             <span>خرید ها</span>
-
-                                                            <!--<i class="icon-upper fa fa-chevron-left"></i>-->
                                                         </a>
                                                         <ul>
                                                             <li>
@@ -153,7 +110,6 @@
 
                                                                 </a>
                                                             </li>
-
                                                             <li>
                                                                 <a href="#">
                                                                     <span> سبد خرید</span>
@@ -165,7 +121,6 @@
 
                                                                 </a>
                                                             </li>
-
                                                         </ul>
                                                     </li>
                                                     <li>
@@ -177,17 +132,14 @@
 
                                                 </ul>
                                             </li>
-
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <i class="fas fa-shopping-bag"></i>
-                                            <span> قیمت گذاری</span>
+                                            <span> Pricing</span>
                                         </a>
                                     </li>
-
-
                                 </ul>
                                 <ul class="links-item">
                                     <li>
@@ -195,13 +147,13 @@
                                             <li>
                                                 <a href="" class="btn-blue-small-navbar">
                                                     <i class="fas fa-plus"></i>
-                                                    <span>ثبت نام</span>
+                                                    <span>Sign Up</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="">
                                                     <i class="fas fa-sign-in-alt"></i>
-                                                    <span>ورود </span>
+                                                    <span>Log In </span>
                                                 </a>
                                             </li>
                                             <li class="menu-control-btn">
@@ -213,21 +165,18 @@
                                             <li>
                                                 <a href="">
                                                     <i class="fas fa-search"></i>
-                                                    <span>جستجو</span>
+                                                    <span>Search</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </li>
-
                                 </ul>
                             </div>
-
                         </nav>
                     </li>
                 </ul>
             </div>
         </div>
-
     </div>
     <main>
         <div class="lesson-content-box">
@@ -235,14 +184,16 @@
                 <div class="path-category">
                     <ul>
                         <li>
-                            <a href="Lesson-courses.html">درس ها</a>
+                            <a href="Lesson-courses-EN.html">Lessons</a>
                         </li>
                         <li>
-                            <a href="Category.html">شروع کننده بحث</a>
+                            <a href="Category-EN.html">
+                                Discussion Starters
+                            </a>
                         </li>
 
                         <li class="current-page">
-                            <a href="#">هوش مصنوعی</a>
+                            <a href="#">Minimum Wage</a>
                         </li>
                     </ul>
                 </div>
@@ -258,25 +209,24 @@
                         </div>
                         <div class="col-lg-10 col-sm-10 col-md-10 col-xs-12 lesson-detail-box-detail">
                             <h3>
-                                تماشا کنید
+                                Minimum Wage
                             </h3>
                             <label>
                                 <a href="#">
-                                    شروع کننده بحث
+                                    Discussion Starters
                                 </a>
                             </label>
                             <ul>
                                 <li>
                                     <i class="far fa-lightbulb"></i>
-                                    <span> اینتر - بین المللی بالا</span>
+                                    <span> Int</span>
                                 </li>
                             </ul>
 
                             <div class="row">
                                 <div class="col-lg-7 col-sm-12 col-md-10 col-xs-12 ">
                                     <p>
-                                        دانش آموزان در مورد پدیده مدرن تماشای بیگانه را می خوانند. آنها واژگان را مرور می کنند و رفتار مشاهده ی اعتیادآور را مورد بحث قرار می دهند. این درس همچنین شامل بررسی سریع تاثیر و تأثیر است.
-
+                                        Students read about minimum wage. The lesson includes vocabulary review exercises, comprehension questions, and discussion questions.
                                     </p>
                                 </div>
                             </div>
@@ -293,7 +243,7 @@
                             <a href="#tab1">
                                 <i class="far fa-file-alt"></i>
                                 <span>
-                                    دیجیتال
+                                    Digital
                                 </span>
                             </a>
                         </li>
@@ -301,7 +251,7 @@
                             <a href="#tab2">
                                 <i class="fas fa-print"></i>
                                 <span>
-                                    پرینت
+                                    Print
                                 </span>
                             </a>
                         </li>
@@ -317,7 +267,7 @@
                                                 <label>
                                                     <i class="far fa-file-alt"></i>
                                                     <span>
-                                                        فایل های PDF
+                                                        PDFs
                                                     </span>
                                                 </label>
                                             </div>
@@ -325,13 +275,13 @@
                                                 <a class="big-blue-button" href="#">
                                                     <i class="far fa-file-alt"></i>
                                                     <span>
-                                                        دانشجو
+                                                        Student
                                                     </span>
                                                 </a>
                                                 <a class="big-blue-button" href="#">
                                                     <i class="far fa-file-alt"></i>
                                                     <span>
-                                                        استاد
+                                                        Teacher
                                                     </span>
                                                 </a>
                                                 <div class="study-time">
@@ -339,18 +289,16 @@
                                                         <li>
                                                             <i class="far fa-clock"></i>
                                                             <span>
-                                                                1-2 ساعت
+                                                                1.5–2 hours
                                                             </span>
                                                         </li>
                                                         <li>
                                                             <i class="far fa-copy"></i>
                                                             <span>
-                                                                2 صفحه
+                                                                5 pages
                                                             </span>
                                                         </li>
                                                     </ul>
-
-
 
                                                 </div>
                                             </div>
@@ -362,13 +310,17 @@
                                                 <label>
                                                     <i class="fas fa-volume-up"></i>
                                                     <span>
-                                                        صدا ها
+                                                        Audio
                                                     </span>
                                                 </label>
                                             </div>
                                             <div class="white-box-print-content">
-                                                <p>ممنوعیت کیسه های پلاستیکی</p>
-                                                <a href="#" class="download-link">         <img src="Content/Image/download.png" /></a>
+                                                <p>
+                                                    Sending Money Home
+                                                </p>
+                                                <a href="#" class="download-link">
+                                                    <img src="Content/Image/download.png" />
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -379,88 +331,96 @@
                                         <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                                             <div class="head-col-event">
                                                 <i class="fas fa-tasks"></i>
-                                                <span>وظایف</span>
+                                                <span>Tasks</span>
                                             </div>
                                             <div class="content-col-event">
                                                 <ul>
                                                     <li>
                                                         <span>
-                                                            خواندن
+                                                            reading
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            وظایف بازبینی واژگان
+                                                            vocabulary review tasks
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            سوالات بحث
+                                                            discussion questions
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            سمعی
+                                                            audio
                                                         </span>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
+
+
+
+
+
+
+
+
                                         <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                                             <div class="head-col-event">
                                                 <i class="fas fa-book"></i>
-                                                <span>واژگان</span>
+                                                <span>Vocabulary</span>
                                             </div>
                                             <div class="content-col-event">
                                                 <ul>
                                                     <li>
                                                         <span>
-                                                            راحتی
+                                                            convenience
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            وظایف بازبینی واژگان
+                                                            clog
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            ممنوعیت
+                                                            ban
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            دسترس
+                                                            disposal
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            ویرانگر
+                                                            devastating
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            فراخوانی
+                                                            invoke
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            قراضه
+                                                            scrap
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            اعمال
+                                                            enforce
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            اجباری
+                                                            mandatory
                                                         </span>
                                                     </li>
                                                     <li>
                                                         <span>
-                                                            یکجا
+                                                            outright
                                                         </span>
                                                     </li>
                                                 </ul>
@@ -469,13 +429,13 @@
                                         <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                                             <div class="head-col-event">
                                                 <i class="fas fa-pen"></i>
-                                                <span>گرامر</span>
+                                                <span>Grammar</span>
                                             </div>
                                             <div class="content-col-event">
                                                 <ul>
                                                     <li>
                                                         <span>
-                                                            ملت ها و. ملیت ها
+                                                            nations vs. nationalities
                                                         </span>
                                                     </li>
 
@@ -495,23 +455,24 @@
                                     <div class="col-lg-8 col-sm-10 col-md-8 col-xs-12 tasks-box">
                                         <div class="head-col-event">
                                             <i class="fas fa-tasks"></i>
-                                            <span>وظایف</span>
+                                            <span>Tasks</span>
                                         </div>
                                         <div class="content-col-event">
                                             <table>
                                                 <tr>
                                                     <th>
-                                                        عنوان
+                                                        Title
                                                     </th>
                                                     <th>
-                                                        آخرین جلسه
+                                                        Latest session
+
 
                                                     </th>
-                                                    <th>مشق شب</th>
+                                                    <th>Homework</th>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        دست گرمی بازی کردن
+                                                        Warm-Up
 
                                                     </td>
                                                     <td>-</td>
@@ -519,42 +480,42 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        پیشنمایش واژگان A
+                                                        Vocabulary Preview A
                                                     </td>
                                                     <td>-</td>
                                                     <td>-</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        پیش بینی واژگان B
+                                                        Vocabulary Preview B
                                                     </td>
                                                     <td>-</td>
                                                     <td>-</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        خواندن و گوش دادن
+                                                        Read & Listen
                                                     </td>
                                                     <td>-</td>
                                                     <td>-</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        دست گرمی بازی کردن
+                                                        Comprehension
                                                     </td>
                                                     <td>-</td>
                                                     <td>-</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        مرور واژگان
+                                                        Vocabulary Review
                                                     </td>
                                                     <td>-</td>
                                                     <td>-</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        ملت ها و ملیت ها
+                                                        Discussion or Writing
 
                                                     </td>
                                                     <td>-</td>
@@ -562,14 +523,15 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        بحث
+                                                        Sentence Stems for Debating
+
                                                     </td>
                                                     <td>-</td>
                                                     <td>-</td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        گوش دادن و نوع
+                                                        Debate #1
                                                     </td>
                                                     <td>-</td>
                                                     <td>-</td>
@@ -590,7 +552,7 @@
                 <div class="container">
                     <div class="related-material-head">
                         <h2>
-                            موارد مرتبط
+                            Related Materials
                         </h2>
                     </div>
                     <div class="related-material-content">
@@ -604,9 +566,93 @@
                                         <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9 ">
                                             <div class="items-related-content">
                                                 <a href="#">
-                                                    <h4> ممنوعیت معادن زمین</h4>
+                                                    <h4> Money</h4>
 
-                                                    <span> مباحثات کوتاه</span>
+                                                    <span>   English Foundations</span>
+
+                                                    <label> INT - HIGH INT</label>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 ">
+                                <div class="items-related">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 items-related-img">
+                                            <img src="Content/Image/img-lessons/img-lessons14.png" />
+                                        </div>
+                                        <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9 ">
+                                            <div class="items-related-content">
+                                                <a href="#">
+                                                    <h4> Money</h4>
+
+                                                    <span>   English Foundations</span>
+
+                                                    <label> INT - HIGH INT</label>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 ">
+                                <div class="items-related">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 items-related-img">
+                                            <img src="Content/Image/img-lessons/img-lessons14.png" />
+                                        </div>
+                                        <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9 ">
+                                            <div class="items-related-content">
+                                                <a href="#">
+                                                    <h4> Money</h4>
+
+                                                    <span>   English Foundations</span>
+
+                                                    <label> INT - HIGH INT</label>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 ">
+                                <div class="items-related">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 items-related-img">
+                                            <img src="Content/Image/img-lessons/img-lessons14.png" />
+                                        </div>
+                                        <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9 ">
+                                            <div class="items-related-content">
+                                                <a href="#">
+                                                    <h4> Money</h4>
+
+                                                    <span>   English Foundations</span>
+
+                                                    <label> INT - HIGH INT</label>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 ">
+                                <div class="items-related">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 items-related-img">
+                                            <img src="Content/Image/img-lessons/img-lessons14.png" />
+                                        </div>
+                                        <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9 ">
+                                            <div class="items-related-content">
+                                                <a href="#">
+                                                    <h4> Money</h4>
+
+                                                    <span>   English Foundations</span>
 
                                                     <label> INT - HIGH INT</label>
 
@@ -621,223 +667,259 @@
                 </div>
             </div>
         </div>
-
-
-
         <div class="white-footer-box">
-            <div class="row">
-                <div class="col-lg-8 col-md-9 col-sm-10 col-xs-12">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
-                            <label>طرح ها</label>
-                            <ul>
-                                <li>
-                                    <a href="Lesson-courses.html">
-                                        <i class="far fa-file-alt"></i>
-                                        <span>درس ها</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="Lesson-calendar.html">
-                                        <i class="far fa-calendar-alt"></i>
-                                        <span>تقویم درس</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="Lesson-collections.html">
-                                        <i class="far fa-folder-open"></i>
-                                        <span>مجموعه درس</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="Resources.html">
-                                        <i class="fas fa-wrench"></i>
-                                        <span>منابع</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="FlashCard.html">
-                                        <i class="fas fa-bolt"></i>
-                                        <span>فلش کارت </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="index-blog.html">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <span>وبلاگ</span>
-                                    </a>
-                                </li>
-                            </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                        <label>Materials</label>
+                        <ul>
+                            <li>
+                                <a href="Lesson-courses.html">
+                                    <i class="far fa-file-alt"></i>
+                                    <span>Lessons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Lesson-calendar.html">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>Lesson Calendar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Lesson-collections.html">
+                                    <i class="far fa-folder-open"></i>
+                                    <span>Lesson Collections</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Resources.html">
+                                    <i class="fas fa-wrench"></i>
+                                    <span>Resources</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="FlashCard.html">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Flashcards </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index-blog.html">
+                                    <i class="fas fa-pencil-alt"></i>
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                        </ul>
 
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
-                            <label>حساب</label>
-                            <ul>
-                                <li>
-                                    <a href="Sign-up.html" class="btn-blue-small">
-                                        <i class="fas fa-plus"></i>
-                                        <span>ثبت نام</span>
-                                    </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                        <label>Account</label>
+                        <ul>
+                            <li>
+                                <a href="Sign-up.html" class="btn-blue-small">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Sign Up</span>
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="Login-teacher.html">
-                                        <i class="fas fa-sign-in-alt"></i>
-                                        <span>ورود</span>
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="Login-teacher.html">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    <span>Log In</span>
+                                </a>
 
-                                </li>
-                            </ul>
+                            </li>
+                        </ul>
 
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
-                            <label>سایت</label>
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <i class="fas fa-question"></i>
-                                        <span>کمک</span>
-                                    </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                        <label>Site</label>
+                        <ul>
+                            <li>
+                                <a href="Help-EN.html">
+                                    <i class="fas fa-question"></i>
+                                    <span>Help</span>
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="far fa-lightbulb"></i>
-                                        <span>مقیاس</span>
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-lightbulb"></i>
+                                    <span>Equivalency Scale</span>
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="Index.html">
-                                        <i class="fas fa-map-signs"></i>
-                                        <span>تور</span>
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="Index-En.html">
+                                    <i class="fas fa-map-signs"></i>
+                                    <span>Tour</span>
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="Pricing.html">
-                                        <i class="fas fa-shopping-bag"></i>
-                                        <span>قیمت ها</span>
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="Pricing-En.html">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>Pricing</span>
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="Sample.html">
-                                        <i class="fas fa-unlock-alt"></i>
-                                        <span>نمونه ها</span>
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="Sample-En.html">
+                                    <i class="fas fa-unlock-alt"></i>
+                                    <span>Samples</span>
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="About.html">
-                                        <i class="fas fa-info-circle"></i>
-                                        <span>درباره ما</span>
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="About-En.html">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>About</span>
+                                </a>
 
-                                </li>
-                            </ul>
+                            </li>
+                        </ul>
 
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
-                            <label>در تماس بودن</label>
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <i class="fab fa-facebook"></i>
-                                        <span>فیس بوک</span>
-                                    </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6">
+                        <label>
+                            Get in Touch
+                        </label>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fab fa-twitter"></i>
-                                        <span>توییتر</span>
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="far fa-envelope"></i>
-                                        <span>تماس با ما</span>
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="Contact-us-EN.html">
+                                    <i class="far fa-envelope"></i>
+                                    <span>Contact Us</span>
+                                </a>
 
-                                </li>
-                            </ul>
+                            </li>
+                        </ul>
 
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6 download-box">
-                            <label>برنامه را دانلود کنید</label>
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <img src="Content/Image/app-store.svg" />
-                                    </a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-6 col-sm-6 download-box">
+                        <label>
+                            Download the App
+                        </label>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="Content/Image/app-store.svg" />
+                                </a>
 
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="Content/Image/google-store.svg" />
-                                    </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="Content/Image/google-store.svg" />
+                                </a>
 
-                                </li>
-                            </ul>
+                            </li>
+                        </ul>
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <footer>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
 
-                    <img src="Content/Image/logo-footer.png" />
-                    <label>
-                        کتابخانه ESL متعلق به Red River Press Inc.
-                    </label>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <h5>
-                        تماس
-                    </h5>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-phone"></i>
-                                <span>ایالات متحده / کانادایی (TOLL-FREE): 1-866-896-7123</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <h5>
-                        آدرس
-                    </h5>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <span>ایران - تهران - انقلاب</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <h5>
-                        حقوقی
-                    </h5>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <span>شرایط استفاده</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>سیاست حفظ حریم خصوصی</span>
-                            </a>
-                        </li>
-                    </ul>
+                        <img src="Content/Image/logo-footer.png" />
+                        <label>
+                            ESL Library is owned and managed by <a href="#"> Red River Press Inc.</a>
+                        </label>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h5>
+                            Contact
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-phone"></i>
+                                    <span>
+                                        US/CANADA (TOLL-FREE):1‑866‑896‑7123
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-phone"></i>
+                                    <span>
+                                        INTERNATIONAL:1‑204‑452‑8241
+
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-fax"></i>
+                                    <span>
+                                        FAX:1‑204‑202‑5088
+
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h5>
+                            Address
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>777–70 Arthur Street</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Winnipeg, Manitoba, Canada</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>R3B 1G7</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h5>
+                            Legal
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>Terms of Use</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Privacy Policy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span>
+                                    © 2019 Red River Press. All rights reserved.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
