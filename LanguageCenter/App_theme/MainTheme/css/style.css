@@ -287,6 +287,20 @@ p {
     margin-left: 6px;
 }
 
+
+#hidden-print-div {
+    display: none;
+}
+
+@media print {
+    #hidden-print-div {
+        display: block;
+    }
+
+    #page-content {
+        display: none;
+    }
+}
 .button-subscribe-link {
     position: relative;
     text-decoration: none;
@@ -312,6 +326,11 @@ p {
     margin-right: 30px;
 }
 
+@media(max-width: 768px) {
+    .download-box, .white-footer-box .container div[class^="col"]{
+        margin: 0
+    }
+}
     .download-box img {
         max-width: 130px;
     }
