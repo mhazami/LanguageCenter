@@ -3100,7 +3100,7 @@ a:hover svg.fa-heart {
     }
 
 .banner-sign-item {
-    float: none;
+    float: none!important;
     height: 60px;
     position: relative;
     margin: auto
@@ -3471,7 +3471,9 @@ a:hover svg.fa-heart {
 .student-box.sign-up-page .continue.btn-register span, .student-box.sign-up-page .continue.btn-blue-small svg {
     color: #252525 !important;
 }
-
+.student-box.sign-up-page .continue > span {
+    color: #252525 !important;
+}
 .student-box.sign-up-page .continue {
     background-color: #fff;
     color: #252525 !important;

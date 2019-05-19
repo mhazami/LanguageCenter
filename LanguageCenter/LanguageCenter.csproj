@@ -277,6 +277,8 @@
     <Content Include="Login-teacher.html" />
     <Content Include="About.html" />
     <Content Include="Contact-us.html" />
+    <Content Include="Sign-up-EN.html" />
+    <Content Include="Sign-up-student-en.html" />
     <Content Include="Sign-up.html" />
     <Content Include="Sign-up-student.html" />
     <Content Include="Resources.html" />

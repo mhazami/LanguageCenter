@@ -20,14 +20,17 @@ body {
 .search-for-help input[type="text"] {
     padding: 15px 100px 12px 19px;
 }
+
 .white-box-print-content p {
     text-align: left;
     float: left;
     font-size: 16px;
 }
+
 .download-link {
     float: right
 }
+
 .search-btn {
     left: auto;
     right: 0;
@@ -358,4 +361,35 @@ svg {
 
 .big-blue-button {
     float: left;
+}
+
+.banner-sign-item img {
+    float: left
+}
+
+.banner-sign-item h4 {
+    width: auto;
+    display: inline-block;
+    margin-left: 17px;
+    margin-right: 0;
+    margin-right: 0;
+    float: left;
+}
+
+.input-control input[type="text"], .input-control input[type="email"], .input-control input[type="password"], .input-control select, .input-control textarea {
+    padding: 25px 0 10px 49px;
+    float: left;
+}
+
+.input-control svg {
+    right: auto;
+    left: 15px;
+}
+.input-control span {
+    right: auto;
+    left: 51px;
+}
+.input-control > label input[type="checkbox"], .input-control > label {
+    float: left;
+    margin-left: 7px;
 }
