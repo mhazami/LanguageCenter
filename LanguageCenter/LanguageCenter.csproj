@@ -273,10 +273,13 @@
     <Content Include="Lesson-calendar.html" />
     <Content Include="index-blog.html" />
     <Content Include="Lesson-courses.html" />
+    <Content Include="Login-student-EN.html" />
     <Content Include="Login-student.html" />
+    <Content Include="Login-teacher-EN.html" />
     <Content Include="Login-teacher.html" />
     <Content Include="About.html" />
     <Content Include="Contact-us.html" />
+    <Content Include="Sample-EN.html" />
     <Content Include="Sign-up-EN.html" />
     <Content Include="Sign-up-student-en.html" />
     <Content Include="Sign-up.html" />
