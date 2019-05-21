@@ -108,6 +108,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About-EN.html" />
     <Content Include="App_theme\MainTheme\webfonts\fa-brands-400.svg" />
     <Content Include="App_theme\MainTheme\webfonts\fa-regular-400.svg" />
     <Content Include="App_theme\MainTheme\webfonts\fa-solid-900.svg" />
@@ -120,6 +121,7 @@
     <Content Include="Content\Image\steps-help\step6.png" />
     <Content Include="Content\Image\steps-help\step7.png" />
     <Content Include="Content\mov_bbb.mp4" />
+    <Content Include="FlashCard-EN.html" />
     <Content Include="Help-doc-EN.html" />
     <Content Include="Help-EN.html" />
     <Content Include="Help-item-EN.html" />

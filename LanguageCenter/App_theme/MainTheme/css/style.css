@@ -301,6 +301,7 @@ p {
         display: none;
     }
 }
+
 .button-subscribe-link {
     position: relative;
     text-decoration: none;
@@ -327,21 +328,22 @@ p {
 }
 
 @media(max-width: 768px) {
-    .download-box, .white-footer-box .container div[class^="col"]{
+    .download-box, .white-footer-box .container div[class^="col"] {
         margin: 0
     }
 }
-    .download-box img {
-        max-width: 130px;
-    }
 
-    .download-box ul li:first-child img {
-        max-width: 100px;
-    }
+.download-box img {
+    max-width: 130px;
+}
 
-    .download-box ul li {
-        margin: 8px 0;
-    }
+.download-box ul li:first-child img {
+    max-width: 100px;
+}
+
+.download-box ul li {
+    margin: 8px 0;
+}
 
 .white-footer-box {
     float: right;
@@ -736,6 +738,10 @@ footer {
     background-color: #efefef
 }
 
+.flash-footer .white-box-contnet p, .flash-footer .banner-top-content > p {
+    margin: 0 0 15px 0;
+}
+
 .text-box {
     text-align: center;
     background-color: #fff;
@@ -942,7 +948,8 @@ footer {
 
 .img-item-tutorials img {
     border-radius: 50%;
-    height: 330px;
+    height: 305px;
+    width: 90%;
     object-fit: cover;
 }
 
@@ -1334,8 +1341,9 @@ footer {
 /*FlashCard*/
 .count-items-selected {
     background-color: #fff;
-    float: right;
-    width: 100%;
+    float: none;
+    display: inline-block;
+    width: 85%;
     padding: 25px;
     text-align: center;
 }
@@ -3100,7 +3108,7 @@ a:hover svg.fa-heart {
     }
 
 .banner-sign-item {
-    float: none!important;
+    float: none !important;
     height: 60px;
     position: relative;
     margin: auto
@@ -3471,9 +3479,11 @@ a:hover svg.fa-heart {
 .student-box.sign-up-page .continue.btn-register span, .student-box.sign-up-page .continue.btn-blue-small svg {
     color: #252525 !important;
 }
+
 .student-box.sign-up-page .continue > span {
     color: #252525 !important;
 }
+
 .student-box.sign-up-page .continue {
     background-color: #fff;
     color: #252525 !important;
@@ -3679,7 +3689,7 @@ a:hover svg.fa-heart {
 }
 
 .text-box.light-blue p {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .our-team-box article img {
@@ -3700,8 +3710,8 @@ a:hover svg.fa-heart {
     .our-team-box article h3 {
         text-align: center;
         margin: 15px 0 8px 0;
-        font-size: 25px;
-        color: #6f6f6f;
+        font-size: 24px;
+        color: #3e3e3e;
     }
 
 .lan-tabel {

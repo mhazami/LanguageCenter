@@ -54,6 +54,10 @@ body {
         left: auto !important;
         right: 0 !important;
     }
+
+        .links-item li a svg {
+            margin-top: -4px;
+        }
 }
 
 .sign-header h1 {
@@ -78,7 +82,7 @@ body {
     }
 
     #accordian .list-nav ul li a {
-        padding: 9px 35px 9px 16px;
+        padding: 8px 32px 4px 13px;
     }
 
     .dropdown-container .dropdown-container {
@@ -197,6 +201,15 @@ body {
         margin: 0px 5px;
         margin-left: 0
     }
+
+.button-row .btn-blue-small:first-child {
+    margin: 10px 5px;
+    margin-left: 0
+}
+
+.text-box p {
+    font-size: 19px;
+}
 
 .white-footer-box ul li a svg {
     margin: -3px 5px 0 0px;
@@ -407,12 +420,92 @@ svg {
 
 @media (min-width: 1024px) {
     .list-nav > li a span, .links-item > li a span {
-        margin: -3px 5px 2px 5px;
+        margin: -3px 5px 0px 2px;
         display: inline-block;
     }
+}
+
+.btn-blue-small svg {
+    margin: -4px 6px 0 -4px;
 }
 
 .input-control > label span {
     margin: 2px 11px;
     font-size: 20px;
+}
+
+.text-box [class^="col"] > span {
+    font-size: 55px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.items-tutorials a {
+    font-size: 35px;
+    font-weight: 300 !important;
+}
+
+.de-title a, .de-title {
+    font-weight: 500 !important;
+    font-size: 15px;
+}
+
+.content-item-tutorials {
+    padding: 0
+}
+
+    .content-item-tutorials p {
+        font-size: 19px;
+        font-weight: normal;
+        line-height: normal;
+    }
+
+    .content-item-tutorials .button-row a svg {
+        margin-left: 5px;
+        transform: rotate(180deg)
+    }
+
+.items-tutorials a span {
+    font-weight: 500 !important
+}
+
+.text-box .flash-card-box .row > div {
+    float: left
+}
+
+.link > img {
+    left: 0;
+    right: auto
+}
+
+.accordion li .link svg {
+    right: -16px;
+    font-size: 15px;
+    left: auto;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.link span {
+    margin: 0px 0px 0px 40px;
+    float: left;
+    font-size: 25px;
+}
+
+    .link span.count-card {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+.submenu li > div {
+    text-align: left;
+    float: left;
+    font-size: 18px;
+}
+
+.text-box.light-blue h1 {
+    margin: 42px 0;
+    font-size: 53px;
 }
